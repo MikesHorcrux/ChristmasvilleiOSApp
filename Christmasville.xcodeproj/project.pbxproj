@@ -1,0 +1,991 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		552C726E2A4E58FC00E2B682 /* AddAddressForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552C726D2A4E58FC00E2B682 /* AddAddressForm.swift */; };
+		5535F1DF2A36A034000279F6 /* SnowBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5535F1DB2A36A034000279F6 /* SnowBackground.swift */; };
+		5535F1E02A36A034000279F6 /* snow.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5535F1DC2A36A034000279F6 /* snow.sks */; };
+		5535F1E12A36A034000279F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5535F1DD2A36A034000279F6 /* Assets.xcassets */; };
+		5535F1E22A36A034000279F6 /* SnowScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5535F1DE2A36A034000279F6 /* SnowScene.swift */; };
+		5535F1E52A36A409000279F6 /* LightsMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5535F1E42A36A409000279F6 /* LightsMapView.swift */; };
+		553F99092A35133E00F7D4BD /* ChristmasvilleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553F99082A35133E00F7D4BD /* ChristmasvilleApp.swift */; };
+		553F990D2A35133F00F7D4BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 553F990C2A35133F00F7D4BD /* Assets.xcassets */; };
+		553F99112A35133F00F7D4BD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 553F99102A35133F00F7D4BD /* Preview Assets.xcassets */; };
+		553F991B2A35133F00F7D4BD /* ChristmasvilleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553F991A2A35133F00F7D4BD /* ChristmasvilleTests.swift */; };
+		553F99252A35133F00F7D4BD /* ChristmasvilleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553F99242A35133F00F7D4BD /* ChristmasvilleUITests.swift */; };
+		553F99272A35133F00F7D4BD /* ChristmasvilleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553F99262A35133F00F7D4BD /* ChristmasvilleUITestsLaunchTests.swift */; };
+		5546CB602A6498960079D285 /* AuthManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5546CB5F2A6498960079D285 /* AuthManger.swift */; };
+		5546CB632A649A4B0079D285 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 5546CB622A649A4B0079D285 /* FirebaseAnalytics */; };
+		5546CB652A649A4B0079D285 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 5546CB642A649A4B0079D285 /* FirebaseAuth */; };
+		5546CB672A649A4B0079D285 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 5546CB662A649A4B0079D285 /* FirebaseCrashlytics */; };
+		5546CB692A649A4B0079D285 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 5546CB682A649A4B0079D285 /* FirebaseFirestore */; };
+		5546CB6B2A649A4B0079D285 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 5546CB6A2A649A4B0079D285 /* FirebaseFirestoreSwift */; };
+		5546CB6E2A649D9B0079D285 /* String+extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5546CB6D2A649D9B0079D285 /* String+extention.swift */; };
+		5546CB712A64B7C90079D285 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5546CB702A64B7C90079D285 /* LoginView.swift */; };
+		5546CB732A64C4980079D285 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5546CB722A64C4980079D285 /* SignInView.swift */; };
+		5546CB752A64C5590079D285 /* EmailSignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5546CB742A64C5590079D285 /* EmailSignUpView.swift */; };
+		5546CB772A64C6010079D285 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5546CB762A64C6010079D285 /* AuthView.swift */; };
+		5546CB7A2A64CCE60079D285 /* RepeatingPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5546CB792A64CCE60079D285 /* RepeatingPlayer.swift */; };
+		5546CB7E2A64D0A10079D285 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5546CB7D2A64D0A10079D285 /* GoogleService-Info.plist */; };
+		555D4C002A52004B00943DB8 /* ChristmasLightsLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555D4BFF2A52004B00943DB8 /* ChristmasLightsLocation.swift */; };
+		555D62092A36825A00785A7C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555D62082A36825A00785A7C /* MainView.swift */; };
+		555D620C2A36902800785A7C /* CVTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555D620B2A36902800785A7C /* CVTabView.swift */; };
+		555D620E2A36908F00785A7C /* SplitMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555D620D2A36908F00785A7C /* SplitMenuView.swift */; };
+		5562CAC02A59A566003E5DA9 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5562CABF2A59A566003E5DA9 /* Address.swift */; };
+		5562CAC22A59A5F9003E5DA9 /* Coordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5562CAC12A59A5F9003E5DA9 /* Coordinates.swift */; };
+		5562CAC52A59A671003E5DA9 /* ChristmasLightsHouseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5562CAC42A59A671003E5DA9 /* ChristmasLightsHouseType.swift */; };
+		5562CAC92A59A7AD003E5DA9 /* CLMFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5562CAC82A59A7AD003E5DA9 /* CLMFormViewModel.swift */; };
+		5562CACB2A59F85A003E5DA9 /* RoundGreenButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5562CACA2A59F85A003E5DA9 /* RoundGreenButtonStyle.swift */; };
+		559A2D6D2A3938EF00DFA306 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559A2D6C2A3938EF00DFA306 /* LocationManager.swift */; };
+		559A2D742A3A904800DFA306 /* LocationServicesInitalPermissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559A2D732A3A904800DFA306 /* LocationServicesInitalPermissionView.swift */; };
+		559A2D772A3A97CF00DFA306 /* PillButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559A2D762A3A97CF00DFA306 /* PillButtonStyle.swift */; };
+		55D4D9752A8AD720000DEC60 /* Bubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D4D9742A8AD720000DEC60 /* Bubble.swift */; };
+		55D4D9772A8AD7A4000DEC60 /* BubbleShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D4D9762A8AD7A4000DEC60 /* BubbleShape.swift */; };
+		55D4D9792A8AD84F000DEC60 /* UserBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D4D9782A8AD84F000DEC60 /* UserBubble.swift */; };
+		55D4D97B2A8ADA69000DEC60 /* SystemBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D4D97A2A8ADA69000DEC60 /* SystemBubble.swift */; };
+		55D4D97D2A8ADCE0000DEC60 /* TextEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D4D97C2A8ADCE0000DEC60 /* TextEntryView.swift */; };
+		55D4D9802A8AE276000DEC60 /* MrsClauseKitchen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D4D97F2A8AE276000DEC60 /* MrsClauseKitchen.swift */; };
+		55D4D9832A8AE2BA000DEC60 /* MrsClauseKitchenChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D4D9822A8AE2BA000DEC60 /* MrsClauseKitchenChatViewModel.swift */; };
+		55E2A1F42A78A8C700260F59 /* CLMViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E2A1F32A78A8C700260F59 /* CLMViewModel.swift */; };
+		55E2A1F62A79F45600260F59 /* LightLocationLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E2A1F52A79F45600260F59 /* LightLocationLabel.swift */; };
+		55E2A1F82A7C80F000260F59 /* LocationProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E2A1F72A7C80F000260F59 /* LocationProfileView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		553F99172A35133F00F7D4BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 553F98FD2A35133E00F7D4BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 553F99042A35133E00F7D4BD;
+			remoteInfo = Christmasville;
+		};
+		553F99212A35133F00F7D4BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 553F98FD2A35133E00F7D4BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 553F99042A35133E00F7D4BD;
+			remoteInfo = Christmasville;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		552C726D2A4E58FC00E2B682 /* AddAddressForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAddressForm.swift; sourceTree = "<group>"; };
+		5535F1DB2A36A034000279F6 /* SnowBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnowBackground.swift; sourceTree = "<group>"; };
+		5535F1DC2A36A034000279F6 /* snow.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = snow.sks; sourceTree = "<group>"; };
+		5535F1DD2A36A034000279F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5535F1DE2A36A034000279F6 /* SnowScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnowScene.swift; sourceTree = "<group>"; };
+		5535F1E42A36A409000279F6 /* LightsMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightsMapView.swift; sourceTree = "<group>"; };
+		553F99052A35133E00F7D4BD /* Christmasville.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Christmasville.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		553F99082A35133E00F7D4BD /* ChristmasvilleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChristmasvilleApp.swift; sourceTree = "<group>"; };
+		553F990C2A35133F00F7D4BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		553F990E2A35133F00F7D4BD /* Christmasville.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Christmasville.entitlements; sourceTree = "<group>"; };
+		553F99102A35133F00F7D4BD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		553F99162A35133F00F7D4BD /* ChristmasvilleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChristmasvilleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		553F991A2A35133F00F7D4BD /* ChristmasvilleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChristmasvilleTests.swift; sourceTree = "<group>"; };
+		553F99202A35133F00F7D4BD /* ChristmasvilleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChristmasvilleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		553F99242A35133F00F7D4BD /* ChristmasvilleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChristmasvilleUITests.swift; sourceTree = "<group>"; };
+		553F99262A35133F00F7D4BD /* ChristmasvilleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChristmasvilleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5546CB5F2A6498960079D285 /* AuthManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManger.swift; sourceTree = "<group>"; };
+		5546CB6D2A649D9B0079D285 /* String+extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+extention.swift"; sourceTree = "<group>"; };
+		5546CB702A64B7C90079D285 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		5546CB722A64C4980079D285 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		5546CB742A64C5590079D285 /* EmailSignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailSignUpView.swift; sourceTree = "<group>"; };
+		5546CB762A64C6010079D285 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		5546CB792A64CCE60079D285 /* RepeatingPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatingPlayer.swift; sourceTree = "<group>"; };
+		5546CB7D2A64D0A10079D285 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		555D4BFF2A52004B00943DB8 /* ChristmasLightsLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChristmasLightsLocation.swift; sourceTree = "<group>"; };
+		555D62082A36825A00785A7C /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		555D620B2A36902800785A7C /* CVTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVTabView.swift; sourceTree = "<group>"; };
+		555D620D2A36908F00785A7C /* SplitMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitMenuView.swift; sourceTree = "<group>"; };
+		5562CABF2A59A566003E5DA9 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		5562CAC12A59A5F9003E5DA9 /* Coordinates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinates.swift; sourceTree = "<group>"; };
+		5562CAC42A59A671003E5DA9 /* ChristmasLightsHouseType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChristmasLightsHouseType.swift; sourceTree = "<group>"; };
+		5562CAC82A59A7AD003E5DA9 /* CLMFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLMFormViewModel.swift; sourceTree = "<group>"; };
+		5562CACA2A59F85A003E5DA9 /* RoundGreenButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundGreenButtonStyle.swift; sourceTree = "<group>"; };
+		559A2D6C2A3938EF00DFA306 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		559A2D732A3A904800DFA306 /* LocationServicesInitalPermissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationServicesInitalPermissionView.swift; sourceTree = "<group>"; };
+		559A2D762A3A97CF00DFA306 /* PillButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillButtonStyle.swift; sourceTree = "<group>"; };
+		55D4D9742A8AD720000DEC60 /* Bubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bubble.swift; sourceTree = "<group>"; };
+		55D4D9762A8AD7A4000DEC60 /* BubbleShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleShape.swift; sourceTree = "<group>"; };
+		55D4D9782A8AD84F000DEC60 /* UserBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserBubble.swift; sourceTree = "<group>"; };
+		55D4D97A2A8ADA69000DEC60 /* SystemBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemBubble.swift; sourceTree = "<group>"; };
+		55D4D97C2A8ADCE0000DEC60 /* TextEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEntryView.swift; sourceTree = "<group>"; };
+		55D4D97F2A8AE276000DEC60 /* MrsClauseKitchen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MrsClauseKitchen.swift; sourceTree = "<group>"; };
+		55D4D9822A8AE2BA000DEC60 /* MrsClauseKitchenChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MrsClauseKitchenChatViewModel.swift; sourceTree = "<group>"; };
+		55E2A1F32A78A8C700260F59 /* CLMViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLMViewModel.swift; sourceTree = "<group>"; };
+		55E2A1F52A79F45600260F59 /* LightLocationLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightLocationLabel.swift; sourceTree = "<group>"; };
+		55E2A1F72A7C80F000260F59 /* LocationProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationProfileView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		553F99022A35133E00F7D4BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5546CB6B2A649A4B0079D285 /* FirebaseFirestoreSwift in Frameworks */,
+				5546CB672A649A4B0079D285 /* FirebaseCrashlytics in Frameworks */,
+				5546CB692A649A4B0079D285 /* FirebaseFirestore in Frameworks */,
+				5546CB632A649A4B0079D285 /* FirebaseAnalytics in Frameworks */,
+				5546CB652A649A4B0079D285 /* FirebaseAuth in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		553F99132A35133F00F7D4BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		553F991D2A35133F00F7D4BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5535F1DA2A36A025000279F6 /* Snow */ = {
+			isa = PBXGroup;
+			children = (
+				5535F1DD2A36A034000279F6 /* Assets.xcassets */,
+				5535F1DC2A36A034000279F6 /* snow.sks */,
+				5535F1DB2A36A034000279F6 /* SnowBackground.swift */,
+				5535F1DE2A36A034000279F6 /* SnowScene.swift */,
+			);
+			path = Snow;
+			sourceTree = "<group>";
+		};
+		5535F1E32A36A3EE000279F6 /* ChristmasLightsMap */ = {
+			isa = PBXGroup;
+			children = (
+				5535F1E42A36A409000279F6 /* LightsMapView.swift */,
+				552C726D2A4E58FC00E2B682 /* AddAddressForm.swift */,
+				55E2A1F52A79F45600260F59 /* LightLocationLabel.swift */,
+				55E2A1F72A7C80F000260F59 /* LocationProfileView.swift */,
+			);
+			path = ChristmasLightsMap;
+			sourceTree = "<group>";
+		};
+		553F98FC2A35133E00F7D4BD = {
+			isa = PBXGroup;
+			children = (
+				553F99072A35133E00F7D4BD /* Christmasville */,
+				553F99192A35133F00F7D4BD /* ChristmasvilleTests */,
+				553F99232A35133F00F7D4BD /* ChristmasvilleUITests */,
+				553F99062A35133E00F7D4BD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		553F99062A35133E00F7D4BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				553F99052A35133E00F7D4BD /* Christmasville.app */,
+				553F99162A35133F00F7D4BD /* ChristmasvilleTests.xctest */,
+				553F99202A35133F00F7D4BD /* ChristmasvilleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		553F99072A35133E00F7D4BD /* Christmasville */ = {
+			isa = PBXGroup;
+			children = (
+				5546CB7D2A64D0A10079D285 /* GoogleService-Info.plist */,
+				5546CB6C2A649D800079D285 /* Extentions */,
+				5562CAC62A59A75A003E5DA9 /* ViewModels */,
+				5562CAC32A59A647003E5DA9 /* Enum */,
+				555D4BFE2A52001E00943DB8 /* Models */,
+				559A2D6B2A3938CF00DFA306 /* Managers */,
+				5535F1DA2A36A025000279F6 /* Snow */,
+				555D62072A36824500785A7C /* View */,
+				553F99082A35133E00F7D4BD /* ChristmasvilleApp.swift */,
+				553F990C2A35133F00F7D4BD /* Assets.xcassets */,
+				553F990E2A35133F00F7D4BD /* Christmasville.entitlements */,
+				553F990F2A35133F00F7D4BD /* Preview Content */,
+			);
+			path = Christmasville;
+			sourceTree = "<group>";
+		};
+		553F990F2A35133F00F7D4BD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				553F99102A35133F00F7D4BD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		553F99192A35133F00F7D4BD /* ChristmasvilleTests */ = {
+			isa = PBXGroup;
+			children = (
+				553F991A2A35133F00F7D4BD /* ChristmasvilleTests.swift */,
+			);
+			path = ChristmasvilleTests;
+			sourceTree = "<group>";
+		};
+		553F99232A35133F00F7D4BD /* ChristmasvilleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				553F99242A35133F00F7D4BD /* ChristmasvilleUITests.swift */,
+				553F99262A35133F00F7D4BD /* ChristmasvilleUITestsLaunchTests.swift */,
+			);
+			path = ChristmasvilleUITests;
+			sourceTree = "<group>";
+		};
+		5546CB6C2A649D800079D285 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				5546CB6D2A649D9B0079D285 /* String+extention.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		5546CB6F2A64B7A80079D285 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				5546CB702A64B7C90079D285 /* LoginView.swift */,
+				5546CB722A64C4980079D285 /* SignInView.swift */,
+				5546CB742A64C5590079D285 /* EmailSignUpView.swift */,
+				5546CB762A64C6010079D285 /* AuthView.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		555D4BFE2A52001E00943DB8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				555D4BFF2A52004B00943DB8 /* ChristmasLightsLocation.swift */,
+				5562CABF2A59A566003E5DA9 /* Address.swift */,
+				5562CAC12A59A5F9003E5DA9 /* Coordinates.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		555D62072A36824500785A7C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				55D4D97E2A8AE24A000DEC60 /* MrsClauseKitchen */,
+				55D4D9722A8AD3CA000DEC60 /* Chat */,
+				5546CB6F2A64B7A80079D285 /* Auth */,
+				559A2D752A3A97B400DFA306 /* Styles */,
+				559A2D6E2A3A8FB500DFA306 /* AppMessaging */,
+				5535F1E32A36A3EE000279F6 /* ChristmasLightsMap */,
+				555D620A2A36901300785A7C /* Navigations */,
+				555D62082A36825A00785A7C /* MainView.swift */,
+				5546CB792A64CCE60079D285 /* RepeatingPlayer.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		555D620A2A36901300785A7C /* Navigations */ = {
+			isa = PBXGroup;
+			children = (
+				555D620B2A36902800785A7C /* CVTabView.swift */,
+				555D620D2A36908F00785A7C /* SplitMenuView.swift */,
+			);
+			path = Navigations;
+			sourceTree = "<group>";
+		};
+		5562CAC32A59A647003E5DA9 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				5562CAC42A59A671003E5DA9 /* ChristmasLightsHouseType.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		5562CAC62A59A75A003E5DA9 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				55D4D9812A8AE291000DEC60 /* MrsClauseKitchen */,
+				5562CAC72A59A76E003E5DA9 /* ChristmasLightsMap */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		5562CAC72A59A76E003E5DA9 /* ChristmasLightsMap */ = {
+			isa = PBXGroup;
+			children = (
+				5562CAC82A59A7AD003E5DA9 /* CLMFormViewModel.swift */,
+				55E2A1F32A78A8C700260F59 /* CLMViewModel.swift */,
+			);
+			path = ChristmasLightsMap;
+			sourceTree = "<group>";
+		};
+		559A2D6B2A3938CF00DFA306 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				559A2D6C2A3938EF00DFA306 /* LocationManager.swift */,
+				5546CB5F2A6498960079D285 /* AuthManger.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		559A2D6E2A3A8FB500DFA306 /* AppMessaging */ = {
+			isa = PBXGroup;
+			children = (
+				559A2D722A3A900300DFA306 /* Onboarding */,
+				559A2D712A3A8FF100DFA306 /* PopUps */,
+				559A2D6F2A3A8FDD00DFA306 /* alerts */,
+			);
+			path = AppMessaging;
+			sourceTree = "<group>";
+		};
+		559A2D6F2A3A8FDD00DFA306 /* alerts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = alerts;
+			sourceTree = "<group>";
+		};
+		559A2D712A3A8FF100DFA306 /* PopUps */ = {
+			isa = PBXGroup;
+			children = (
+				559A2D732A3A904800DFA306 /* LocationServicesInitalPermissionView.swift */,
+			);
+			path = PopUps;
+			sourceTree = "<group>";
+		};
+		559A2D722A3A900300DFA306 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		559A2D752A3A97B400DFA306 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				559A2D762A3A97CF00DFA306 /* PillButtonStyle.swift */,
+				5562CACA2A59F85A003E5DA9 /* RoundGreenButtonStyle.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		55D4D9722A8AD3CA000DEC60 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				55D4D9732A8AD6E3000DEC60 /* ChatBubbles */,
+				55D4D97C2A8ADCE0000DEC60 /* TextEntryView.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		55D4D9732A8AD6E3000DEC60 /* ChatBubbles */ = {
+			isa = PBXGroup;
+			children = (
+				55D4D9742A8AD720000DEC60 /* Bubble.swift */,
+				55D4D9762A8AD7A4000DEC60 /* BubbleShape.swift */,
+				55D4D9782A8AD84F000DEC60 /* UserBubble.swift */,
+				55D4D97A2A8ADA69000DEC60 /* SystemBubble.swift */,
+			);
+			path = ChatBubbles;
+			sourceTree = "<group>";
+		};
+		55D4D97E2A8AE24A000DEC60 /* MrsClauseKitchen */ = {
+			isa = PBXGroup;
+			children = (
+				55D4D97F2A8AE276000DEC60 /* MrsClauseKitchen.swift */,
+			);
+			path = MrsClauseKitchen;
+			sourceTree = "<group>";
+		};
+		55D4D9812A8AE291000DEC60 /* MrsClauseKitchen */ = {
+			isa = PBXGroup;
+			children = (
+				55D4D9822A8AE2BA000DEC60 /* MrsClauseKitchenChatViewModel.swift */,
+			);
+			path = MrsClauseKitchen;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		553F99042A35133E00F7D4BD /* Christmasville */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 553F992A2A35133F00F7D4BD /* Build configuration list for PBXNativeTarget "Christmasville" */;
+			buildPhases = (
+				553F99012A35133E00F7D4BD /* Sources */,
+				553F99022A35133E00F7D4BD /* Frameworks */,
+				553F99032A35133E00F7D4BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Christmasville;
+			packageProductDependencies = (
+				5546CB622A649A4B0079D285 /* FirebaseAnalytics */,
+				5546CB642A649A4B0079D285 /* FirebaseAuth */,
+				5546CB662A649A4B0079D285 /* FirebaseCrashlytics */,
+				5546CB682A649A4B0079D285 /* FirebaseFirestore */,
+				5546CB6A2A649A4B0079D285 /* FirebaseFirestoreSwift */,
+			);
+			productName = Christmasville;
+			productReference = 553F99052A35133E00F7D4BD /* Christmasville.app */;
+			productType = "com.apple.product-type.application";
+		};
+		553F99152A35133F00F7D4BD /* ChristmasvilleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 553F992D2A35133F00F7D4BD /* Build configuration list for PBXNativeTarget "ChristmasvilleTests" */;
+			buildPhases = (
+				553F99122A35133F00F7D4BD /* Sources */,
+				553F99132A35133F00F7D4BD /* Frameworks */,
+				553F99142A35133F00F7D4BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				553F99182A35133F00F7D4BD /* PBXTargetDependency */,
+			);
+			name = ChristmasvilleTests;
+			productName = ChristmasvilleTests;
+			productReference = 553F99162A35133F00F7D4BD /* ChristmasvilleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		553F991F2A35133F00F7D4BD /* ChristmasvilleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 553F99302A35133F00F7D4BD /* Build configuration list for PBXNativeTarget "ChristmasvilleUITests" */;
+			buildPhases = (
+				553F991C2A35133F00F7D4BD /* Sources */,
+				553F991D2A35133F00F7D4BD /* Frameworks */,
+				553F991E2A35133F00F7D4BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				553F99222A35133F00F7D4BD /* PBXTargetDependency */,
+			);
+			name = ChristmasvilleUITests;
+			productName = ChristmasvilleUITests;
+			productReference = 553F99202A35133F00F7D4BD /* ChristmasvilleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		553F98FD2A35133E00F7D4BD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					553F99042A35133E00F7D4BD = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					553F99152A35133F00F7D4BD = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 553F99042A35133E00F7D4BD;
+					};
+					553F991F2A35133F00F7D4BD = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 553F99042A35133E00F7D4BD;
+					};
+				};
+			};
+			buildConfigurationList = 553F99002A35133E00F7D4BD /* Build configuration list for PBXProject "Christmasville" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 553F98FC2A35133E00F7D4BD;
+			packageReferences = (
+				5546CB612A649A4B0079D285 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 553F99062A35133E00F7D4BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				553F99042A35133E00F7D4BD /* Christmasville */,
+				553F99152A35133F00F7D4BD /* ChristmasvilleTests */,
+				553F991F2A35133F00F7D4BD /* ChristmasvilleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		553F99032A35133E00F7D4BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				553F99112A35133F00F7D4BD /* Preview Assets.xcassets in Resources */,
+				553F990D2A35133F00F7D4BD /* Assets.xcassets in Resources */,
+				5535F1E12A36A034000279F6 /* Assets.xcassets in Resources */,
+				5535F1E02A36A034000279F6 /* snow.sks in Resources */,
+				5546CB7E2A64D0A10079D285 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		553F99142A35133F00F7D4BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		553F991E2A35133F00F7D4BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		553F99012A35133E00F7D4BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				555D62092A36825A00785A7C /* MainView.swift in Sources */,
+				55D4D9832A8AE2BA000DEC60 /* MrsClauseKitchenChatViewModel.swift in Sources */,
+				55D4D9792A8AD84F000DEC60 /* UserBubble.swift in Sources */,
+				5535F1E52A36A409000279F6 /* LightsMapView.swift in Sources */,
+				55D4D97D2A8ADCE0000DEC60 /* TextEntryView.swift in Sources */,
+				55E2A1F62A79F45600260F59 /* LightLocationLabel.swift in Sources */,
+				5535F1DF2A36A034000279F6 /* SnowBackground.swift in Sources */,
+				5546CB602A6498960079D285 /* AuthManger.swift in Sources */,
+				5546CB7A2A64CCE60079D285 /* RepeatingPlayer.swift in Sources */,
+				5546CB6E2A649D9B0079D285 /* String+extention.swift in Sources */,
+				559A2D772A3A97CF00DFA306 /* PillButtonStyle.swift in Sources */,
+				55E2A1F82A7C80F000260F59 /* LocationProfileView.swift in Sources */,
+				555D4C002A52004B00943DB8 /* ChristmasLightsLocation.swift in Sources */,
+				5562CAC02A59A566003E5DA9 /* Address.swift in Sources */,
+				555D620C2A36902800785A7C /* CVTabView.swift in Sources */,
+				55E2A1F42A78A8C700260F59 /* CLMViewModel.swift in Sources */,
+				5562CAC52A59A671003E5DA9 /* ChristmasLightsHouseType.swift in Sources */,
+				5562CAC22A59A5F9003E5DA9 /* Coordinates.swift in Sources */,
+				5546CB752A64C5590079D285 /* EmailSignUpView.swift in Sources */,
+				552C726E2A4E58FC00E2B682 /* AddAddressForm.swift in Sources */,
+				5546CB772A64C6010079D285 /* AuthView.swift in Sources */,
+				5535F1E22A36A034000279F6 /* SnowScene.swift in Sources */,
+				5562CACB2A59F85A003E5DA9 /* RoundGreenButtonStyle.swift in Sources */,
+				5546CB712A64B7C90079D285 /* LoginView.swift in Sources */,
+				555D620E2A36908F00785A7C /* SplitMenuView.swift in Sources */,
+				559A2D742A3A904800DFA306 /* LocationServicesInitalPermissionView.swift in Sources */,
+				5562CAC92A59A7AD003E5DA9 /* CLMFormViewModel.swift in Sources */,
+				55D4D9772A8AD7A4000DEC60 /* BubbleShape.swift in Sources */,
+				55D4D9802A8AE276000DEC60 /* MrsClauseKitchen.swift in Sources */,
+				553F99092A35133E00F7D4BD /* ChristmasvilleApp.swift in Sources */,
+				5546CB732A64C4980079D285 /* SignInView.swift in Sources */,
+				55D4D9752A8AD720000DEC60 /* Bubble.swift in Sources */,
+				55D4D97B2A8ADA69000DEC60 /* SystemBubble.swift in Sources */,
+				559A2D6D2A3938EF00DFA306 /* LocationManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		553F99122A35133F00F7D4BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				553F991B2A35133F00F7D4BD /* ChristmasvilleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		553F991C2A35133F00F7D4BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				553F99272A35133F00F7D4BD /* ChristmasvilleUITestsLaunchTests.swift in Sources */,
+				553F99252A35133F00F7D4BD /* ChristmasvilleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		553F99182A35133F00F7D4BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 553F99042A35133E00F7D4BD /* Christmasville */;
+			targetProxy = 553F99172A35133F00F7D4BD /* PBXContainerItemProxy */;
+		};
+		553F99222A35133F00F7D4BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 553F99042A35133E00F7D4BD /* Christmasville */;
+			targetProxy = 553F99212A35133F00F7D4BD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		553F99282A35133F00F7D4BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		553F99292A35133F00F7D4BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		553F992B2A35133F00F7D4BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Christmasville/Christmasville.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Christmasville/Preview Content\"";
+				DEVELOPMENT_TEAM = 5V5PZUN2HG;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "e need access to your location to show you Santa's lights map in your area";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.flamingoapps.Christmasville;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+			};
+			name = Debug;
+		};
+		553F992C2A35133F00F7D4BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Christmasville/Christmasville.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Christmasville/Preview Content\"";
+				DEVELOPMENT_TEAM = 5V5PZUN2HG;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "e need access to your location to show you Santa's lights map in your area";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.flamingoapps.Christmasville;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+			};
+			name = Release;
+		};
+		553F992E2A35133F00F7D4BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5V5PZUN2HG;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.flamingoapps.ChristmasvilleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Christmasville.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Christmasville";
+			};
+			name = Debug;
+		};
+		553F992F2A35133F00F7D4BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5V5PZUN2HG;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.flamingoapps.ChristmasvilleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Christmasville.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Christmasville";
+			};
+			name = Release;
+		};
+		553F99312A35133F00F7D4BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5V5PZUN2HG;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.flamingoapps.ChristmasvilleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Christmasville;
+			};
+			name = Debug;
+		};
+		553F99322A35133F00F7D4BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5V5PZUN2HG;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.flamingoapps.ChristmasvilleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Christmasville;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		553F99002A35133E00F7D4BD /* Build configuration list for PBXProject "Christmasville" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				553F99282A35133F00F7D4BD /* Debug */,
+				553F99292A35133F00F7D4BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		553F992A2A35133F00F7D4BD /* Build configuration list for PBXNativeTarget "Christmasville" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				553F992B2A35133F00F7D4BD /* Debug */,
+				553F992C2A35133F00F7D4BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		553F992D2A35133F00F7D4BD /* Build configuration list for PBXNativeTarget "ChristmasvilleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				553F992E2A35133F00F7D4BD /* Debug */,
+				553F992F2A35133F00F7D4BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		553F99302A35133F00F7D4BD /* Build configuration list for PBXNativeTarget "ChristmasvilleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				553F99312A35133F00F7D4BD /* Debug */,
+				553F99322A35133F00F7D4BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5546CB612A649A4B0079D285 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.12.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5546CB622A649A4B0079D285 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5546CB612A649A4B0079D285 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		5546CB642A649A4B0079D285 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5546CB612A649A4B0079D285 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		5546CB662A649A4B0079D285 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5546CB612A649A4B0079D285 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		5546CB682A649A4B0079D285 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5546CB612A649A4B0079D285 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		5546CB6A2A649A4B0079D285 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5546CB612A649A4B0079D285 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 553F98FD2A35133E00F7D4BD /* Project object */;
+}
