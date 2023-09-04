@@ -14,8 +14,16 @@ struct SplitMenuView: View {
     var body: some View {
         NavigationSplitView {
             List {
-                NavigationLink(destination: Text("home"), isActive: $showHome) {
-                    Label("Home", systemImage: "circle")
+                NavigationLink(destination: LightsMapView()) {
+                    Label {
+                        Text("Home")
+                    } icon: {
+                        Image(.snowTree3)
+                            .resizable()
+                            .scaledToFit()
+                            .foregroundColor(.lightgreen)
+                    }
+
                 }
                 NavigationLink(destination: LightsMapView()) {
                     Label {
@@ -28,14 +36,38 @@ struct SplitMenuView: View {
                     }
 
                 }
-                NavigationLink(destination: Text("kitchen view")) {
-                    Label("Mrs Cluse's Kitchen", systemImage: "circle")
+                NavigationLink(destination: LightsMapView()) {
+                    Label {
+                        Text("Mrs Cluse's Kitchen")
+                    } icon: {
+                        Image(.gingerbread3)
+                            .resizable()
+                            .scaledToFit()
+                            .foregroundColor(.lightgreen)
+                    }
+
                 }
-                NavigationLink(destination: Text("shop view")) {
-                    Label("Elves shop", systemImage: "circle")
+                NavigationLink(destination: LightsMapView()) {
+                    Label {
+                        Text("Elves shop")
+                    } icon: {
+                        Image(.sleigh3)
+                            .resizable()
+                            .scaledToFit()
+                            .foregroundColor(.lightgreen)
+                    }
+
                 }
-                NavigationLink(destination: Text("inbox view")) {
-                    Label("Santa's inbox", systemImage: "circle")
+                NavigationLink(destination: LightsMapView()) {
+                    Label {
+                        Text("Santa's inbox")
+                    } icon: {
+                        Image(.christmasHat3)
+                            .resizable()
+                            .scaledToFit()
+                            .foregroundColor(.lightgreen)
+                    }
+
                 }
             }
             .listStyle(.sidebar)

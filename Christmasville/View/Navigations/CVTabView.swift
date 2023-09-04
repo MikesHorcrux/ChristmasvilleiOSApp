@@ -18,7 +18,7 @@ struct CVTabView: View {
                     content:  {
                 Text("Tab Content 1")
                     .tabItem {
-                        Label("Home", systemImage: "circle")
+                        Label("Home", image: selectedTab == 1 ? .snowTree3 : .snowTree2)
                     }
                     .tag(1)
                 LightsMapView()
@@ -28,17 +28,17 @@ struct CVTabView: View {
                     .tag(2)
                 Text("Tab Content 1")
                     .tabItem {
-                        Label("Mrs Cluse's Kitchen", systemImage: "circle")
+                        Label("Mrs Cluse's Kitchen", image: selectedTab == 3 ? .gingerbread3 : .gingerbread2)
                     }
                     .tag(3)
                 Text("Tab Content 2")
                     .tabItem {
-                        Label("Elves shop", systemImage: "circle")
+                        Label("Elves shop", image: selectedTab == 4 ? .sleigh3 : .sleigh2)
                     }
                     .tag(4)
                 Text("Tab Content 2")
                     .tabItem {
-                        Label("Santa's inbox", systemImage: "circle")
+                        Label("Santa's inbox", image: selectedTab == 5 ? .christmasHat3 : .christmasHat2)
                     }
                     .tag(5)
             })
