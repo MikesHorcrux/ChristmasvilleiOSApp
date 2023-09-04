@@ -44,6 +44,7 @@
 		559A2D6D2A3938EF00DFA306 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559A2D6C2A3938EF00DFA306 /* LocationManager.swift */; };
 		559A2D742A3A904800DFA306 /* LocationServicesInitalPermissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559A2D732A3A904800DFA306 /* LocationServicesInitalPermissionView.swift */; };
 		559A2D772A3A97CF00DFA306 /* PillButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559A2D762A3A97CF00DFA306 /* PillButtonStyle.swift */; };
+		55CA29182AA663BB003A5B1E /* ComingSoonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CA29172AA663BB003A5B1E /* ComingSoonView.swift */; };
 		55D4D9752A8AD720000DEC60 /* Bubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D4D9742A8AD720000DEC60 /* Bubble.swift */; };
 		55D4D9772A8AD7A4000DEC60 /* BubbleShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D4D9762A8AD7A4000DEC60 /* BubbleShape.swift */; };
 		55D4D9792A8AD84F000DEC60 /* UserBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D4D9782A8AD84F000DEC60 /* UserBubble.swift */; };
@@ -110,6 +111,7 @@
 		559A2D6C2A3938EF00DFA306 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		559A2D732A3A904800DFA306 /* LocationServicesInitalPermissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationServicesInitalPermissionView.swift; sourceTree = "<group>"; };
 		559A2D762A3A97CF00DFA306 /* PillButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillButtonStyle.swift; sourceTree = "<group>"; };
+		55CA29172AA663BB003A5B1E /* ComingSoonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComingSoonView.swift; sourceTree = "<group>"; };
 		55D4D9742A8AD720000DEC60 /* Bubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bubble.swift; sourceTree = "<group>"; };
 		55D4D9762A8AD7A4000DEC60 /* BubbleShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleShape.swift; sourceTree = "<group>"; };
 		55D4D9782A8AD84F000DEC60 /* UserBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserBubble.swift; sourceTree = "<group>"; };
@@ -270,6 +272,7 @@
 		555D62072A36824500785A7C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				55CA29152AA66388003A5B1E /* Onboarding */,
 				55D4D97E2A8AE24A000DEC60 /* MrsClauseKitchen */,
 				55D4D9722A8AD3CA000DEC60 /* Chat */,
 				5546CB6F2A64B7A80079D285 /* Auth */,
@@ -366,6 +369,22 @@
 				5562CACA2A59F85A003E5DA9 /* RoundGreenButtonStyle.swift */,
 			);
 			path = Styles;
+			sourceTree = "<group>";
+		};
+		55CA29152AA66388003A5B1E /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				55CA29162AA6639A003A5B1E /* ComingSoon */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		55CA29162AA6639A003A5B1E /* ComingSoon */ = {
+			isa = PBXGroup;
+			children = (
+				55CA29172AA663BB003A5B1E /* ComingSoonView.swift */,
+			);
+			path = ComingSoon;
 			sourceTree = "<group>";
 		};
 		55D4D9722A8AD3CA000DEC60 /* Chat */ = {
@@ -578,6 +597,7 @@
 				55D4D9802A8AE276000DEC60 /* MrsClauseKitchen.swift in Sources */,
 				553F99092A35133E00F7D4BD /* ChristmasvilleApp.swift in Sources */,
 				5546CB732A64C4980079D285 /* SignInView.swift in Sources */,
+				55CA29182AA663BB003A5B1E /* ComingSoonView.swift in Sources */,
 				55D4D9752A8AD720000DEC60 /* Bubble.swift in Sources */,
 				55D4D97B2A8ADA69000DEC60 /* SystemBubble.swift in Sources */,
 				559A2D6D2A3938EF00DFA306 /* LocationManager.swift in Sources */,

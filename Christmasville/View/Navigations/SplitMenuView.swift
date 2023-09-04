@@ -14,7 +14,7 @@ struct SplitMenuView: View {
     var body: some View {
         NavigationSplitView {
             List {
-                NavigationLink(destination: LightsMapView()) {
+                NavigationLink(destination: ComingSoonView()) {
                     Label {
                         Text("Home")
                     } icon: {
@@ -36,7 +36,7 @@ struct SplitMenuView: View {
                     }
 
                 }
-                NavigationLink(destination: LightsMapView()) {
+                NavigationLink(destination: ComingSoonView()) {
                     Label {
                         Text("Mrs Cluse's Kitchen")
                     } icon: {
@@ -47,7 +47,7 @@ struct SplitMenuView: View {
                     }
 
                 }
-                NavigationLink(destination: LightsMapView()) {
+                NavigationLink(destination: ComingSoonView()) {
                     Label {
                         Text("Elves shop")
                     } icon: {
@@ -58,7 +58,7 @@ struct SplitMenuView: View {
                     }
 
                 }
-                NavigationLink(destination: LightsMapView()) {
+                NavigationLink(destination: ComingSoonView()) {
                     Label {
                         Text("Santa's inbox")
                     } icon: {

@@ -16,7 +16,7 @@ struct CVTabView: View {
         if authManager.user != nil {
             TabView(selection: $selectedTab,
                     content:  {
-                Text("Tab Content 1")
+                ComingSoonView()
                     .tabItem {
                         Label("Home", image: selectedTab == 1 ? .snowTree3 : .snowTree2)
                     }
@@ -26,17 +26,17 @@ struct CVTabView: View {
                         Label("Lights Map", image: selectedTab == 2 ? .bulb : .bulbSolid)
                     }
                     .tag(2)
-                Text("Tab Content 1")
+                ComingSoonView()
                     .tabItem {
                         Label("Mrs Cluse's Kitchen", image: selectedTab == 3 ? .gingerbread3 : .gingerbread2)
                     }
                     .tag(3)
-                Text("Tab Content 2")
+                ComingSoonView()
                     .tabItem {
                         Label("Elves shop", image: selectedTab == 4 ? .sleigh3 : .sleigh2)
                     }
                     .tag(4)
-                Text("Tab Content 2")
+                ComingSoonView()
                     .tabItem {
                         Label("Santa's inbox", image: selectedTab == 5 ? .christmasHat3 : .christmasHat2)
                     }
