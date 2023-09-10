@@ -41,6 +41,19 @@
 		5562CAC52A59A671003E5DA9 /* ChristmasLightsHouseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5562CAC42A59A671003E5DA9 /* ChristmasLightsHouseType.swift */; };
 		5562CAC92A59A7AD003E5DA9 /* CLMFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5562CAC82A59A7AD003E5DA9 /* CLMFormViewModel.swift */; };
 		5562CACB2A59F85A003E5DA9 /* RoundGreenButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5562CACA2A59F85A003E5DA9 /* RoundGreenButtonStyle.swift */; };
+		5566D8292AAE37AA00B810B0 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5566D8222AAE37AA00B810B0 /* APIClient.swift */; };
+		5566D82A2AAE37AA00B810B0 /* NetworkingLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5566D8232AAE37AA00B810B0 /* NetworkingLogger.swift */; };
+		5566D82B2AAE37AA00B810B0 /* NetworkRequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5566D8242AAE37AA00B810B0 /* NetworkRequestError.swift */; };
+		5566D82C2AAE37AA00B810B0 /* NetworkDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5566D8252AAE37AA00B810B0 /* NetworkDispatcher.swift */; };
+		5566D82D2AAE37AA00B810B0 /* JSONManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5566D8262AAE37AA00B810B0 /* JSONManager.swift */; };
+		5566D82E2AAE37AA00B810B0 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5566D8272AAE37AA00B810B0 /* Request.swift */; };
+		5566D82F2AAE37AA00B810B0 /* RequestPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5566D8282AAE37AA00B810B0 /* RequestPublisher.swift */; };
+		5566D8322AAE37D900B810B0 /* Dictionary+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5566D8302AAE37D800B810B0 /* Dictionary+extension.swift */; };
+		5566D8332AAE37D900B810B0 /* URLRequest+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5566D8312AAE37D900B810B0 /* URLRequest+extension.swift */; };
+		5566D8352AAE37E900B810B0 /* Secrets.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5566D8342AAE37E900B810B0 /* Secrets.plist */; };
+		5566D8392AAE38A800B810B0 /* FirestoreLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5566D8362AAE38A800B810B0 /* FirestoreLogger.swift */; };
+		5566D83C2AAE3FBB00B810B0 /* Env.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5566D83B2AAE3FBB00B810B0 /* Env.swift */; };
+		5566D83F2AAE741800B810B0 /* APIClientEnvironmentKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5566D83E2AAE741800B810B0 /* APIClientEnvironmentKey.swift */; };
 		559A2D6D2A3938EF00DFA306 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559A2D6C2A3938EF00DFA306 /* LocationManager.swift */; };
 		559A2D742A3A904800DFA306 /* LocationServicesInitalPermissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559A2D732A3A904800DFA306 /* LocationServicesInitalPermissionView.swift */; };
 		559A2D772A3A97CF00DFA306 /* PillButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559A2D762A3A97CF00DFA306 /* PillButtonStyle.swift */; };
@@ -108,6 +121,19 @@
 		5562CAC42A59A671003E5DA9 /* ChristmasLightsHouseType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChristmasLightsHouseType.swift; sourceTree = "<group>"; };
 		5562CAC82A59A7AD003E5DA9 /* CLMFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLMFormViewModel.swift; sourceTree = "<group>"; };
 		5562CACA2A59F85A003E5DA9 /* RoundGreenButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundGreenButtonStyle.swift; sourceTree = "<group>"; };
+		5566D8222AAE37AA00B810B0 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		5566D8232AAE37AA00B810B0 /* NetworkingLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingLogger.swift; sourceTree = "<group>"; };
+		5566D8242AAE37AA00B810B0 /* NetworkRequestError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRequestError.swift; sourceTree = "<group>"; };
+		5566D8252AAE37AA00B810B0 /* NetworkDispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkDispatcher.swift; sourceTree = "<group>"; };
+		5566D8262AAE37AA00B810B0 /* JSONManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONManager.swift; sourceTree = "<group>"; };
+		5566D8272AAE37AA00B810B0 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		5566D8282AAE37AA00B810B0 /* RequestPublisher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestPublisher.swift; sourceTree = "<group>"; };
+		5566D8302AAE37D800B810B0 /* Dictionary+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+extension.swift"; sourceTree = "<group>"; };
+		5566D8312AAE37D900B810B0 /* URLRequest+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLRequest+extension.swift"; sourceTree = "<group>"; };
+		5566D8342AAE37E900B810B0 /* Secrets.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Secrets.plist; sourceTree = "<group>"; };
+		5566D8362AAE38A800B810B0 /* FirestoreLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirestoreLogger.swift; sourceTree = "<group>"; };
+		5566D83B2AAE3FBB00B810B0 /* Env.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Env.swift; sourceTree = "<group>"; };
+		5566D83E2AAE741800B810B0 /* APIClientEnvironmentKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientEnvironmentKey.swift; sourceTree = "<group>"; };
 		559A2D6C2A3938EF00DFA306 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		559A2D732A3A904800DFA306 /* LocationServicesInitalPermissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationServicesInitalPermissionView.swift; sourceTree = "<group>"; };
 		559A2D762A3A97CF00DFA306 /* PillButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillButtonStyle.swift; sourceTree = "<group>"; };
@@ -199,8 +225,12 @@
 		553F99072A35133E00F7D4BD /* Christmasville */ = {
 			isa = PBXGroup;
 			children = (
+				5566D83D2AAE740500B810B0 /* EnviormentKeys */,
+				5566D8342AAE37E900B810B0 /* Secrets.plist */,
 				5546CB7D2A64D0A10079D285 /* GoogleService-Info.plist */,
+				5566D8362AAE38A800B810B0 /* FirestoreLogger.swift */,
 				5546CB6C2A649D800079D285 /* Extentions */,
+				5566D8202AAE376800B810B0 /* Networking */,
 				5562CAC62A59A75A003E5DA9 /* ViewModels */,
 				5562CAC32A59A647003E5DA9 /* Enum */,
 				555D4BFE2A52001E00943DB8 /* Models */,
@@ -243,6 +273,8 @@
 		5546CB6C2A649D800079D285 /* Extentions */ = {
 			isa = PBXGroup;
 			children = (
+				5566D8302AAE37D800B810B0 /* Dictionary+extension.swift */,
+				5566D8312AAE37D900B810B0 /* URLRequest+extension.swift */,
 				5546CB6D2A649D9B0079D285 /* String+extention.swift */,
 			);
 			path = Extentions;
@@ -319,6 +351,37 @@
 				55E2A1F32A78A8C700260F59 /* CLMViewModel.swift */,
 			);
 			path = ChristmasLightsMap;
+			sourceTree = "<group>";
+		};
+		5566D8202AAE376800B810B0 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				5566D83B2AAE3FBB00B810B0 /* Env.swift */,
+				5566D8212AAE377300B810B0 /* NetworkingClient */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		5566D8212AAE377300B810B0 /* NetworkingClient */ = {
+			isa = PBXGroup;
+			children = (
+				5566D8222AAE37AA00B810B0 /* APIClient.swift */,
+				5566D8262AAE37AA00B810B0 /* JSONManager.swift */,
+				5566D8252AAE37AA00B810B0 /* NetworkDispatcher.swift */,
+				5566D8232AAE37AA00B810B0 /* NetworkingLogger.swift */,
+				5566D8242AAE37AA00B810B0 /* NetworkRequestError.swift */,
+				5566D8272AAE37AA00B810B0 /* Request.swift */,
+				5566D8282AAE37AA00B810B0 /* RequestPublisher.swift */,
+			);
+			path = NetworkingClient;
+			sourceTree = "<group>";
+		};
+		5566D83D2AAE740500B810B0 /* EnviormentKeys */ = {
+			isa = PBXGroup;
+			children = (
+				5566D83E2AAE741800B810B0 /* APIClientEnvironmentKey.swift */,
+			);
+			path = EnviormentKeys;
 			sourceTree = "<group>";
 		};
 		559A2D6B2A3938CF00DFA306 /* Managers */ = {
@@ -541,6 +604,7 @@
 				553F990D2A35133F00F7D4BD /* Assets.xcassets in Resources */,
 				5535F1E12A36A034000279F6 /* Assets.xcassets in Resources */,
 				5535F1E02A36A034000279F6 /* snow.sks in Resources */,
+				5566D8352AAE37E900B810B0 /* Secrets.plist in Resources */,
 				5546CB7E2A64D0A10079D285 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -570,22 +634,27 @@
 				55D4D9832A8AE2BA000DEC60 /* MrsClauseKitchenChatViewModel.swift in Sources */,
 				55D4D9792A8AD84F000DEC60 /* UserBubble.swift in Sources */,
 				5535F1E52A36A409000279F6 /* LightsMapView.swift in Sources */,
+				5566D82A2AAE37AA00B810B0 /* NetworkingLogger.swift in Sources */,
 				55D4D97D2A8ADCE0000DEC60 /* TextEntryView.swift in Sources */,
 				55E2A1F62A79F45600260F59 /* LightLocationLabel.swift in Sources */,
 				5535F1DF2A36A034000279F6 /* SnowBackground.swift in Sources */,
+				5566D82E2AAE37AA00B810B0 /* Request.swift in Sources */,
 				5546CB602A6498960079D285 /* AuthManger.swift in Sources */,
 				5546CB7A2A64CCE60079D285 /* RepeatingPlayer.swift in Sources */,
 				5546CB6E2A649D9B0079D285 /* String+extention.swift in Sources */,
 				559A2D772A3A97CF00DFA306 /* PillButtonStyle.swift in Sources */,
+				5566D82C2AAE37AA00B810B0 /* NetworkDispatcher.swift in Sources */,
 				55E2A1F82A7C80F000260F59 /* LocationProfileView.swift in Sources */,
 				555D4C002A52004B00943DB8 /* ChristmasLightsLocation.swift in Sources */,
 				5562CAC02A59A566003E5DA9 /* Address.swift in Sources */,
+				5566D83F2AAE741800B810B0 /* APIClientEnvironmentKey.swift in Sources */,
 				555D620C2A36902800785A7C /* CVTabView.swift in Sources */,
 				55E2A1F42A78A8C700260F59 /* CLMViewModel.swift in Sources */,
 				5562CAC52A59A671003E5DA9 /* ChristmasLightsHouseType.swift in Sources */,
 				5562CAC22A59A5F9003E5DA9 /* Coordinates.swift in Sources */,
 				5546CB752A64C5590079D285 /* EmailSignUpView.swift in Sources */,
 				552C726E2A4E58FC00E2B682 /* AddAddressForm.swift in Sources */,
+				5566D8392AAE38A800B810B0 /* FirestoreLogger.swift in Sources */,
 				5546CB772A64C6010079D285 /* AuthView.swift in Sources */,
 				5535F1E22A36A034000279F6 /* SnowScene.swift in Sources */,
 				5562CACB2A59F85A003E5DA9 /* RoundGreenButtonStyle.swift in Sources */,
@@ -593,14 +662,21 @@
 				555D620E2A36908F00785A7C /* SplitMenuView.swift in Sources */,
 				559A2D742A3A904800DFA306 /* LocationServicesInitalPermissionView.swift in Sources */,
 				5562CAC92A59A7AD003E5DA9 /* CLMFormViewModel.swift in Sources */,
+				5566D8322AAE37D900B810B0 /* Dictionary+extension.swift in Sources */,
 				55D4D9772A8AD7A4000DEC60 /* BubbleShape.swift in Sources */,
 				55D4D9802A8AE276000DEC60 /* MrsClauseKitchen.swift in Sources */,
 				553F99092A35133E00F7D4BD /* ChristmasvilleApp.swift in Sources */,
 				5546CB732A64C4980079D285 /* SignInView.swift in Sources */,
+				5566D82F2AAE37AA00B810B0 /* RequestPublisher.swift in Sources */,
+				5566D83C2AAE3FBB00B810B0 /* Env.swift in Sources */,
+				5566D82D2AAE37AA00B810B0 /* JSONManager.swift in Sources */,
+				5566D8332AAE37D900B810B0 /* URLRequest+extension.swift in Sources */,
 				55CA29182AA663BB003A5B1E /* ComingSoonView.swift in Sources */,
+				5566D82B2AAE37AA00B810B0 /* NetworkRequestError.swift in Sources */,
 				55D4D9752A8AD720000DEC60 /* Bubble.swift in Sources */,
 				55D4D97B2A8ADA69000DEC60 /* SystemBubble.swift in Sources */,
 				559A2D6D2A3938EF00DFA306 /* LocationManager.swift in Sources */,
+				5566D8292AAE37AA00B810B0 /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

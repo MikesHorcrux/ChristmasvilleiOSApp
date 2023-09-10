@@ -16,6 +16,8 @@ struct ChristmasvilleApp: App {
     var body: some Scene {
         WindowGroup {
            MainView()
+                .environment(\.apiClient, DefaultAPIClient(baseURL: Env.secret(.apiBaseURL)))
+
         }
     }
 }
