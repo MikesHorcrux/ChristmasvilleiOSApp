@@ -42,12 +42,15 @@ struct TextEntryView: View {
                 .padding([.trailing, .bottom],14)
             }
         }
-        //.padding(.bottom, 50)
+        .padding(.bottom, 50)
         .background(.coal)
         .cornerRadius(25)
     }
 }
 
 #Preview {
-    TextEntryView(textentry: "Hey All"){}
+    VStack {
+        Spacer()
+        TextEntryView(textentry: "Hey All"){}
+    }
 }

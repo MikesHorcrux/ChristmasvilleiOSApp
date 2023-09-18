@@ -54,10 +54,15 @@
 		5566D8392AAE38A800B810B0 /* FirestoreLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5566D8362AAE38A800B810B0 /* FirestoreLogger.swift */; };
 		5566D83C2AAE3FBB00B810B0 /* Env.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5566D83B2AAE3FBB00B810B0 /* Env.swift */; };
 		5566D83F2AAE741800B810B0 /* APIClientEnvironmentKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5566D83E2AAE741800B810B0 /* APIClientEnvironmentKey.swift */; };
+		557570432AB27051007B7F91 /* Conversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557570412AB27051007B7F91 /* Conversation.swift */; };
+		557570442AB27051007B7F91 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557570422AB27051007B7F91 /* Message.swift */; };
+		557570472AB2708A007B7F91 /* MCKChatRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557570462AB2708A007B7F91 /* MCKChatRequest.swift */; };
+		557570492AB277EA007B7F91 /* MCKChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557570482AB277EA007B7F91 /* MCKChatView.swift */; };
 		559A2D6D2A3938EF00DFA306 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559A2D6C2A3938EF00DFA306 /* LocationManager.swift */; };
 		559A2D742A3A904800DFA306 /* LocationServicesInitalPermissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559A2D732A3A904800DFA306 /* LocationServicesInitalPermissionView.swift */; };
 		559A2D772A3A97CF00DFA306 /* PillButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559A2D762A3A97CF00DFA306 /* PillButtonStyle.swift */; };
 		55CA29182AA663BB003A5B1E /* ComingSoonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CA29172AA663BB003A5B1E /* ComingSoonView.swift */; };
+		55CD21472AB7BFB700987391 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CD21462AB7BFB700987391 /* Recipe.swift */; };
 		55D4D9752A8AD720000DEC60 /* Bubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D4D9742A8AD720000DEC60 /* Bubble.swift */; };
 		55D4D9772A8AD7A4000DEC60 /* BubbleShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D4D9762A8AD7A4000DEC60 /* BubbleShape.swift */; };
 		55D4D9792A8AD84F000DEC60 /* UserBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D4D9782A8AD84F000DEC60 /* UserBubble.swift */; };
@@ -134,10 +139,15 @@
 		5566D8362AAE38A800B810B0 /* FirestoreLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirestoreLogger.swift; sourceTree = "<group>"; };
 		5566D83B2AAE3FBB00B810B0 /* Env.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Env.swift; sourceTree = "<group>"; };
 		5566D83E2AAE741800B810B0 /* APIClientEnvironmentKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientEnvironmentKey.swift; sourceTree = "<group>"; };
+		557570412AB27051007B7F91 /* Conversation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Conversation.swift; sourceTree = "<group>"; };
+		557570422AB27051007B7F91 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		557570462AB2708A007B7F91 /* MCKChatRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCKChatRequest.swift; sourceTree = "<group>"; };
+		557570482AB277EA007B7F91 /* MCKChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCKChatView.swift; sourceTree = "<group>"; };
 		559A2D6C2A3938EF00DFA306 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		559A2D732A3A904800DFA306 /* LocationServicesInitalPermissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationServicesInitalPermissionView.swift; sourceTree = "<group>"; };
 		559A2D762A3A97CF00DFA306 /* PillButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillButtonStyle.swift; sourceTree = "<group>"; };
 		55CA29172AA663BB003A5B1E /* ComingSoonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComingSoonView.swift; sourceTree = "<group>"; };
+		55CD21462AB7BFB700987391 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		55D4D9742A8AD720000DEC60 /* Bubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bubble.swift; sourceTree = "<group>"; };
 		55D4D9762A8AD7A4000DEC60 /* BubbleShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleShape.swift; sourceTree = "<group>"; };
 		55D4D9782A8AD84F000DEC60 /* UserBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserBubble.swift; sourceTree = "<group>"; };
@@ -225,6 +235,7 @@
 		553F99072A35133E00F7D4BD /* Christmasville */ = {
 			isa = PBXGroup;
 			children = (
+				557570452AB27067007B7F91 /* Requests */,
 				5566D83D2AAE740500B810B0 /* EnviormentKeys */,
 				5566D8342AAE37E900B810B0 /* Secrets.plist */,
 				5546CB7D2A64D0A10079D285 /* GoogleService-Info.plist */,
@@ -294,9 +305,12 @@
 		555D4BFE2A52001E00943DB8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				557570412AB27051007B7F91 /* Conversation.swift */,
+				557570422AB27051007B7F91 /* Message.swift */,
 				555D4BFF2A52004B00943DB8 /* ChristmasLightsLocation.swift */,
 				5562CABF2A59A566003E5DA9 /* Address.swift */,
 				5562CAC12A59A5F9003E5DA9 /* Coordinates.swift */,
+				55CD21462AB7BFB700987391 /* Recipe.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -382,6 +396,14 @@
 				5566D83E2AAE741800B810B0 /* APIClientEnvironmentKey.swift */,
 			);
 			path = EnviormentKeys;
+			sourceTree = "<group>";
+		};
+		557570452AB27067007B7F91 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				557570462AB2708A007B7F91 /* MCKChatRequest.swift */,
+			);
+			path = Requests;
 			sourceTree = "<group>";
 		};
 		559A2D6B2A3938CF00DFA306 /* Managers */ = {
@@ -474,6 +496,7 @@
 			isa = PBXGroup;
 			children = (
 				55D4D97F2A8AE276000DEC60 /* MrsClauseKitchen.swift */,
+				557570482AB277EA007B7F91 /* MCKChatView.swift */,
 			);
 			path = MrsClauseKitchen;
 			sourceTree = "<group>";
@@ -647,15 +670,19 @@
 				55E2A1F82A7C80F000260F59 /* LocationProfileView.swift in Sources */,
 				555D4C002A52004B00943DB8 /* ChristmasLightsLocation.swift in Sources */,
 				5562CAC02A59A566003E5DA9 /* Address.swift in Sources */,
+				557570472AB2708A007B7F91 /* MCKChatRequest.swift in Sources */,
 				5566D83F2AAE741800B810B0 /* APIClientEnvironmentKey.swift in Sources */,
 				555D620C2A36902800785A7C /* CVTabView.swift in Sources */,
 				55E2A1F42A78A8C700260F59 /* CLMViewModel.swift in Sources */,
 				5562CAC52A59A671003E5DA9 /* ChristmasLightsHouseType.swift in Sources */,
 				5562CAC22A59A5F9003E5DA9 /* Coordinates.swift in Sources */,
+				55CD21472AB7BFB700987391 /* Recipe.swift in Sources */,
 				5546CB752A64C5590079D285 /* EmailSignUpView.swift in Sources */,
 				552C726E2A4E58FC00E2B682 /* AddAddressForm.swift in Sources */,
+				557570432AB27051007B7F91 /* Conversation.swift in Sources */,
 				5566D8392AAE38A800B810B0 /* FirestoreLogger.swift in Sources */,
 				5546CB772A64C6010079D285 /* AuthView.swift in Sources */,
+				557570442AB27051007B7F91 /* Message.swift in Sources */,
 				5535F1E22A36A034000279F6 /* SnowScene.swift in Sources */,
 				5562CACB2A59F85A003E5DA9 /* RoundGreenButtonStyle.swift in Sources */,
 				5546CB712A64B7C90079D285 /* LoginView.swift in Sources */,
@@ -675,6 +702,7 @@
 				5566D82B2AAE37AA00B810B0 /* NetworkRequestError.swift in Sources */,
 				55D4D9752A8AD720000DEC60 /* Bubble.swift in Sources */,
 				55D4D97B2A8ADA69000DEC60 /* SystemBubble.swift in Sources */,
+				557570492AB277EA007B7F91 /* MCKChatView.swift in Sources */,
 				559A2D6D2A3938EF00DFA306 /* LocationManager.swift in Sources */,
 				5566D8292AAE37AA00B810B0 /* APIClient.swift in Sources */,
 			);

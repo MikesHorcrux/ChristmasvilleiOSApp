@@ -9,6 +9,7 @@ import SwiftUI
 import Observation
 
 struct SplitMenuView: View {
+    @Environment(\.apiClient) var apiClient: APIClient
     @State var showHome: Bool = false
     var authManager = AuthenticationManager()
     var body: some View {

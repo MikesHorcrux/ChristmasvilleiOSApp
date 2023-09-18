@@ -9,6 +9,7 @@ import SwiftUI
 import Observation
 
 struct CVTabView: View {
+    @Environment(\.apiClient) var apiClient: APIClient
     @State var selectedTab = 1
     var authManager = AuthenticationManager()
     
@@ -17,6 +18,9 @@ struct CVTabView: View {
             TabView(selection: $selectedTab,
                     content:  {
                 ComingSoonView()
+//                    .onAppear(){
+//                        authManager.signOut()
+//                    }
                     .tabItem {
                         Label("Home", image: selectedTab == 1 ? .snowTree3 : .snowTree2)
                     }
@@ -26,7 +30,7 @@ struct CVTabView: View {
                         Label("Lights Map", image: selectedTab == 2 ? .bulb : .bulbSolid)
                     }
                     .tag(2)
-                ComingSoonView()
+                MrsClauseKitchen(apiClient: apiClient)
                     .tabItem {
                         Label("Mrs Cluse's Kitchen", image: selectedTab == 3 ? .gingerbread3 : .gingerbread2)
                     }
@@ -47,6 +51,7 @@ struct CVTabView: View {
             AuthView()
         }
     }
+    
 }
 
 #Preview {
