@@ -46,12 +46,7 @@ struct LocationProfileView: View {
                         Text(location.address.country)
                     }
                     .padding() // Add padding to the VStack content
-                    .background(
-                        RoundedRectangle(cornerRadius: 15)
-                            .fill(Color("SnowBackground")) // Same neumorphic background color
-                            .shadow(color: Color.white.opacity(0.06), radius: 5, x: -5, y: -5) // Light shadow
-                            .shadow(color: Color.black.opacity(0.1), radius: 5, x: 5, y: 5)  // Dark shadow
-                    )
+                    .neumorphicBackground()
                     .padding(20) // Padding around the entire ZStack content if desired
                 }
                 Spacer()

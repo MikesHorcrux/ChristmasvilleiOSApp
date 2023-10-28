@@ -37,7 +37,7 @@ struct SplitMenuView: View {
                     }
 
                 }
-                NavigationLink(destination: ComingSoonView()) {
+                NavigationLink(destination:  MrsClauseKitchen(apiClient: apiClient)) {
                     Label {
                         Text("Mrs Cluse's Kitchen")
                     } icon: {

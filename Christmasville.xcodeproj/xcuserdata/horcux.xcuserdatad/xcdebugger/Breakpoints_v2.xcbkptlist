@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "28C71E55-9EB0-43E4-87F3-A48087E4399B"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6D8C8CFD-FFC9-4B67-92C0-EAEBF91136E7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Christmasville/ViewModels/MrsClauseKitchen/MrsClauseKitchenChatViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
+            landmarkName = "sendConversation()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1C611CEC-B204-493D-B5AF-D53A826AC136"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Christmasville/ViewModels/MrsClauseKitchen/MrsClauseKitchenChatViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
+            landmarkName = "sendConversation()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1C611CEC-B204-493D-B5AF-D53A826AC136 - 30b9649003b383a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for Christmasville.MrsClauseKitchenChatViewModel.sendConversation() async -&gt; ()"
+                  moduleName = "Christmasville"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/horcux/Develop/ChristmasvilleiOSApp/Christmasville/ViewModels/MrsClauseKitchen/MrsClauseKitchenChatViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "84"
+                  endingLineNumber = "84"
+                  offsetFromSymbolStart = "904">
+               </Location>
+               <Location
+                  uuid = "1C611CEC-B204-493D-B5AF-D53A826AC136 - 30b9649003b383a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for Christmasville.MrsClauseKitchenChatViewModel.sendConversation() async -&gt; ()"
+                  moduleName = "Christmasville"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/horcux/Develop/ChristmasvilleiOSApp/Christmasville/ViewModels/MrsClauseKitchen/MrsClauseKitchenChatViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "84"
+                  endingLineNumber = "84"
+                  offsetFromSymbolStart = "1232">
+               </Location>
+               <Location
+                  uuid = "1C611CEC-B204-493D-B5AF-D53A826AC136 - 30b9649003b3932"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for Christmasville.MrsClauseKitchenChatViewModel.sendConversation() async -&gt; ()"
+                  moduleName = "Christmasville"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/horcux/Develop/ChristmasvilleiOSApp/Christmasville/ViewModels/MrsClauseKitchen/MrsClauseKitchenChatViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "92"
+                  endingLineNumber = "92"
+                  offsetFromSymbolStart = "916">
+               </Location>
+               <Location
+                  uuid = "1C611CEC-B204-493D-B5AF-D53A826AC136 - 30b9649003b3932"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for Christmasville.MrsClauseKitchenChatViewModel.sendConversation() async -&gt; ()"
+                  moduleName = "Christmasville"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/horcux/Develop/ChristmasvilleiOSApp/Christmasville/ViewModels/MrsClauseKitchen/MrsClauseKitchenChatViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "92"
+                  endingLineNumber = "92"
+                  offsetFromSymbolStart = "1224">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4D30DA50-C905-4BAF-B6FF-85A39C7E0E6C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Christmasville/Networking/NetworkingClient/NetworkingLogger.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
+            landmarkName = "dataLog(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0E0A3C12-FD37-47F5-8D4C-8342EAC6BFC9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Christmasville/ViewModels/MrsClauseKitchen/MrsClauseKitchenChatViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "99"
+            endingLineNumber = "99"
+            landmarkName = "sendConversation()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

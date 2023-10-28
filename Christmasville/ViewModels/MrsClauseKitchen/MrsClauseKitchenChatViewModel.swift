@@ -8,6 +8,7 @@
 import Foundation
 import Observation
 import FirebaseAuth
+import FirebaseFirestore
 
 @Observable
 class MrsClauseKitchenChatViewModel {
@@ -16,6 +17,7 @@ class MrsClauseKitchenChatViewModel {
     var textEntry: String = ""
 
     private var user: User?
+    private let db = Firestore.firestore()
     
     init(client: APIClient) {
         self.client = client
@@ -37,16 +39,6 @@ class MrsClauseKitchenChatViewModel {
         })
     }
     
-    func testing() async {
-        do {
-            let response = try await client.dispatch(testrequest())
-                    // Use the response
-                    print(response)
-            //print(response)
-                } catch {
-                    // Handle error
-                }
-    }
     func sendMsg(){
         var msg = Message(content: textEntry, role: "user")
         chat.append(msg)
@@ -55,7 +47,8 @@ class MrsClauseKitchenChatViewModel {
             await sendConversation()
         }
     }
-    func parseRecipe(from response: String) -> Recipe? {
+
+    private func parseRecipe(from response: String) -> Recipe? {
         let pattern = "\\*\\*Title:\\*\\*\\s*(.+?)(?=\\*\\*Ingredients:\\*\\*)\\*\\*Ingredients:\\*\\*\\s*(.+?)(?=\\*\\*Instructions:\\*\\*)\\*\\*Instructions:\\*\\*\\s*(.+)"
         
         do {
@@ -74,68 +67,50 @@ class MrsClauseKitchenChatViewModel {
         
         return nil
     }
+
+    
+    private func containsTitleOrIngredients(in string: String) -> Bool {
+        let lowercasedString = string.lowercased()
+        return lowercasedString.contains("title") || lowercasedString.contains("ingredients")
+    }
+    
     func sendConversation() async {
         do {
-            let response = try await client.dispatch(MCKChatRequest(conversation: Conversation(messages: chat)))
+            var currentChat: [Message]
+            if chat.isEmpty {
+                 currentChat = [
+                Message(content: "Hey 👋", role: "user")
+                ]
+            } else {
+                currentChat = chat
+            }
+            var response = try await client.dispatch(MCKChatRequest(conversation: Conversation(messages: chat)))
             self.chat.append(response.messages.first!)
-            print(response.messages.first ?? "________")
-            
-            let nessage: String? = """
-                                                                                                                                                                                                                                                                                                                                                    Oh, how wonderful! A hearty stew is just the ticket to keep warm during those chilly winter nights. Now, let me see. Ah, here we are! This is one of Santa's favorites - Hearty Reindeer Stew. And before you ask – no, we don't use actual reindeer up here! That would be quite scandalous. This recipe calls for beef! Here you go:
-                                                                                                                                                                                                                                                                                                                                                    
-                                                                                                                                                                                                                                                                                                                                                    **Title:** Hearty North Pole Beef Stew
-                                                                                                                                                                                                                                                                                                                                                    **Ingredients:**
-                                                                                                                                                                                                                                                                                                                                                    - 2 lbs of stewing beef
-                                                                                                                                                                                                                                                                                                                                                    - 2 tablespoons of olive oil
-                                                                                                                                                                                                                                                                                                                                                    - Salt and pepper to taste
-                                                                                                                                                                                                                                                                                                                                                    - 1 large onion, chopped
-                                                                                                                                                                                                                                                                                                                                                    - 3 cloves garlic, minced
-                                                                                                                                                                                                                                                                                                                                                    - 2 tablespoons flour
-                                                                                                                                                                                                                                                                                                                                                    - 4 cups beef broth
-                                                                                                                                                                                                                                                                                                                                                    - 1 cup red wine, optional (replace with broth if not using)
-                                                                                                                                                                                                                                                                                                                                                    - 2 cups diced potatoes
-                                                                                                                                                                                                                                                                                                                                                    - 1 cup chopped carrots
-                                                                                                                                                                                                                                                                                                                                                    - 3/4 cup peas
-                                                                                                                                                                                                                                                                                                                                                    - 2 tablespoons Worcestershire sauce
-                                                                                                                                                                                                                                                                                                                                                    - 2 teaspoons rosemary
-                                                                                                                                                                                                                                                                                                                                                    - 2 teaspoons thyme
-
-                                                                                                                                                                                                                                                                                                                                                    **Instructions:**
-                                                                                                                                                                                                                                                                                                                                                    1. Heat the olive oil over medium-high heat in a large pot. Season the beef with salt and pepper and add it to the pot. Cook until browned on all sides.
-                                                                                                                                                                                                                                                                                                                                                    2. Add the onion and garlic to the pot and cook for a few minutes until the onion becomes translucent.
-                                                                                                                                                                                                                                                                                                                                                    3. Sprinkle flour over the meat and onions, stir well to coat everything.
-                                                                                                                                                                                                                                                                                                                                                    4. Gradually add in the beef broth and wine (if using), making sure to stir well to prevent any lumps from forming.
-                                                                                                                                                                                                                                                                                                                                                    5. Add in your potatoes, carrots, peas, Worcestershire sauce, rosemary, and thyme.
-                                                                                                                                                                                                                                                                                                                                                    6. Bring your stew to a boil then reduce to a simmer, cover with a lid and let it simmer for about 2 hours.
-                                                                                                                                                                                                                                                                                                                                                    7. Check seasoning and add more salt and pepper if needed.
-
-                                                                                                                                                                                                                                                                                                                                                    Best served with warm, crusty bread! I believe you'll enjoy this stew. It warms you right up and has comfort written all over it!
-
-                                                                                                                                                                                                                                                                                                                                                    Oh, and don't forget, dear. All recipes taste better when made with a sprinkle of love and a dash of holiday cheer. Can I assist you with any other holiday recipes?
-"""
             
             // Try to parse the recipe from the response message
-            if let parsedRecipe = parseRecipe(from: nessage!) {
-                print("Recipe parsed successfully:")
-                print("Title: \(parsedRecipe.title)")
-                print("Ingredients: \(parsedRecipe.ingredients)")
-                print("Instructions: \(parsedRecipe.instructions)")
-            } else {
-                print("Could not parse a recipe from the response")
+            if containsTitleOrIngredients(in: response.messages.first!.content) {
+                if let parsedRecipe = parseRecipe(from: response.messages.first!.content) {
+                    await saveMrsClauseRecipe(recipe: parsedRecipe)
+                } else {
+                    print("Could not parse a recipe from the response")
+                }
             }
         } catch {
             print("There is an error")
         }
     }
-}
-
-
-
-struct testrequest: Request {
-    typealias ReturnType = String
     
-    var path: String = "test"
-    var apiVersion: Int? = nil
-    var method: HTTPMethod = .get
+    //firebase
     
+    func saveMrsClauseRecipe(recipe: Recipe) async {
+        do {
+            guard let userId = Auth.auth().currentUser?.uid else {
+                print("No user ID found")
+                return
+            }
+            let _ = try await db.collection("christmasRecipes").document(userId).collection("mrsClauseRecipes").addDocument(from: recipe)
+        } catch {
+            print("Error saving location: \(error)")
+        }
+    }
 }
