@@ -12,7 +12,7 @@ import AuthenticationServices
 
 
 @Observable
-class AuthenticationManager: NSObject{
+class AuthenticationManager: NSObject {
     var user: User?
     var isAuthenticating = false
     var error: Error?
@@ -60,21 +60,31 @@ class AuthenticationManager: NSObject{
         }
     }
     
-    func deleteUser() {
-        let user = Auth.auth().currentUser
-
-        user?.delete { error in
-          if let error = error {
+    func deleteUser() async {
+        guard let user = Auth.auth().currentUser else {
+            print("No user is signed in")
+            return
+        }
+        do {
+            try await withCheckedThrowingContinuation { (continuation: CheckedContinuation<Void, Error>) in
+                user.delete { error in
+                    if let error = error {
+                        continuation.resume(throwing: error)
+                    } else {
+                        self.user = nil
+                        print("User deleted")
+                        continuation.resume()
+                    }
+                }
+            }
+        } catch {
+            self.error = error
             print(error)
-          } else {
-              self.user = nil
-              print("user deleted")
-          }
         }
     }
+
     
 }
-
 extension AuthenticationManager: ASAuthorizationControllerDelegate {
     
     func authorizationController(controller: ASAuthorizationController?, didCompleteWithAuthorization authorization: ASAuthorization) async {

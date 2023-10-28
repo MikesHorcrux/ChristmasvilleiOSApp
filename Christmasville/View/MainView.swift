@@ -14,9 +14,7 @@ struct MainView: View {
     
     var body: some View {
         if auth.user != nil {
-            NavigationStack() {
                 CVTabView()
-            }
         } else {
             AuthView(authManager: auth)
         }

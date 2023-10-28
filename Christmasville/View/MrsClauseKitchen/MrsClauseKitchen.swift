@@ -19,79 +19,66 @@ struct MrsClauseKitchen: View {
     }
     
     var body: some View {
-        ZStack {
-            VStack(alignment: .leading) {
-                
-                HStack(alignment: .top){
-                    Text("Mrs Claus CookBook")
-                        .font(.title)
-                        .fontWeight(.bold)
-                    .foregroundStyle(.santaRed)
-                    .multilineTextAlignment(.leading)
-                    Spacer()
-                    Image("ginger bread man #2")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 65)
-                        .padding()
-                        .neumorphicBackground(backgroundColor: .bellBrown)
-                }
-                ScrollView(.vertical){
-                    VStack {
-                        ForEach(viewModel.mrsClauseRecipe, id: \.self){ recipe in
-                            NavigationLink {
-                                RecipeView(recipe: recipe)
-                            } label: {
-                                FeaturedRecipeCard(recipe: recipe)
+        NavigationStack() {
+            ZStack {
+                VStack(alignment: .leading) {
+                    
+                    HStack(alignment: .top){
+                        Text("Mrs Claus CookBook")
+                            .font(.title)
+                            .fontWeight(.bold)
+                        .foregroundStyle(.santaRed)
+                        .multilineTextAlignment(.leading)
+                        Spacer()
+                        Image("ginger bread man #2")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 65)
+                            .padding()
+                            .neumorphicBackground(backgroundColor: .bellBrown)
+                    }
+                    ScrollView(.vertical){
+                        VStack {
+                            ForEach(viewModel.mrsClauseRecipe, id: \.self){ recipe in
+                                NavigationLink {
+                                    RecipeView(recipe: recipe)
+                                } label: {
+                                    FeaturedRecipeCard(recipe: recipe)
+                                }
                             }
                         }
                     }
-                }
-                Spacer()
-//                Text("My Recipes:")
-//                    .font(.callout)
-//                    .fontWeight(.bold)
-//                    .foregroundStyle(.santaRed)
-//                ScrollView(.horizontal){
-//                    HStack {
-//                        ForEach(viewModel.mrsClauseRecipe, id: \.self){ recipe in
-//                            NavigationLink {
-//                                RecipeView(recipe: recipe)
-//                            } label: {
-//                                MiniRecipeCard(recipe: recipe)
-//                            }
-//                        }
-//                    }
-//                }
-            }
-            VStack{
-                Spacer()
-                HStack{
                     Spacer()
-                    Button(action: {
-                        show.toggle()
-                    }, label: {
-                        Image("christmas Mug - 1")
-                    })
-                    .buttonStyle(RoundGreenButtonStyle())
+                }
+                VStack{
+                    Spacer()
+                    HStack{
+                        Spacer()
+                        Button(action: {
+                            show.toggle()
+                        }, label: {
+                            Image("christmas Mug - 1")
+                        })
+                        .buttonStyle(RoundGreenButtonStyle())
+                    }
                 }
             }
-        }
-        .padding()
-        .snowBackground()
-        .onAppear(){
-            Task{
-                await viewModel.getSavedMrsClauseRecipes()
+            .padding()
+            .snowBackground()
+            .onAppear(){
+                Task{
+                    await viewModel.getSavedMrsClauseRecipes()
+                }
             }
-        }
-        .task {
-            if chatViewModel.chat.isEmpty {
-                await chatViewModel.sendConversation()
+            .task {
+                if chatViewModel.chat.isEmpty {
+                    await chatViewModel.sendConversation()
+                }
             }
-        }
-        .sheet(isPresented: $show, content: {
-            MCKChatView(viewModel: chatViewModel)
+            .sheet(isPresented: $show, content: {
+                MCKChatView(viewModel: chatViewModel)
         })
+        }
     }
 }
 

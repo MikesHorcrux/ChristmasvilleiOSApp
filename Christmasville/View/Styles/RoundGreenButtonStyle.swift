@@ -8,9 +8,10 @@
 import SwiftUI
 
 struct RoundGreenButtonStyle: ButtonStyle {
+    var padding: CGFloat = 10
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
-            .padding()
+            .padding(padding)
             .foregroundStyle(.white)
             .background(Color.everGreen)
             .clipShape(Circle())
