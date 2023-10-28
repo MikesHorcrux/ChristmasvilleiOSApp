@@ -21,20 +21,22 @@ struct LightsMapView: View {
     @State private var showAddAddressSheet = false
     @State var showLocationInfo = false
     var body: some View {
-        ZStack(alignment: .bottomTrailing) {
-            mapSection
-            addAddressButtonSection
-        }
-        .sheet(isPresented: $locationManager.showLocationPermissionPrompt, onDismiss: {
-            if locationManager.askLoctionPermission {
-                locationManager.askLocationPermission()
+        NavigationStack() {
+            ZStack(alignment: .bottomTrailing) {
+                mapSection
+                addAddressButtonSection
             }
-        }) {
-            LocationServicesInitalPermissionView(locationManager: locationManager)
+            .sheet(isPresented: $locationManager.showLocationPermissionPrompt, onDismiss: {
+                if locationManager.askLoctionPermission {
+                    locationManager.askLocationPermission()
+                }
+            }) {
+                LocationServicesInitalPermissionView(locationManager: locationManager)
+            }
+            .task {
+                await viewModel.getUserSavedLocations()
+                print(viewModel.clLocations)
         }
-        .task {
-            await viewModel.getUserSavedLocations()
-            print(viewModel.clLocations)
         }
     }
     

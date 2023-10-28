@@ -31,7 +31,6 @@
 		5546CB752A64C5590079D285 /* EmailSignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5546CB742A64C5590079D285 /* EmailSignUpView.swift */; };
 		5546CB772A64C6010079D285 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5546CB762A64C6010079D285 /* AuthView.swift */; };
 		5546CB7A2A64CCE60079D285 /* RepeatingPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5546CB792A64CCE60079D285 /* RepeatingPlayer.swift */; };
-		5546CB7E2A64D0A10079D285 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5546CB7D2A64D0A10079D285 /* GoogleService-Info.plist */; };
 		555D4C002A52004B00943DB8 /* ChristmasLightsLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555D4BFF2A52004B00943DB8 /* ChristmasLightsLocation.swift */; };
 		555D62092A36825A00785A7C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555D62082A36825A00785A7C /* MainView.swift */; };
 		555D620C2A36902800785A7C /* CVTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555D620B2A36902800785A7C /* CVTabView.swift */; };
@@ -73,6 +72,17 @@
 		55E2A1F42A78A8C700260F59 /* CLMViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E2A1F32A78A8C700260F59 /* CLMViewModel.swift */; };
 		55E2A1F62A79F45600260F59 /* LightLocationLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E2A1F52A79F45600260F59 /* LightLocationLabel.swift */; };
 		55E2A1F82A7C80F000260F59 /* LocationProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E2A1F72A7C80F000260F59 /* LocationProfileView.swift */; };
+		EC29B5DF2ACBA1430032EE95 /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC29B5DE2ACBA1430032EE95 /* RecipeView.swift */; };
+		EC2B1AF72ABF6E95008DF740 /* KeyboardAvoidence.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2B1AF62ABF6E95008DF740 /* KeyboardAvoidence.swift */; };
+		EC2B1AF92ABFBDA6008DF740 /* MrsClauseKitchenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2B1AF82ABFBDA6008DF740 /* MrsClauseKitchenViewModel.swift */; };
+		EC2C137B2AEDA51D00A16DE2 /* CountdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2C137A2AEDA51D00A16DE2 /* CountdownView.swift */; };
+		EC2C1CF42AE72F21001B68DF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC2C1CF32AE72F21001B68DF /* GoogleService-Info.plist */; };
+		EC69994C2AD0F28A009FB09C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC69994B2AD0F28A009FB09C /* HomeView.swift */; };
+		EC69994E2AD0F5C3009FB09C /* SnowBackgroundModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC69994D2AD0F5C3009FB09C /* SnowBackgroundModifier.swift */; };
+		ECEF5C0E2AC0CD85005A36F0 /* WavySquareShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEF5C0D2AC0CD85005A36F0 /* WavySquareShape.swift */; };
+		ECEF5C112AC0E5A6005A36F0 /* NeumorphicBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEF5C102AC0E5A6005A36F0 /* NeumorphicBackground.swift */; };
+		ECEF5C132AC0E822005A36F0 /* MiniRecipeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEF5C122AC0E822005A36F0 /* MiniRecipeCard.swift */; };
+		ECEF5C152AC3C551005A36F0 /* FeaturedRecipeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEF5C142AC3C550005A36F0 /* FeaturedRecipeCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,7 +126,6 @@
 		5546CB742A64C5590079D285 /* EmailSignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailSignUpView.swift; sourceTree = "<group>"; };
 		5546CB762A64C6010079D285 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
 		5546CB792A64CCE60079D285 /* RepeatingPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatingPlayer.swift; sourceTree = "<group>"; };
-		5546CB7D2A64D0A10079D285 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		555D4BFF2A52004B00943DB8 /* ChristmasLightsLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChristmasLightsLocation.swift; sourceTree = "<group>"; };
 		555D62082A36825A00785A7C /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		555D620B2A36902800785A7C /* CVTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVTabView.swift; sourceTree = "<group>"; };
@@ -158,6 +167,17 @@
 		55E2A1F32A78A8C700260F59 /* CLMViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLMViewModel.swift; sourceTree = "<group>"; };
 		55E2A1F52A79F45600260F59 /* LightLocationLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightLocationLabel.swift; sourceTree = "<group>"; };
 		55E2A1F72A7C80F000260F59 /* LocationProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationProfileView.swift; sourceTree = "<group>"; };
+		EC29B5DE2ACBA1430032EE95 /* RecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView.swift; sourceTree = "<group>"; };
+		EC2B1AF62ABF6E95008DF740 /* KeyboardAvoidence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardAvoidence.swift; sourceTree = "<group>"; };
+		EC2B1AF82ABFBDA6008DF740 /* MrsClauseKitchenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MrsClauseKitchenViewModel.swift; sourceTree = "<group>"; };
+		EC2C137A2AEDA51D00A16DE2 /* CountdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownView.swift; sourceTree = "<group>"; };
+		EC2C1CF32AE72F21001B68DF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EC69994B2AD0F28A009FB09C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		EC69994D2AD0F5C3009FB09C /* SnowBackgroundModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnowBackgroundModifier.swift; sourceTree = "<group>"; };
+		ECEF5C0D2AC0CD85005A36F0 /* WavySquareShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WavySquareShape.swift; sourceTree = "<group>"; };
+		ECEF5C102AC0E5A6005A36F0 /* NeumorphicBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphicBackground.swift; sourceTree = "<group>"; };
+		ECEF5C122AC0E822005A36F0 /* MiniRecipeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniRecipeCard.swift; sourceTree = "<group>"; };
+		ECEF5C142AC3C550005A36F0 /* FeaturedRecipeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedRecipeCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,10 +255,11 @@
 		553F99072A35133E00F7D4BD /* Christmasville */ = {
 			isa = PBXGroup;
 			children = (
+				ECEF5C0F2AC0E568005A36F0 /* Modifers */,
 				557570452AB27067007B7F91 /* Requests */,
 				5566D83D2AAE740500B810B0 /* EnviormentKeys */,
 				5566D8342AAE37E900B810B0 /* Secrets.plist */,
-				5546CB7D2A64D0A10079D285 /* GoogleService-Info.plist */,
+				EC2C1CF32AE72F21001B68DF /* GoogleService-Info.plist */,
 				5566D8362AAE38A800B810B0 /* FirestoreLogger.swift */,
 				5546CB6C2A649D800079D285 /* Extentions */,
 				5566D8202AAE376800B810B0 /* Networking */,
@@ -286,6 +307,7 @@
 			children = (
 				5566D8302AAE37D800B810B0 /* Dictionary+extension.swift */,
 				5566D8312AAE37D900B810B0 /* URLRequest+extension.swift */,
+				EC2B1AF62ABF6E95008DF740 /* KeyboardAvoidence.swift */,
 				5546CB6D2A649D9B0079D285 /* String+extention.swift */,
 			);
 			path = Extentions;
@@ -318,6 +340,7 @@
 		555D62072A36824500785A7C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				ECEF5C0C2AC0CD6B005A36F0 /* Shape  */,
 				55CA29152AA66388003A5B1E /* Onboarding */,
 				55D4D97E2A8AE24A000DEC60 /* MrsClauseKitchen */,
 				55D4D9722A8AD3CA000DEC60 /* Chat */,
@@ -328,6 +351,8 @@
 				555D620A2A36901300785A7C /* Navigations */,
 				555D62082A36825A00785A7C /* MainView.swift */,
 				5546CB792A64CCE60079D285 /* RepeatingPlayer.swift */,
+				EC69994B2AD0F28A009FB09C /* HomeView.swift */,
+				EC2C137A2AEDA51D00A16DE2 /* CountdownView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -497,6 +522,9 @@
 			children = (
 				55D4D97F2A8AE276000DEC60 /* MrsClauseKitchen.swift */,
 				557570482AB277EA007B7F91 /* MCKChatView.swift */,
+				ECEF5C122AC0E822005A36F0 /* MiniRecipeCard.swift */,
+				ECEF5C142AC3C550005A36F0 /* FeaturedRecipeCard.swift */,
+				EC29B5DE2ACBA1430032EE95 /* RecipeView.swift */,
 			);
 			path = MrsClauseKitchen;
 			sourceTree = "<group>";
@@ -505,8 +533,26 @@
 			isa = PBXGroup;
 			children = (
 				55D4D9822A8AE2BA000DEC60 /* MrsClauseKitchenChatViewModel.swift */,
+				EC2B1AF82ABFBDA6008DF740 /* MrsClauseKitchenViewModel.swift */,
 			);
 			path = MrsClauseKitchen;
+			sourceTree = "<group>";
+		};
+		ECEF5C0C2AC0CD6B005A36F0 /* Shape  */ = {
+			isa = PBXGroup;
+			children = (
+				ECEF5C0D2AC0CD85005A36F0 /* WavySquareShape.swift */,
+			);
+			path = "Shape ";
+			sourceTree = "<group>";
+		};
+		ECEF5C0F2AC0E568005A36F0 /* Modifers */ = {
+			isa = PBXGroup;
+			children = (
+				ECEF5C102AC0E5A6005A36F0 /* NeumorphicBackground.swift */,
+				EC69994D2AD0F5C3009FB09C /* SnowBackgroundModifier.swift */,
+			);
+			path = Modifers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -628,7 +674,7 @@
 				5535F1E12A36A034000279F6 /* Assets.xcassets in Resources */,
 				5535F1E02A36A034000279F6 /* snow.sks in Resources */,
 				5566D8352AAE37E900B810B0 /* Secrets.plist in Resources */,
-				5546CB7E2A64D0A10079D285 /* GoogleService-Info.plist in Resources */,
+				EC2C1CF42AE72F21001B68DF /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -657,8 +703,11 @@
 				55D4D9832A8AE2BA000DEC60 /* MrsClauseKitchenChatViewModel.swift in Sources */,
 				55D4D9792A8AD84F000DEC60 /* UserBubble.swift in Sources */,
 				5535F1E52A36A409000279F6 /* LightsMapView.swift in Sources */,
+				EC2C137B2AEDA51D00A16DE2 /* CountdownView.swift in Sources */,
 				5566D82A2AAE37AA00B810B0 /* NetworkingLogger.swift in Sources */,
 				55D4D97D2A8ADCE0000DEC60 /* TextEntryView.swift in Sources */,
+				ECEF5C132AC0E822005A36F0 /* MiniRecipeCard.swift in Sources */,
+				EC69994E2AD0F5C3009FB09C /* SnowBackgroundModifier.swift in Sources */,
 				55E2A1F62A79F45600260F59 /* LightLocationLabel.swift in Sources */,
 				5535F1DF2A36A034000279F6 /* SnowBackground.swift in Sources */,
 				5566D82E2AAE37AA00B810B0 /* Request.swift in Sources */,
@@ -670,12 +719,14 @@
 				55E2A1F82A7C80F000260F59 /* LocationProfileView.swift in Sources */,
 				555D4C002A52004B00943DB8 /* ChristmasLightsLocation.swift in Sources */,
 				5562CAC02A59A566003E5DA9 /* Address.swift in Sources */,
+				EC29B5DF2ACBA1430032EE95 /* RecipeView.swift in Sources */,
 				557570472AB2708A007B7F91 /* MCKChatRequest.swift in Sources */,
 				5566D83F2AAE741800B810B0 /* APIClientEnvironmentKey.swift in Sources */,
 				555D620C2A36902800785A7C /* CVTabView.swift in Sources */,
 				55E2A1F42A78A8C700260F59 /* CLMViewModel.swift in Sources */,
 				5562CAC52A59A671003E5DA9 /* ChristmasLightsHouseType.swift in Sources */,
 				5562CAC22A59A5F9003E5DA9 /* Coordinates.swift in Sources */,
+				ECEF5C112AC0E5A6005A36F0 /* NeumorphicBackground.swift in Sources */,
 				55CD21472AB7BFB700987391 /* Recipe.swift in Sources */,
 				5546CB752A64C5590079D285 /* EmailSignUpView.swift in Sources */,
 				552C726E2A4E58FC00E2B682 /* AddAddressForm.swift in Sources */,
@@ -683,7 +734,11 @@
 				5566D8392AAE38A800B810B0 /* FirestoreLogger.swift in Sources */,
 				5546CB772A64C6010079D285 /* AuthView.swift in Sources */,
 				557570442AB27051007B7F91 /* Message.swift in Sources */,
+				EC69994C2AD0F28A009FB09C /* HomeView.swift in Sources */,
 				5535F1E22A36A034000279F6 /* SnowScene.swift in Sources */,
+				EC2B1AF92ABFBDA6008DF740 /* MrsClauseKitchenViewModel.swift in Sources */,
+				ECEF5C0E2AC0CD85005A36F0 /* WavySquareShape.swift in Sources */,
+				ECEF5C152AC3C551005A36F0 /* FeaturedRecipeCard.swift in Sources */,
 				5562CACB2A59F85A003E5DA9 /* RoundGreenButtonStyle.swift in Sources */,
 				5546CB712A64B7C90079D285 /* LoginView.swift in Sources */,
 				555D620E2A36908F00785A7C /* SplitMenuView.swift in Sources */,
@@ -698,6 +753,7 @@
 				5566D83C2AAE3FBB00B810B0 /* Env.swift in Sources */,
 				5566D82D2AAE37AA00B810B0 /* JSONManager.swift in Sources */,
 				5566D8332AAE37D900B810B0 /* URLRequest+extension.swift in Sources */,
+				EC2B1AF72ABF6E95008DF740 /* KeyboardAvoidence.swift in Sources */,
 				55CA29182AA663BB003A5B1E /* ComingSoonView.swift in Sources */,
 				5566D82B2AAE37AA00B810B0 /* NetworkRequestError.swift in Sources */,
 				55D4D9752A8AD720000DEC60 /* Bubble.swift in Sources */,

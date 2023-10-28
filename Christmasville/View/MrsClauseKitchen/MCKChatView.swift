@@ -11,6 +11,7 @@ import Observation
 struct MCKChatView: View {
     @State var viewModel: MrsClauseKitchenChatViewModel
     @State var textEntry: String = ""
+    @FocusState private var chatFeildIsFocused: Bool
     var body: some View {
         ScrollViewReader { scrollView in
             ZStack{
@@ -30,13 +31,34 @@ struct MCKChatView: View {
                     }
                     
                 }
+                .gesture(
+                    DragGesture(minimumDistance: 17, coordinateSpace: .local)  // Use a small minimum distance to ensure that the drag is deliberate
+                        .onChanged { value in
+                            if value.startLocation.y < value.location.y {  // Dragging downwards
+                                chatFeildIsFocused = false
+                            }
+                        }
+                )
+                .padding(.top, 25)
                 .padding(.bottom, 100)
+                .keyboardAvoiding()
                 VStack {
                     Spacer()
                     textEntyView
+                        .focused($chatFeildIsFocused)
                 }
+                .keyboardAvoiding()
+                VStack {
+                    Capsule()
+                        .frame(width: 40, height: 6)
+                        .opacity(0.2)
+                    Spacer()
+                }
+                .padding()
             }
-            .ignoresSafeArea(.all)
+            
+            .padding(.bottom, -39)
+            .background(SnowBackground().ignoresSafeArea(edges: .all))
             .onChange(of: viewModel.chat) { _ in
                 let lastIndex = viewModel.chat.count - 1
                 if lastIndex >= 0 {
@@ -62,6 +84,19 @@ struct MCKChatView: View {
             HStack {
                 Spacer()
                 HStack {
+                    if chatFeildIsFocused {
+                        Button {
+                            chatFeildIsFocused = false
+                        } label: {
+                            Image(systemName: "keyboard.chevron.compact.down")
+                                .fontWeight(.semibold)
+                                .font(.body)
+                                .foregroundColor(Color.everGreen)
+                                .padding(5)
+                                .background(.lightgreen)
+                                .clipShape(Circle())
+                        }
+                    }
                     Button {
                         viewModel.sendMsg()
                     } label: {
@@ -72,7 +107,6 @@ struct MCKChatView: View {
                             .padding(5)
                             .background(.lightgreen)
                             .clipShape(Circle())
-                            //.padding()
                     }
                 }
                 .padding([.trailing, .bottom],14)

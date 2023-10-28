@@ -6,12 +6,11 @@
 //
 
 import Foundation
+import FirebaseFirestoreSwift
 
-struct Recipe {
+struct Recipe: Codable, Hashable {
+    @DocumentID var id: String?
     var title: String
     var ingredients: String
     var instructions: String
-
-
 }
-

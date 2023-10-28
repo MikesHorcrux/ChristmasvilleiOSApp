@@ -6,18 +6,18 @@
 //
 
 import SwiftUI
+import Observation
 
 struct MainView: View {
-    @State private var selectedTab = 0
+    @Environment(\.apiClient) var apiClient: APIClient
+    @State var auth = AuthenticationManager()
+    
     var body: some View {
-            #if os(iOS)
-                NavigationStack {
-                    CVTabView()
-                }
-            #elseif os(macOS) || targetEnvironment(macCatalyst)
-            SplitMenuView()
-            .frame(minWidth: 600, minHeight: 400)
-            #endif
+        if auth.user != nil {
+                CVTabView()
+        } else {
+            AuthView(authManager: auth)
+        }
     }
 }
 
