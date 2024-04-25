@@ -18,7 +18,7 @@ struct HomeView: View {
     @State var position: MapCameraPosition = .userLocation(fallback: .automatic)
     init(apiClient: APIClient, selectedTab: Binding<Int>) {
         _mrsClauseKitchen = State(initialValue: MrsClauseKitchenViewModel())
-        _mrsClauseChat = State(initialValue: MrsClauseKitchenChatViewModel(client: apiClient))
+        _mrsClauseChat = State(initialValue: MrsClauseKitchenChatViewModel())
         _christmasLightMap = State(initialValue: CLMViewModel())
         _selectedTab = selectedTab
     }

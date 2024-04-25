@@ -15,7 +15,7 @@ struct MrsClauseKitchen: View {
     @State var show = false
     init(apiClient: APIClient) {
         _viewModel = State(initialValue: MrsClauseKitchenViewModel())
-        _chatViewModel = State(initialValue: MrsClauseKitchenChatViewModel(client: apiClient))
+        _chatViewModel = State(initialValue: MrsClauseKitchenChatViewModel())
     }
     
     var body: some View {
@@ -71,8 +71,8 @@ struct MrsClauseKitchen: View {
                 }
             }
             .task {
-                if chatViewModel.chat.isEmpty {
-                    await chatViewModel.sendConversation()
+                if chatViewModel.messages.isEmpty {
+                    await chatViewModel.startNewChat()
                 }
             }
             .sheet(isPresented: $show, content: {

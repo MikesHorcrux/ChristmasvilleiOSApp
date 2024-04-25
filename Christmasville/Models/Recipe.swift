@@ -13,4 +13,5 @@ struct Recipe: Codable, Hashable {
     var title: String
     var ingredients: String
     var instructions: String
+    var tip: String?
 }

@@ -17,13 +17,13 @@ struct MCKChatView: View {
             ZStack{
                 ScrollView {
                     VStack(spacing: 20) {
-                        ForEach(Array(viewModel.chat.enumerated()), id: \.offset) { index, message in
+                        ForEach(Array(viewModel.messages.enumerated()), id: \.offset) { index, message in
                             HStack {
-                                if message.role == "user"{
+                                if message.participant == .user{
                                     Spacer()
-                                    UserChatBubble(msg: message.content)
+                                    UserChatBubble(msg: message.message)
                                 } else {
-                                    SystemBubble(msg: message.content)
+                                    SystemBubble(msg: message.message)
                                     Spacer()
                                 }
                             }
@@ -59,8 +59,8 @@ struct MCKChatView: View {
             
             .padding(.bottom, -39)
             .background(SnowBackground().ignoresSafeArea(edges: .all))
-            .onChange(of: viewModel.chat) { _ in
-                let lastIndex = viewModel.chat.count - 1
+            .onChange(of: viewModel.messages) { measages in
+                let lastIndex = viewModel.messages.count - 1
                 if lastIndex >= 0 {
                     scrollView.scrollTo(lastIndex, anchor: .bottom)
                 }
@@ -98,7 +98,7 @@ struct MCKChatView: View {
                         }
                     }
                     Button {
-                        viewModel.sendMsg()
+                        viewModel.sendMessage(viewModel.textEntry)
                     } label: {
                         Image(systemName: "arrow.up")
                             .fontWeight(.semibold)
@@ -120,6 +120,6 @@ struct MCKChatView: View {
 
 #if DEBUG
 #Preview {
-    MCKChatView(viewModel: MrsClauseKitchenChatViewModel(client: InMemoryAPIClient()))
+    MCKChatView(viewModel: MrsClauseKitchenChatViewModel())
 }
 #endif
