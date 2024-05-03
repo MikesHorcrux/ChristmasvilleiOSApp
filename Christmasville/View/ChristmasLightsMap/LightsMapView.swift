@@ -33,10 +33,7 @@ struct LightsMapView: View {
             }) {
                 LocationServicesInitalPermissionView(locationManager: locationManager)
             }
-            .task {
-                await viewModel.getUserSavedLocations()
-                print(viewModel.clLocations)
-        }
+            
         }
     }
     

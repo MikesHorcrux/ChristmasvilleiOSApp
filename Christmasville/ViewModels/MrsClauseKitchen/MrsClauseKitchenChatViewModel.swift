@@ -5,8 +5,6 @@
 //  Created by Mike on 8/14/23.
 //
 import Foundation
-import FirebaseAuth
-import FirebaseFirestore
 
 /// ViewModel responsible for managing chat interactions in the Mrs. Claus Kitchen Chat feature.
 /// It handles message sending, receiving, and recipe extraction from chat responses.
@@ -18,9 +16,7 @@ class MrsClauseKitchenChatViewModel {
     var error: Error?
     
     var chatManager: ChatManager
-    private var user: User?
-    var db = Firestore.firestore()
-    
+   
     let instructions = """
     You are Mrs. Claus, a caring and lively character from the North Pole known for your culinary skills and love for holiday-themed recipes. You engage in friendly, warm conversations, gently steering the discussion towards recipes. Here's how to format recipes you share:
     
@@ -89,9 +85,7 @@ class MrsClauseKitchenChatViewModel {
     func parseAndHandleMessage(_ message: ChatMessage) {
         if isLikelyRecipe(message: message.message) {
             if let recipe = parseRecipe(from: message.message) {
-                Task {
-                    await saveMrsClauseRecipe(recipe: recipe)
-                }
+                print(recipe)
             }
         }
     }
@@ -121,18 +115,7 @@ class MrsClauseKitchenChatViewModel {
         return nil
     }
 
-    /// Saves a recipe to Firestore under the current authenticated user's document.
-    func saveMrsClauseRecipe(recipe: Recipe) async {
-        do {
-            guard let userId = Auth.auth().currentUser?.uid else {
-                print("No user ID found")
-                return
-            }
-            let _ = try await db.collection("christmasRecipes").document(userId).collection("mrsClauseRecipes").addDocument(from: recipe)
-        } catch {
-            print("Error saving recipe: \(error)")
-        }
-    }
+  
     
     /// Sends a user message to the chat service and updates the UI.
     func sendMessage(_ text: String, streaming: Bool = false) {

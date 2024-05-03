@@ -41,13 +41,12 @@ struct MCKChatView: View {
                 )
                 .padding(.top, 25)
                 .padding(.bottom, 100)
-                .keyboardAvoiding()
+                
                 VStack {
                     Spacer()
                     textEntyView
                         .focused($chatFeildIsFocused)
                 }
-                .keyboardAvoiding()
                 VStack {
                     Capsule()
                         .frame(width: 40, height: 6)

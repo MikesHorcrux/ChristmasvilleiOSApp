@@ -25,10 +25,7 @@ struct AddAddressForm: View {
             #if !os(macOS)
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button("Save") {
-                    Task{
-                        await formVM.save()
-                        dismiss()
-                    }
+                    
                 }
             }
             #endif
@@ -107,11 +104,7 @@ struct AddAddressForm: View {
             Spacer()
             VStack {
                 Button("Save") {
-                    Task {
-                        await formVM.save()
-                        // Dismiss the view
-                        dismiss()
-                    }
+                    
                 }
                 .buttonStyle(SantaRedPillButtonStyle())
                

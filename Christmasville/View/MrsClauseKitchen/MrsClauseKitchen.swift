@@ -9,11 +9,10 @@ import SwiftUI
 import Observation
 
 struct MrsClauseKitchen: View {
-    @Environment(\.apiClient) var apiClient: APIClient
     @State var viewModel: MrsClauseKitchenViewModel
     @State var chatViewModel: MrsClauseKitchenChatViewModel
     @State var show = false
-    init(apiClient: APIClient) {
+    init() {
         _viewModel = State(initialValue: MrsClauseKitchenViewModel())
         _chatViewModel = State(initialValue: MrsClauseKitchenChatViewModel())
     }
@@ -65,11 +64,7 @@ struct MrsClauseKitchen: View {
             }
             .padding()
             .snowBackground()
-            .onAppear(){
-                Task{
-                    await viewModel.getSavedMrsClauseRecipes()
-                }
-            }
+           
             .task {
                 if chatViewModel.messages.isEmpty {
                     await chatViewModel.startNewChat()
@@ -86,7 +81,7 @@ struct MrsClauseKitchen: View {
 struct MrsClauseKitchen_Previews: PreviewProvider {
     static var previews: some View {
         NavigationStack() {
-            MrsClauseKitchen(apiClient: InMemoryAPIClient())
+            MrsClauseKitchen()
         }
     }
 }

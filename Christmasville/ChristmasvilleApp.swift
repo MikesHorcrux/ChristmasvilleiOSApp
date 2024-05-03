@@ -6,19 +6,13 @@
 //
 
 import SwiftUI
-import Firebase
-import FirebaseCore
 
 @main
 struct ChristmasvilleApp: App {
-    init() {
-        FirebaseApp.configure()
-    }
+    
     var body: some Scene {
         WindowGroup {
            MainView()
-                .environment(\.apiClient, DefaultAPIClient(baseURL: Env.secret(.apiBaseURL)))
-
         }
     }
 }

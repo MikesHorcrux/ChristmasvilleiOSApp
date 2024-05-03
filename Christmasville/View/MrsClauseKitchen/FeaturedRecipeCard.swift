@@ -50,5 +50,5 @@ struct FeaturedRecipeCard: View {
 }
 
 #Preview {
-    FeaturedRecipeCard(recipe: Recipe(id: nil, title: "testing", ingredients: "ingrediants", instructions: ""))
+    FeaturedRecipeCard(recipe: Recipe(title: "testing", ingredients: "ingrediants", instructions: ""))
 }
