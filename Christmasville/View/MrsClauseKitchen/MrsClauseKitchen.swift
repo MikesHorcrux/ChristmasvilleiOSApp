@@ -7,15 +7,12 @@
 
 import SwiftUI
 import Observation
+import SwiftData
 
 struct MrsClauseKitchen: View {
-    @State var viewModel: MrsClauseKitchenViewModel
-    @State var chatViewModel: MrsClauseKitchenChatViewModel
+    
+    @Query(sort: \Recipe.title) var recipes: [Recipe]
     @State var show = false
-    init() {
-        _viewModel = State(initialValue: MrsClauseKitchenViewModel())
-        _chatViewModel = State(initialValue: MrsClauseKitchenChatViewModel())
-    }
     
     var body: some View {
         NavigationStack() {
@@ -38,7 +35,7 @@ struct MrsClauseKitchen: View {
                     }
                     ScrollView(.vertical){
                         VStack {
-                            ForEach(viewModel.mrsClauseRecipe, id: \.self){ recipe in
+                            ForEach(recipes, id: \.self){ recipe in
                                 NavigationLink {
                                     RecipeView(recipe: recipe)
                                 } label: {
@@ -64,14 +61,8 @@ struct MrsClauseKitchen: View {
             }
             .padding()
             .snowBackground()
-           
-            .task {
-                if chatViewModel.messages.isEmpty {
-                    await chatViewModel.startNewChat()
-                }
-            }
             .sheet(isPresented: $show, content: {
-                MCKChatView(viewModel: chatViewModel)
+                MCKChatView()
         })
         }
     }

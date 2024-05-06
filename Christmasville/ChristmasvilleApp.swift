@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct ChristmasvilleApp: App {
@@ -13,6 +14,7 @@ struct ChristmasvilleApp: App {
     var body: some Scene {
         WindowGroup {
            MainView()
+                .modelContainer(for: [Recipe.self, ChristmasLightsLocation.self])
         }
     }
 }

@@ -15,7 +15,8 @@ import Observation
 /// This view shows a map and a button to add a new address for Christmas lights.
 struct LightsMapView: View {
     @Bindable var locationManager: LocationManager = LocationManager()
-    @State var viewModel: CLMViewModel = CLMViewModel()
+    @State var clLocations: [ChristmasLightsLocation] = []
+    @State var selectedLocation: ChristmasLightsLocation?
     @State var position: MapCameraPosition = .userLocation(fallback: .automatic)
     @State private var showAddAddress = false
     @State private var showAddAddressSheet = false
@@ -43,12 +44,12 @@ struct LightsMapView: View {
     private var mapSection: some View {
         Map(position: $position){
             //UserAnnotation()
-            ForEach(viewModel.clLocations, id: \.id) { location in
+            ForEach(clLocations, id: \.id) { location in
                 Annotation(location.nickname ?? "", coordinate: CLLocationCoordinate2D(latitude: location.coordinates.latitude, longitude: location.coordinates.longitude)) {
                     LightLocationLabel()
                         .onTapGesture {
-                            viewModel.selectedLocation = location
-                            if viewModel.selectedLocation != nil {
+                            selectedLocation = location
+                            if selectedLocation != nil {
                                 showLocationInfo.toggle()
                             }
                         }
@@ -60,7 +61,7 @@ struct LightsMapView: View {
 //            position = .userLocation(fallback: .automatic)
 //        }
         .sheet(isPresented: $showLocationInfo, content: {
-            if let safeLocation = viewModel.selectedLocation {
+            if let safeLocation = selectedLocation {
                 LocationProfileView(location: safeLocation)
                     .presentationDetents([.medium])
                     .presentationDragIndicator(.visible)

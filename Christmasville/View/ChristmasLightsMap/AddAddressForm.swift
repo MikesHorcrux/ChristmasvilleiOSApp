@@ -7,7 +7,11 @@ import Observation
 /// They can also rate the Christmas lights and add a nickname for the address.
 struct AddAddressForm: View {
     @Environment(\.dismiss) var dismiss
-    @Bindable var formVM = CLMFormViewModel()
+    @State var coordinates: Coordinates = Coordinates(latitude: 0, longitude: 0)
+    @State var houseType: ChristmasLightsHouseType = .amazing
+    @State var nickName: String = ""
+    @State var address: Address = Address(street: "", city: "", state: "", country: "", postalCode: "")
+    
     var locationManager: LocationManager
 
     var body: some View {
@@ -37,7 +41,7 @@ struct AddAddressForm: View {
         Section {
             VStack(alignment: .leading) {
                 Text("Add a nickname:")
-                TextField("Santa's House", text: $formVM.nickName)
+                TextField("Santa's House", text: $nickName)
             }
             .padding(.vertical)
         } header: {
@@ -48,7 +52,7 @@ struct AddAddressForm: View {
     /// Section for rating the Christmas lights.
     private var homeTypeSection: some View {
         Section {
-            Picker("Rate the Christmas lights", selection: $formVM.houseType) {
+            Picker("Rate the Christmas lights", selection: $houseType) {
                 ForEach(ChristmasLightsHouseType.allCases, id: \.self) { houseType in
                     Text(houseType.rawValue).tag(houseType)
                 }
@@ -61,10 +65,10 @@ struct AddAddressForm: View {
     /// Section for inputting the address.
     private var addressSection: some View {
         Section {
-            TextField("Street", text: $formVM.address.street)
-            TextField("City", text: $formVM.address.city)
-            TextField("State", text: $formVM.address.state)
-            TextField("Zip code", text: $formVM.address.postalCode)
+            TextField("Street", text: $address.street)
+            TextField("City", text: $address.city)
+            TextField("State", text: $address.state)
+            TextField("Zip code", text: $address.postalCode)
             VStack {
                 HStack() {
                     Capsule().frame(width: nil, height: 1)
@@ -125,8 +129,8 @@ struct AddAddressForm: View {
     private func useCurrentLocation() {
         Task {
             do {
-                formVM.address = try await locationManager.getCurrentLocationAddress()
-                formVM.coordinates = try await locationManager.getCoordinatesFromAddress(formVM.address)
+                address = try await locationManager.getCurrentLocationAddress()
+                coordinates = try await locationManager.getCoordinatesFromAddress(address)
             } catch {
                 print(error)
             }

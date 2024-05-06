@@ -7,22 +7,21 @@
 
 import Foundation
 import GoogleGenerativeAI
+import Observation
 
 /// Manages the interactions with a generative AI model for chat functionality.
+@Observable
 class ChatManager {
-    private var model: GenerativeModel
-    private var chat: Chat
-
-    /// A closure that is called when a new message is received from the system.
-    var onMessageUpdate: ((ChatMessage) -> Void)?
-
-    /// A closure that is called when an error occurs during message handling.
-    var onError: ((Error) -> Void)?
+    var chat: Chat
+    
+    var messages = [ChatMessage]()
+    var busy = false
+    var error: Error?
 
     /// Initializes a new ChatManager with a specific system instruction.
     /// - Parameter systemInstruction: The instruction that defines the system's behavior in the chat.
     init(systemInstruction: String) {
-        model = GenerativeModel(
+       let model = GenerativeModel(
             name: "gemini-1.5-pro-latest",
             apiKey: GoogleAIAPIKey.default,
             systemInstruction: .init(parts: [.text(systemInstruction)]),
@@ -35,7 +34,11 @@ class ChatManager {
     /// - Parameters:
     ///   - text: The text message to send.
     ///   - streaming: Specifies whether to send the message as a streaming request.
-    func sendMessage(_ text: String, streaming: Bool = true) {
+    func sendMessage(_ text: String, streaming: Bool = false) {
+        if !messages.isEmpty{
+            let userMessage = ChatMessage(message: text, participant: .user)
+            messages.append(userMessage)
+        }
         if streaming {
             sendMessageStreaming(text)
         } else {
@@ -52,11 +55,12 @@ class ChatManager {
                 for try await chunk in responseStream {
                     if let text = chunk.text {
                         let message = ChatMessage(message: text, participant: .system, pending: false)
-                        onMessageUpdate?(message)
+                        messages.append(message)
                     }
                 }
             } catch {
-                onError?(error)
+               print(error)
+                busy = false
             }
         }
     }
@@ -66,19 +70,17 @@ class ChatManager {
     private func sendMessageNonStreaming(_ text: String) {
         Task {
             do {
+                busy.toggle()
                 let response = try await chat.sendMessage(text)
                 if let responseText = response.text {
                     let message = ChatMessage(message: responseText, participant: .system, pending: false)
-                    onMessageUpdate?(message)
+                    messages.append(message)
+                    busy.toggle()
                 }
             } catch {
-                onError?(error)
+                print(error)
+                busy.toggle()
             }
         }
-    }
-
-    /// Resets the chat session to start a new conversation.
-    func startNewChat() {
-        chat = model.startChat()
     }
 }

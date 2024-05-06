@@ -27,10 +27,7 @@
 		5562CAC02A59A566003E5DA9 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5562CABF2A59A566003E5DA9 /* Address.swift */; };
 		5562CAC22A59A5F9003E5DA9 /* Coordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5562CAC12A59A5F9003E5DA9 /* Coordinates.swift */; };
 		5562CAC52A59A671003E5DA9 /* ChristmasLightsHouseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5562CAC42A59A671003E5DA9 /* ChristmasLightsHouseType.swift */; };
-		5562CAC92A59A7AD003E5DA9 /* CLMFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5562CAC82A59A7AD003E5DA9 /* CLMFormViewModel.swift */; };
 		5562CACB2A59F85A003E5DA9 /* RoundGreenButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5562CACA2A59F85A003E5DA9 /* RoundGreenButtonStyle.swift */; };
-		557570432AB27051007B7F91 /* Conversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557570412AB27051007B7F91 /* Conversation.swift */; };
-		557570442AB27051007B7F91 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557570422AB27051007B7F91 /* Message.swift */; };
 		557570492AB277EA007B7F91 /* MCKChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557570482AB277EA007B7F91 /* MCKChatView.swift */; };
 		559A2D6D2A3938EF00DFA306 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559A2D6C2A3938EF00DFA306 /* LocationManager.swift */; };
 		559A2D742A3A904800DFA306 /* LocationServicesInitalPermissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559A2D732A3A904800DFA306 /* LocationServicesInitalPermissionView.swift */; };
@@ -43,8 +40,6 @@
 		55D4D97B2A8ADA69000DEC60 /* SystemBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D4D97A2A8ADA69000DEC60 /* SystemBubble.swift */; };
 		55D4D97D2A8ADCE0000DEC60 /* TextEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D4D97C2A8ADCE0000DEC60 /* TextEntryView.swift */; };
 		55D4D9802A8AE276000DEC60 /* MrsClauseKitchen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D4D97F2A8AE276000DEC60 /* MrsClauseKitchen.swift */; };
-		55D4D9832A8AE2BA000DEC60 /* MrsClauseKitchenChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D4D9822A8AE2BA000DEC60 /* MrsClauseKitchenChatViewModel.swift */; };
-		55E2A1F42A78A8C700260F59 /* CLMViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E2A1F32A78A8C700260F59 /* CLMViewModel.swift */; };
 		55E2A1F62A79F45600260F59 /* LightLocationLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E2A1F52A79F45600260F59 /* LightLocationLabel.swift */; };
 		55E2A1F82A7C80F000260F59 /* LocationProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E2A1F72A7C80F000260F59 /* LocationProfileView.swift */; };
 		7F33B1BB2BD9CD8D0011421E /* MarkdownUI in Frameworks */ = {isa = PBXBuildFile; productRef = 7F33B1BA2BD9CD8D0011421E /* MarkdownUI */; };
@@ -57,8 +52,8 @@
 		7F33B1D42BDB100C0011421E /* MrsClauseKitchenChatViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F33B1D32BDB100C0011421E /* MrsClauseKitchenChatViewModelTests.swift */; };
 		7F33B1D52BDB16C10011421E /* MockChatManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F33B1CA2BDB0C530011421E /* MockChatManager.swift */; };
 		7F48ACF02BE4687B00EAD547 /* GenerativeAI-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7F48ACEF2BE4687B00EAD547 /* GenerativeAI-Info.plist */; };
+		7F48ACF32BE85C7000EAD547 /* MrsClauseChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F48ACF22BE85C7000EAD547 /* MrsClauseChat.swift */; };
 		EC29B5DF2ACBA1430032EE95 /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC29B5DE2ACBA1430032EE95 /* RecipeView.swift */; };
-		EC2B1AF92ABFBDA6008DF740 /* MrsClauseKitchenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2B1AF82ABFBDA6008DF740 /* MrsClauseKitchenViewModel.swift */; };
 		EC2C137B2AEDA51D00A16DE2 /* CountdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2C137A2AEDA51D00A16DE2 /* CountdownView.swift */; };
 		EC69994C2AD0F28A009FB09C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC69994B2AD0F28A009FB09C /* HomeView.swift */; };
 		EC69994E2AD0F5C3009FB09C /* SnowBackgroundModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC69994D2AD0F5C3009FB09C /* SnowBackgroundModifier.swift */; };
@@ -110,10 +105,7 @@
 		5562CABF2A59A566003E5DA9 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
 		5562CAC12A59A5F9003E5DA9 /* Coordinates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinates.swift; sourceTree = "<group>"; };
 		5562CAC42A59A671003E5DA9 /* ChristmasLightsHouseType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChristmasLightsHouseType.swift; sourceTree = "<group>"; };
-		5562CAC82A59A7AD003E5DA9 /* CLMFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLMFormViewModel.swift; sourceTree = "<group>"; };
 		5562CACA2A59F85A003E5DA9 /* RoundGreenButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundGreenButtonStyle.swift; sourceTree = "<group>"; };
-		557570412AB27051007B7F91 /* Conversation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Conversation.swift; sourceTree = "<group>"; };
-		557570422AB27051007B7F91 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		557570482AB277EA007B7F91 /* MCKChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCKChatView.swift; sourceTree = "<group>"; };
 		559A2D6C2A3938EF00DFA306 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		559A2D732A3A904800DFA306 /* LocationServicesInitalPermissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationServicesInitalPermissionView.swift; sourceTree = "<group>"; };
@@ -126,8 +118,6 @@
 		55D4D97A2A8ADA69000DEC60 /* SystemBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemBubble.swift; sourceTree = "<group>"; };
 		55D4D97C2A8ADCE0000DEC60 /* TextEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEntryView.swift; sourceTree = "<group>"; };
 		55D4D97F2A8AE276000DEC60 /* MrsClauseKitchen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MrsClauseKitchen.swift; sourceTree = "<group>"; };
-		55D4D9822A8AE2BA000DEC60 /* MrsClauseKitchenChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MrsClauseKitchenChatViewModel.swift; sourceTree = "<group>"; };
-		55E2A1F32A78A8C700260F59 /* CLMViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLMViewModel.swift; sourceTree = "<group>"; };
 		55E2A1F52A79F45600260F59 /* LightLocationLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightLocationLabel.swift; sourceTree = "<group>"; };
 		55E2A1F72A7C80F000260F59 /* LocationProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationProfileView.swift; sourceTree = "<group>"; };
 		7F33B1BF2BD9DD3C0011421E /* ChatManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatManager.swift; sourceTree = "<group>"; };
@@ -136,8 +126,8 @@
 		7F33B1CA2BDB0C530011421E /* MockChatManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockChatManager.swift; sourceTree = "<group>"; };
 		7F33B1D32BDB100C0011421E /* MrsClauseKitchenChatViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MrsClauseKitchenChatViewModelTests.swift; sourceTree = "<group>"; };
 		7F48ACEF2BE4687B00EAD547 /* GenerativeAI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GenerativeAI-Info.plist"; sourceTree = "<group>"; };
+		7F48ACF22BE85C7000EAD547 /* MrsClauseChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MrsClauseChat.swift; sourceTree = "<group>"; };
 		EC29B5DE2ACBA1430032EE95 /* RecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView.swift; sourceTree = "<group>"; };
-		EC2B1AF82ABFBDA6008DF740 /* MrsClauseKitchenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MrsClauseKitchenViewModel.swift; sourceTree = "<group>"; };
 		EC2C137A2AEDA51D00A16DE2 /* CountdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownView.swift; sourceTree = "<group>"; };
 		EC69994B2AD0F28A009FB09C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		EC69994D2AD0F5C3009FB09C /* SnowBackgroundModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnowBackgroundModifier.swift; sourceTree = "<group>"; };
@@ -181,6 +171,7 @@
 				5535F1DC2A36A034000279F6 /* snow.sks */,
 				5535F1DB2A36A034000279F6 /* SnowBackground.swift */,
 				5535F1DE2A36A034000279F6 /* SnowScene.swift */,
+				EC69994D2AD0F5C3009FB09C /* SnowBackgroundModifier.swift */,
 			);
 			path = Snow;
 			sourceTree = "<group>";
@@ -220,12 +211,10 @@
 		553F99072A35133E00F7D4BD /* Christmasville */ = {
 			isa = PBXGroup;
 			children = (
-				ECEF5C0F2AC0E568005A36F0 /* Modifers */,
-				5562CAC62A59A75A003E5DA9 /* ViewModels */,
+				559A2D752A3A97B400DFA306 /* Styles */,
 				5562CAC32A59A647003E5DA9 /* Enum */,
 				555D4BFE2A52001E00943DB8 /* Models */,
 				559A2D6B2A3938CF00DFA306 /* Managers */,
-				5535F1DA2A36A025000279F6 /* Snow */,
 				555D62072A36824500785A7C /* View */,
 				553F99082A35133E00F7D4BD /* ChristmasvilleApp.swift */,
 				553F990C2A35133F00F7D4BD /* Assets.xcassets */,
@@ -265,13 +254,8 @@
 		555D4BFE2A52001E00943DB8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				557570412AB27051007B7F91 /* Conversation.swift */,
-				557570422AB27051007B7F91 /* Message.swift */,
-				555D4BFF2A52004B00943DB8 /* ChristmasLightsLocation.swift */,
-				5562CABF2A59A566003E5DA9 /* Address.swift */,
-				5562CAC12A59A5F9003E5DA9 /* Coordinates.swift */,
-				55CD21462AB7BFB700987391 /* Recipe.swift */,
-				7F33B1C12BD9DD980011421E /* ChatMessage.swift */,
+				7F48ACF42BE8758E00EAD547 /* ChristmasLightsLocation */,
+				7F48ACF12BE5C40600EAD547 /* MCKitchen */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -279,11 +263,9 @@
 		555D62072A36824500785A7C /* View */ = {
 			isa = PBXGroup;
 			children = (
-				ECEF5C0C2AC0CD6B005A36F0 /* Shape  */,
 				55CA29152AA66388003A5B1E /* Onboarding */,
 				55D4D97E2A8AE24A000DEC60 /* MrsClauseKitchen */,
 				55D4D9722A8AD3CA000DEC60 /* Chat */,
-				559A2D752A3A97B400DFA306 /* Styles */,
 				559A2D6E2A3A8FB500DFA306 /* AppMessaging */,
 				5535F1E32A36A3EE000279F6 /* ChristmasLightsMap */,
 				555D620A2A36901300785A7C /* Navigations */,
@@ -310,24 +292,6 @@
 				5562CAC42A59A671003E5DA9 /* ChristmasLightsHouseType.swift */,
 			);
 			path = Enum;
-			sourceTree = "<group>";
-		};
-		5562CAC62A59A75A003E5DA9 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				55D4D9812A8AE291000DEC60 /* MrsClauseKitchen */,
-				5562CAC72A59A76E003E5DA9 /* ChristmasLightsMap */,
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		5562CAC72A59A76E003E5DA9 /* ChristmasLightsMap */ = {
-			isa = PBXGroup;
-			children = (
-				5562CAC82A59A7AD003E5DA9 /* CLMFormViewModel.swift */,
-				55E2A1F32A78A8C700260F59 /* CLMViewModel.swift */,
-			);
-			path = ChristmasLightsMap;
 			sourceTree = "<group>";
 		};
 		559A2D6B2A3938CF00DFA306 /* Managers */ = {
@@ -374,8 +338,9 @@
 		559A2D752A3A97B400DFA306 /* Styles */ = {
 			isa = PBXGroup;
 			children = (
-				559A2D762A3A97CF00DFA306 /* PillButtonStyle.swift */,
-				5562CACA2A59F85A003E5DA9 /* RoundGreenButtonStyle.swift */,
+				7F48ACF62BE8763200EAD547 /* ButtonStyles */,
+				ECEF5C0C2AC0CD6B005A36F0 /* Shape  */,
+				ECEF5C0F2AC0E568005A36F0 /* Modifers */,
 			);
 			path = Styles;
 			sourceTree = "<group>";
@@ -428,15 +393,6 @@
 			path = MrsClauseKitchen;
 			sourceTree = "<group>";
 		};
-		55D4D9812A8AE291000DEC60 /* MrsClauseKitchen */ = {
-			isa = PBXGroup;
-			children = (
-				55D4D9822A8AE2BA000DEC60 /* MrsClauseKitchenChatViewModel.swift */,
-				EC2B1AF82ABFBDA6008DF740 /* MrsClauseKitchenViewModel.swift */,
-			);
-			path = MrsClauseKitchen;
-			sourceTree = "<group>";
-		};
 		7F33B1C52BD9E1A70011421E /* GoogleAI */ = {
 			isa = PBXGroup;
 			children = (
@@ -444,6 +400,43 @@
 				7F48ACEF2BE4687B00EAD547 /* GenerativeAI-Info.plist */,
 			);
 			path = GoogleAI;
+			sourceTree = "<group>";
+		};
+		7F48ACF12BE5C40600EAD547 /* MCKitchen */ = {
+			isa = PBXGroup;
+			children = (
+				55CD21462AB7BFB700987391 /* Recipe.swift */,
+				7F48ACF22BE85C7000EAD547 /* MrsClauseChat.swift */,
+			);
+			path = MCKitchen;
+			sourceTree = "<group>";
+		};
+		7F48ACF42BE8758E00EAD547 /* ChristmasLightsLocation */ = {
+			isa = PBXGroup;
+			children = (
+				555D4BFF2A52004B00943DB8 /* ChristmasLightsLocation.swift */,
+				5562CABF2A59A566003E5DA9 /* Address.swift */,
+				5562CAC12A59A5F9003E5DA9 /* Coordinates.swift */,
+				7F33B1C12BD9DD980011421E /* ChatMessage.swift */,
+			);
+			path = ChristmasLightsLocation;
+			sourceTree = "<group>";
+		};
+		7F48ACF52BE8760200EAD547 /* Neumorphic */ = {
+			isa = PBXGroup;
+			children = (
+				ECEF5C102AC0E5A6005A36F0 /* NeumorphicBackground.swift */,
+			);
+			path = Neumorphic;
+			sourceTree = "<group>";
+		};
+		7F48ACF62BE8763200EAD547 /* ButtonStyles */ = {
+			isa = PBXGroup;
+			children = (
+				559A2D762A3A97CF00DFA306 /* PillButtonStyle.swift */,
+				5562CACA2A59F85A003E5DA9 /* RoundGreenButtonStyle.swift */,
+			);
+			path = ButtonStyles;
 			sourceTree = "<group>";
 		};
 		ECEF5C0C2AC0CD6B005A36F0 /* Shape  */ = {
@@ -457,8 +450,8 @@
 		ECEF5C0F2AC0E568005A36F0 /* Modifers */ = {
 			isa = PBXGroup;
 			children = (
-				ECEF5C102AC0E5A6005A36F0 /* NeumorphicBackground.swift */,
-				EC69994D2AD0F5C3009FB09C /* SnowBackgroundModifier.swift */,
+				7F48ACF52BE8760200EAD547 /* Neumorphic */,
+				5535F1DA2A36A025000279F6 /* Snow */,
 			);
 			path = Modifers;
 			sourceTree = "<group>";
@@ -605,7 +598,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				555D62092A36825A00785A7C /* MainView.swift in Sources */,
-				55D4D9832A8AE2BA000DEC60 /* MrsClauseKitchenChatViewModel.swift in Sources */,
 				55D4D9792A8AD84F000DEC60 /* UserBubble.swift in Sources */,
 				5535F1E52A36A409000279F6 /* LightsMapView.swift in Sources */,
 				EC2C137B2AEDA51D00A16DE2 /* CountdownView.swift in Sources */,
@@ -622,29 +614,25 @@
 				5562CAC02A59A566003E5DA9 /* Address.swift in Sources */,
 				EC29B5DF2ACBA1430032EE95 /* RecipeView.swift in Sources */,
 				555D620C2A36902800785A7C /* CVTabView.swift in Sources */,
-				55E2A1F42A78A8C700260F59 /* CLMViewModel.swift in Sources */,
 				5562CAC52A59A671003E5DA9 /* ChristmasLightsHouseType.swift in Sources */,
 				5562CAC22A59A5F9003E5DA9 /* Coordinates.swift in Sources */,
 				ECEF5C112AC0E5A6005A36F0 /* NeumorphicBackground.swift in Sources */,
 				55CD21472AB7BFB700987391 /* Recipe.swift in Sources */,
 				552C726E2A4E58FC00E2B682 /* AddAddressForm.swift in Sources */,
-				557570432AB27051007B7F91 /* Conversation.swift in Sources */,
 				7F33B1D52BDB16C10011421E /* MockChatManager.swift in Sources */,
-				557570442AB27051007B7F91 /* Message.swift in Sources */,
 				EC69994C2AD0F28A009FB09C /* HomeView.swift in Sources */,
 				5535F1E22A36A034000279F6 /* SnowScene.swift in Sources */,
-				EC2B1AF92ABFBDA6008DF740 /* MrsClauseKitchenViewModel.swift in Sources */,
 				ECEF5C0E2AC0CD85005A36F0 /* WavySquareShape.swift in Sources */,
 				7F33B1C02BD9DD3C0011421E /* ChatManager.swift in Sources */,
 				ECEF5C152AC3C551005A36F0 /* FeaturedRecipeCard.swift in Sources */,
 				5562CACB2A59F85A003E5DA9 /* RoundGreenButtonStyle.swift in Sources */,
 				555D620E2A36908F00785A7C /* SplitMenuView.swift in Sources */,
 				559A2D742A3A904800DFA306 /* LocationServicesInitalPermissionView.swift in Sources */,
-				5562CAC92A59A7AD003E5DA9 /* CLMFormViewModel.swift in Sources */,
 				55D4D9772A8AD7A4000DEC60 /* BubbleShape.swift in Sources */,
 				55D4D9802A8AE276000DEC60 /* MrsClauseKitchen.swift in Sources */,
 				7F33B1C22BD9DD980011421E /* ChatMessage.swift in Sources */,
 				553F99092A35133E00F7D4BD /* ChristmasvilleApp.swift in Sources */,
+				7F48ACF32BE85C7000EAD547 /* MrsClauseChat.swift in Sources */,
 				55CA29182AA663BB003A5B1E /* ComingSoonView.swift in Sources */,
 				55D4D9752A8AD720000DEC60 /* Bubble.swift in Sources */,
 				55D4D97B2A8ADA69000DEC60 /* SystemBubble.swift in Sources */,
