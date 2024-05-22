@@ -306,18 +306,9 @@
 		559A2D6E2A3A8FB500DFA306 /* AppMessaging */ = {
 			isa = PBXGroup;
 			children = (
-				559A2D722A3A900300DFA306 /* Onboarding */,
 				559A2D712A3A8FF100DFA306 /* PopUps */,
-				559A2D6F2A3A8FDD00DFA306 /* alerts */,
 			);
 			path = AppMessaging;
-			sourceTree = "<group>";
-		};
-		559A2D6F2A3A8FDD00DFA306 /* alerts */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = alerts;
 			sourceTree = "<group>";
 		};
 		559A2D712A3A8FF100DFA306 /* PopUps */ = {
@@ -326,13 +317,6 @@
 				559A2D732A3A904800DFA306 /* LocationServicesInitalPermissionView.swift */,
 			);
 			path = PopUps;
-			sourceTree = "<group>";
-		};
-		559A2D722A3A900300DFA306 /* Onboarding */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Onboarding;
 			sourceTree = "<group>";
 		};
 		559A2D752A3A97B400DFA306 /* Styles */ = {

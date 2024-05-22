@@ -6,6 +6,8 @@ import Observation
 /// This form allows users to manually input an address or use their current location.
 /// They can also rate the Christmas lights and add a nickname for the address.
 struct AddAddressForm: View {
+    @Environment(\.modelContext) var modelContext
+
     @Environment(\.dismiss) var dismiss
     @State var coordinates: Coordinates = Coordinates(latitude: 0, longitude: 0)
     @State var houseType: ChristmasLightsHouseType = .amazing
@@ -29,7 +31,10 @@ struct AddAddressForm: View {
             #if !os(macOS)
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button("Save") {
-                    
+                    // save for ios
+                    let location = ChristmasLightsLocation(nickname: nickName,address: address, coordinates: coordinates, houseType: houseType)
+                    modelContext.insert(location)
+                    dismiss()
                 }
             }
             #endif

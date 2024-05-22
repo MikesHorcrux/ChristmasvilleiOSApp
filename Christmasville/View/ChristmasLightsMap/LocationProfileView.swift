@@ -8,7 +8,7 @@
 import SwiftUI
 import Observation
 struct LocationProfileView: View {
-    var location: ChristmasLightsLocation
+    @Binding var location: ChristmasLightsLocation
     var body: some View {
         VStack {
             HStack {
@@ -60,7 +60,7 @@ struct LocationProfileView: View {
 }
 
 #Preview {
-    LocationProfileView(location:
+    LocationProfileView(location: .constant(
         ChristmasLightsLocation(
             address: Address(
                 street: "123 Christmas St",
@@ -77,5 +77,6 @@ struct LocationProfileView: View {
             houseType: .fail
         )
     )
+                        )
 
 }

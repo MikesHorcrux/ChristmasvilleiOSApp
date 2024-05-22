@@ -9,14 +9,15 @@ import SwiftUI
 import MapKit
 import CoreLocation
 import Observation
+import SwiftData
 
 /// A view representing a map for Christmas lights.
 ///
 /// This view shows a map and a button to add a new address for Christmas lights.
 struct LightsMapView: View {
+    @Query var clLocations: [ChristmasLightsLocation]
     @Bindable var locationManager: LocationManager = LocationManager()
-    @State var clLocations: [ChristmasLightsLocation] = []
-    @State var selectedLocation: ChristmasLightsLocation?
+//    @State var selectedLocation: ChristmasLightsLocation = ChristmasLightsLocation(address: Address(street: "", city: "", state: "", country: "", postalCode: ""), coordinates: Coordinates(latitude: 0, longitude: 0), houseType: .amazing)
     @State var position: MapCameraPosition = .userLocation(fallback: .automatic)
     @State private var showAddAddress = false
     @State private var showAddAddressSheet = false
@@ -48,10 +49,6 @@ struct LightsMapView: View {
                 Annotation(location.nickname ?? "", coordinate: CLLocationCoordinate2D(latitude: location.coordinates.latitude, longitude: location.coordinates.longitude)) {
                     LightLocationLabel()
                         .onTapGesture {
-                            selectedLocation = location
-                            if selectedLocation != nil {
-                                showLocationInfo.toggle()
-                            }
                         }
                 }
             }
@@ -60,18 +57,11 @@ struct LightsMapView: View {
 //        .onMapCameraChange {
 //            position = .userLocation(fallback: .automatic)
 //        }
-        .sheet(isPresented: $showLocationInfo, content: {
-            if let safeLocation = selectedLocation {
-                LocationProfileView(location: safeLocation)
-                    .presentationDetents([.medium])
-                    .presentationDragIndicator(.visible)
-            } else {
-                EmptyView()
-                    .onAppear(){
-                        showLocationInfo = false
-                    }
-            }
-        })
+//        .sheet(isPresented: $showLocationInfo, content: {
+//                LocationProfileView(location: $selectedLocation)
+//                    .presentationDetents([.medium])
+//                    .presentationDragIndicator(.visible)
+//        })
 
     }
     
