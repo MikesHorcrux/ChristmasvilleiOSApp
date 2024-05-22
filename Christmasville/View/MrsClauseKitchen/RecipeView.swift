@@ -48,6 +48,6 @@ struct RecipeView: View {
 
 #Preview {
     NavigationStack {
-        RecipeView(recipe: Recipe(id: "", title: "", ingredients: "", instructions: ""))
+        RecipeView(recipe: Recipe(title: "", ingredients: "", instructions: ""))
     }
 }

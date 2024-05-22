@@ -9,15 +9,9 @@ import SwiftUI
 import Observation
 
 struct MainView: View {
-    @Environment(\.apiClient) var apiClient: APIClient
-    @State var auth = AuthenticationManager()
     
     var body: some View {
-        if auth.user != nil {
                 CVTabView()
-        } else {
-            AuthView(authManager: auth)
-        }
     }
 }
 

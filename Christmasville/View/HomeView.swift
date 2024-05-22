@@ -12,16 +12,7 @@ import MapKit
 
 struct HomeView: View {
     @Binding var selectedTab: Int
-    @State private var mrsClauseKitchen: MrsClauseKitchenViewModel
-    @State private var mrsClauseChat: MrsClauseKitchenChatViewModel
-    @State private var christmasLightMap: CLMViewModel
-    @State var position: MapCameraPosition = .userLocation(fallback: .automatic)
-    init(apiClient: APIClient, selectedTab: Binding<Int>) {
-        _mrsClauseKitchen = State(initialValue: MrsClauseKitchenViewModel())
-        _mrsClauseChat = State(initialValue: MrsClauseKitchenChatViewModel())
-        _christmasLightMap = State(initialValue: CLMViewModel())
-        _selectedTab = selectedTab
-    }
+   
     var body: some View {
         NavigationStack() {
             VStack {
@@ -78,18 +69,12 @@ struct HomeView: View {
                         .buttonStyle(RoundGreenButtonStyle(padding: 2))
                     }
                 }
-                .onAppear(){
-                    Task{
-                        await mrsClauseKitchen.getSavedMrsClauseRecipes()
-                        await christmasLightMap.getUserSavedLocations()
-                    }
-                }
             }
         }
     }
 }
 
 #Preview {
-    HomeView(apiClient: InMemoryAPIClient(), selectedTab: .constant(0))
+    HomeView(selectedTab: .constant(0))
 }
 

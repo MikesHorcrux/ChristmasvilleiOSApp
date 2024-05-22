@@ -9,9 +9,9 @@ import SwiftUI
 import Observation
 
 struct SplitMenuView: View {
-    @Environment(\.apiClient) var apiClient: APIClient
+    
     @State var showHome: Bool = false
-    var authManager = AuthenticationManager()
+  
     var body: some View {
         NavigationSplitView {
             List {
@@ -37,7 +37,7 @@ struct SplitMenuView: View {
                     }
 
                 }
-                NavigationLink(destination:  MrsClauseKitchen(apiClient: apiClient)) {
+                NavigationLink(destination:  MrsClauseKitchen()) {
                     Label {
                         Text("Mrs Cluse's Kitchen")
                     } icon: {
@@ -73,12 +73,7 @@ struct SplitMenuView: View {
             }
             .listStyle(.sidebar)
         } detail: {
-            AuthView()
-                .onAppear(){
-                    if authManager.user != nil {
-                        showHome.toggle()
-                    }
-                }
+            Text("Hi")
         }
     }
     

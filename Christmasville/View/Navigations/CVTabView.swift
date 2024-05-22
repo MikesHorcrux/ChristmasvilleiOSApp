@@ -9,14 +9,13 @@ import SwiftUI
 import Observation
 
 struct CVTabView: View {
-    @Environment(\.apiClient) var apiClient: APIClient
+   
     @State var selectedTab = 1
-    var authManager = AuthenticationManager()
-    
+   
     var body: some View {
             TabView(selection: $selectedTab,
                         content:  {
-                HomeView(apiClient: apiClient, selectedTab: $selectedTab)
+                HomeView(selectedTab: $selectedTab)
     //                    .onAppear(){
     //                        authManager.signOut()
     //                    }
@@ -32,7 +31,7 @@ struct CVTabView: View {
                         .tag(2)
                         //.toolbarBackground(.hidden, for: .tabBar)
                 //NavigationStack {
-                    MrsClauseKitchen(apiClient: apiClient)
+                    MrsClauseKitchen()
                // }
                 .tabItem {
                                                Label("Mrs Cluse's Kitchen", image: selectedTab == 3 ? .gingerbread3 : .gingerbread2)

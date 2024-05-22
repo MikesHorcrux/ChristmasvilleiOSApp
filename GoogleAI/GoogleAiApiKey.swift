@@ -4,7 +4,6 @@
 //
 //  Created by Mike  Van Amburg on 4/22/24.
 //
-
 import Foundation
 
 enum GoogleAIAPIKey {

@@ -47,7 +47,7 @@ struct MiniRecipeCard: View {
 }
 
 #Preview {
-    MiniRecipeCard(recipe: Recipe(id: nil, title: "testing", ingredients: "ingrediants", instructions: ""))
+    MiniRecipeCard(recipe: Recipe(title: "testing", ingredients: "ingrediants", instructions: ""))
         .padding()
         .background(SnowBackground().edgesIgnoringSafeArea(.all))
 }
