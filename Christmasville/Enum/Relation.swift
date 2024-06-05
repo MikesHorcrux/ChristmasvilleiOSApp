@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+enum Relation: String, Codable {
+    case family
+    case friend
+    case colleague
+    case other
+}

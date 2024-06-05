@@ -49,8 +49,10 @@
 		7F33B1C92BD9E3C60011421E /* GoogleAiApiKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F33B1C42BD9E1A70011421E /* GoogleAiApiKey.swift */; };
 		7F33B1CD2BDB0CA50011421E /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F33B1C12BD9DD980011421E /* ChatMessage.swift */; };
 		7F33B1CE2BDB0CA80011421E /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F33B1C12BD9DD980011421E /* ChatMessage.swift */; };
-		7F33B1D42BDB100C0011421E /* MrsClauseKitchenChatViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F33B1D32BDB100C0011421E /* MrsClauseKitchenChatViewModelTests.swift */; };
-		7F33B1D52BDB16C10011421E /* MockChatManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F33B1CA2BDB0C530011421E /* MockChatManager.swift */; };
+		7F35E11D2C0FD31600297037 /* SWEmptyPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F35E11C2C0FD31600297037 /* SWEmptyPage.swift */; };
+		7F35E1202C0FD68F00297037 /* SantasWorkshop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F35E11F2C0FD68F00297037 /* SantasWorkshop.swift */; };
+		7F35E1222C0FF6EE00297037 /* Relation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F35E1212C0FF6EE00297037 /* Relation.swift */; };
+		7F35E1252C0FFFA000297037 /* Giftee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F35E1242C0FFFA000297037 /* Giftee.swift */; };
 		7F48ACF02BE4687B00EAD547 /* GenerativeAI-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7F48ACEF2BE4687B00EAD547 /* GenerativeAI-Info.plist */; };
 		7F48ACF32BE85C7000EAD547 /* MrsClauseChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F48ACF22BE85C7000EAD547 /* MrsClauseChat.swift */; };
 		EC29B5DF2ACBA1430032EE95 /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC29B5DE2ACBA1430032EE95 /* RecipeView.swift */; };
@@ -123,8 +125,10 @@
 		7F33B1BF2BD9DD3C0011421E /* ChatManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatManager.swift; sourceTree = "<group>"; };
 		7F33B1C12BD9DD980011421E /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
 		7F33B1C42BD9E1A70011421E /* GoogleAiApiKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleAiApiKey.swift; sourceTree = "<group>"; };
-		7F33B1CA2BDB0C530011421E /* MockChatManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockChatManager.swift; sourceTree = "<group>"; };
-		7F33B1D32BDB100C0011421E /* MrsClauseKitchenChatViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MrsClauseKitchenChatViewModelTests.swift; sourceTree = "<group>"; };
+		7F35E11C2C0FD31600297037 /* SWEmptyPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWEmptyPage.swift; sourceTree = "<group>"; };
+		7F35E11F2C0FD68F00297037 /* SantasWorkshop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SantasWorkshop.swift; sourceTree = "<group>"; };
+		7F35E1212C0FF6EE00297037 /* Relation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Relation.swift; sourceTree = "<group>"; };
+		7F35E1242C0FFFA000297037 /* Giftee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Giftee.swift; sourceTree = "<group>"; };
 		7F48ACEF2BE4687B00EAD547 /* GenerativeAI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GenerativeAI-Info.plist"; sourceTree = "<group>"; };
 		7F48ACF22BE85C7000EAD547 /* MrsClauseChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MrsClauseChat.swift; sourceTree = "<group>"; };
 		EC29B5DE2ACBA1430032EE95 /* RecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView.swift; sourceTree = "<group>"; };
@@ -236,8 +240,6 @@
 			isa = PBXGroup;
 			children = (
 				553F991A2A35133F00F7D4BD /* ChristmasvilleTests.swift */,
-				7F33B1CA2BDB0C530011421E /* MockChatManager.swift */,
-				7F33B1D32BDB100C0011421E /* MrsClauseKitchenChatViewModelTests.swift */,
 			);
 			path = ChristmasvilleTests;
 			sourceTree = "<group>";
@@ -254,6 +256,7 @@
 		555D4BFE2A52001E00943DB8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				7F35E1232C0FFF7D00297037 /* SantasWorkshop */,
 				7F48ACF42BE8758E00EAD547 /* ChristmasLightsLocation */,
 				7F48ACF12BE5C40600EAD547 /* MCKitchen */,
 			);
@@ -263,6 +266,8 @@
 		555D62072A36824500785A7C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7F35E11E2C0FD67500297037 /* SantasWorkshop */,
+				7F35E11B2C0FD2DB00297037 /* EmptyViews */,
 				55CA29152AA66388003A5B1E /* Onboarding */,
 				55D4D97E2A8AE24A000DEC60 /* MrsClauseKitchen */,
 				55D4D9722A8AD3CA000DEC60 /* Chat */,
@@ -290,6 +295,7 @@
 			isa = PBXGroup;
 			children = (
 				5562CAC42A59A671003E5DA9 /* ChristmasLightsHouseType.swift */,
+				7F35E1212C0FF6EE00297037 /* Relation.swift */,
 			);
 			path = Enum;
 			sourceTree = "<group>";
@@ -384,6 +390,30 @@
 				7F48ACEF2BE4687B00EAD547 /* GenerativeAI-Info.plist */,
 			);
 			path = GoogleAI;
+			sourceTree = "<group>";
+		};
+		7F35E11B2C0FD2DB00297037 /* EmptyViews */ = {
+			isa = PBXGroup;
+			children = (
+				7F35E11C2C0FD31600297037 /* SWEmptyPage.swift */,
+			);
+			path = EmptyViews;
+			sourceTree = "<group>";
+		};
+		7F35E11E2C0FD67500297037 /* SantasWorkshop */ = {
+			isa = PBXGroup;
+			children = (
+				7F35E11F2C0FD68F00297037 /* SantasWorkshop.swift */,
+			);
+			path = SantasWorkshop;
+			sourceTree = "<group>";
+		};
+		7F35E1232C0FFF7D00297037 /* SantasWorkshop */ = {
+			isa = PBXGroup;
+			children = (
+				7F35E1242C0FFFA000297037 /* Giftee.swift */,
+			);
+			path = SantasWorkshop;
 			sourceTree = "<group>";
 		};
 		7F48ACF12BE5C40600EAD547 /* MCKitchen */ = {
@@ -592,6 +622,7 @@
 				5535F1DF2A36A034000279F6 /* SnowBackground.swift in Sources */,
 				5546CB7A2A64CCE60079D285 /* RepeatingPlayer.swift in Sources */,
 				559A2D772A3A97CF00DFA306 /* PillButtonStyle.swift in Sources */,
+				7F35E1252C0FFFA000297037 /* Giftee.swift in Sources */,
 				7F33B1C92BD9E3C60011421E /* GoogleAiApiKey.swift in Sources */,
 				55E2A1F82A7C80F000260F59 /* LocationProfileView.swift in Sources */,
 				555D4C002A52004B00943DB8 /* ChristmasLightsLocation.swift in Sources */,
@@ -603,7 +634,6 @@
 				ECEF5C112AC0E5A6005A36F0 /* NeumorphicBackground.swift in Sources */,
 				55CD21472AB7BFB700987391 /* Recipe.swift in Sources */,
 				552C726E2A4E58FC00E2B682 /* AddAddressForm.swift in Sources */,
-				7F33B1D52BDB16C10011421E /* MockChatManager.swift in Sources */,
 				EC69994C2AD0F28A009FB09C /* HomeView.swift in Sources */,
 				5535F1E22A36A034000279F6 /* SnowScene.swift in Sources */,
 				ECEF5C0E2AC0CD85005A36F0 /* WavySquareShape.swift in Sources */,
@@ -613,12 +643,15 @@
 				555D620E2A36908F00785A7C /* SplitMenuView.swift in Sources */,
 				559A2D742A3A904800DFA306 /* LocationServicesInitalPermissionView.swift in Sources */,
 				55D4D9772A8AD7A4000DEC60 /* BubbleShape.swift in Sources */,
+				7F35E1222C0FF6EE00297037 /* Relation.swift in Sources */,
 				55D4D9802A8AE276000DEC60 /* MrsClauseKitchen.swift in Sources */,
 				7F33B1C22BD9DD980011421E /* ChatMessage.swift in Sources */,
+				7F35E11D2C0FD31600297037 /* SWEmptyPage.swift in Sources */,
 				553F99092A35133E00F7D4BD /* ChristmasvilleApp.swift in Sources */,
 				7F48ACF32BE85C7000EAD547 /* MrsClauseChat.swift in Sources */,
 				55CA29182AA663BB003A5B1E /* ComingSoonView.swift in Sources */,
 				55D4D9752A8AD720000DEC60 /* Bubble.swift in Sources */,
+				7F35E1202C0FD68F00297037 /* SantasWorkshop.swift in Sources */,
 				55D4D97B2A8ADA69000DEC60 /* SystemBubble.swift in Sources */,
 				557570492AB277EA007B7F91 /* MCKChatView.swift in Sources */,
 				559A2D6D2A3938EF00DFA306 /* LocationManager.swift in Sources */,
@@ -630,7 +663,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F33B1CD2BDB0CA50011421E /* ChatMessage.swift in Sources */,
-				7F33B1D42BDB100C0011421E /* MrsClauseKitchenChatViewModelTests.swift in Sources */,
 				553F991B2A35133F00F7D4BD /* ChristmasvilleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
