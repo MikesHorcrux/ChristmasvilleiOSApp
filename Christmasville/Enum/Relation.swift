@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum Relation: String, Codable {
+enum Relation: String, CaseIterable, Codable {
     case family
     case friend
     case colleague

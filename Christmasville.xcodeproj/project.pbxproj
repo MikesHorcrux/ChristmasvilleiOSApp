@@ -42,7 +42,6 @@
 		55D4D9802A8AE276000DEC60 /* MrsClauseKitchen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D4D97F2A8AE276000DEC60 /* MrsClauseKitchen.swift */; };
 		55E2A1F62A79F45600260F59 /* LightLocationLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E2A1F52A79F45600260F59 /* LightLocationLabel.swift */; };
 		55E2A1F82A7C80F000260F59 /* LocationProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E2A1F72A7C80F000260F59 /* LocationProfileView.swift */; };
-		7F33B1BB2BD9CD8D0011421E /* MarkdownUI in Frameworks */ = {isa = PBXBuildFile; productRef = 7F33B1BA2BD9CD8D0011421E /* MarkdownUI */; };
 		7F33B1BE2BD9CDA10011421E /* GoogleGenerativeAI in Frameworks */ = {isa = PBXBuildFile; productRef = 7F33B1BD2BD9CDA10011421E /* GoogleGenerativeAI */; };
 		7F33B1C02BD9DD3C0011421E /* ChatManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F33B1BF2BD9DD3C0011421E /* ChatManager.swift */; };
 		7F33B1C22BD9DD980011421E /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F33B1C12BD9DD980011421E /* ChatMessage.swift */; };
@@ -51,8 +50,9 @@
 		7F33B1CE2BDB0CA80011421E /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F33B1C12BD9DD980011421E /* ChatMessage.swift */; };
 		7F35E11D2C0FD31600297037 /* SWEmptyPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F35E11C2C0FD31600297037 /* SWEmptyPage.swift */; };
 		7F35E1202C0FD68F00297037 /* SantasWorkshop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F35E11F2C0FD68F00297037 /* SantasWorkshop.swift */; };
-		7F35E1222C0FF6EE00297037 /* Relation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F35E1212C0FF6EE00297037 /* Relation.swift */; };
 		7F35E1252C0FFFA000297037 /* Giftee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F35E1242C0FFFA000297037 /* Giftee.swift */; };
+		7F35E1282C1008B800297037 /* EditGifteeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F35E1272C1008B800297037 /* EditGifteeView.swift */; };
+		7F35E1292C100D6F00297037 /* Relation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F35E1212C0FF6EE00297037 /* Relation.swift */; };
 		7F48ACF02BE4687B00EAD547 /* GenerativeAI-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7F48ACEF2BE4687B00EAD547 /* GenerativeAI-Info.plist */; };
 		7F48ACF32BE85C7000EAD547 /* MrsClauseChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F48ACF22BE85C7000EAD547 /* MrsClauseChat.swift */; };
 		EC29B5DF2ACBA1430032EE95 /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC29B5DE2ACBA1430032EE95 /* RecipeView.swift */; };
@@ -129,6 +129,7 @@
 		7F35E11F2C0FD68F00297037 /* SantasWorkshop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SantasWorkshop.swift; sourceTree = "<group>"; };
 		7F35E1212C0FF6EE00297037 /* Relation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Relation.swift; sourceTree = "<group>"; };
 		7F35E1242C0FFFA000297037 /* Giftee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Giftee.swift; sourceTree = "<group>"; };
+		7F35E1272C1008B800297037 /* EditGifteeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditGifteeView.swift; sourceTree = "<group>"; };
 		7F48ACEF2BE4687B00EAD547 /* GenerativeAI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GenerativeAI-Info.plist"; sourceTree = "<group>"; };
 		7F48ACF22BE85C7000EAD547 /* MrsClauseChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MrsClauseChat.swift; sourceTree = "<group>"; };
 		EC29B5DE2ACBA1430032EE95 /* RecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView.swift; sourceTree = "<group>"; };
@@ -146,7 +147,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F33B1BB2BD9CD8D0011421E /* MarkdownUI in Frameworks */,
 				7F33B1BE2BD9CDA10011421E /* GoogleGenerativeAI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -403,6 +403,7 @@
 		7F35E11E2C0FD67500297037 /* SantasWorkshop */ = {
 			isa = PBXGroup;
 			children = (
+				7F35E1262C10089F00297037 /* Giftee */,
 				7F35E11F2C0FD68F00297037 /* SantasWorkshop.swift */,
 			);
 			path = SantasWorkshop;
@@ -414,6 +415,14 @@
 				7F35E1242C0FFFA000297037 /* Giftee.swift */,
 			);
 			path = SantasWorkshop;
+			sourceTree = "<group>";
+		};
+		7F35E1262C10089F00297037 /* Giftee */ = {
+			isa = PBXGroup;
+			children = (
+				7F35E1272C1008B800297037 /* EditGifteeView.swift */,
+			);
+			path = Giftee;
 			sourceTree = "<group>";
 		};
 		7F48ACF12BE5C40600EAD547 /* MCKitchen */ = {
@@ -487,7 +496,6 @@
 			);
 			name = Christmasville;
 			packageProductDependencies = (
-				7F33B1BA2BD9CD8D0011421E /* MarkdownUI */,
 				7F33B1BD2BD9CDA10011421E /* GoogleGenerativeAI */,
 			);
 			productName = Christmasville;
@@ -612,6 +620,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				555D62092A36825A00785A7C /* MainView.swift in Sources */,
+				7F35E1292C100D6F00297037 /* Relation.swift in Sources */,
 				55D4D9792A8AD84F000DEC60 /* UserBubble.swift in Sources */,
 				5535F1E52A36A409000279F6 /* LightsMapView.swift in Sources */,
 				EC2C137B2AEDA51D00A16DE2 /* CountdownView.swift in Sources */,
@@ -627,6 +636,7 @@
 				55E2A1F82A7C80F000260F59 /* LocationProfileView.swift in Sources */,
 				555D4C002A52004B00943DB8 /* ChristmasLightsLocation.swift in Sources */,
 				5562CAC02A59A566003E5DA9 /* Address.swift in Sources */,
+				7F35E1282C1008B800297037 /* EditGifteeView.swift in Sources */,
 				EC29B5DF2ACBA1430032EE95 /* RecipeView.swift in Sources */,
 				555D620C2A36902800785A7C /* CVTabView.swift in Sources */,
 				5562CAC52A59A671003E5DA9 /* ChristmasLightsHouseType.swift in Sources */,
@@ -643,7 +653,6 @@
 				555D620E2A36908F00785A7C /* SplitMenuView.swift in Sources */,
 				559A2D742A3A904800DFA306 /* LocationServicesInitalPermissionView.swift in Sources */,
 				55D4D9772A8AD7A4000DEC60 /* BubbleShape.swift in Sources */,
-				7F35E1222C0FF6EE00297037 /* Relation.swift in Sources */,
 				55D4D9802A8AE276000DEC60 /* MrsClauseKitchen.swift in Sources */,
 				7F33B1C22BD9DD980011421E /* ChatMessage.swift in Sources */,
 				7F35E11D2C0FD31600297037 /* SWEmptyPage.swift in Sources */,
@@ -1044,11 +1053,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		7F33B1BA2BD9CD8D0011421E /* MarkdownUI */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 7F33B1B92BD9CD8D0011421E /* XCRemoteSwiftPackageReference "swift-markdown-ui" */;
-			productName = MarkdownUI;
-		};
 		7F33B1BD2BD9CDA10011421E /* GoogleGenerativeAI */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 7F33B1BC2BD9CDA10011421E /* XCRemoteSwiftPackageReference "generative-ai-swift" */;

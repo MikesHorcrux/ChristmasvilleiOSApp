@@ -6,23 +6,20 @@
 //
 
 import SwiftUI
-import MarkdownUI
+
 
 struct SystemBubble: View {
     var msg: String = ""
     var body: some View {
         Bubble(direction: .left) {
-            Markdown(msg)
+            Text(msg)
                 .multilineTextAlignment(.leading)
                 .padding(.all, 20)
                 .background(.coal)
                 .textSelection(.enabled)
-                .markdownTextStyle(\.text) {
-                    ForegroundColor(.white)
-                }
+                .foregroundColor(.white)
         }
         .padding(.trailing, 30)
-        
     }
 }
 

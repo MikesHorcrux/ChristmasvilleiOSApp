@@ -14,7 +14,7 @@ struct ChristmasvilleApp: App {
     var body: some Scene {
         WindowGroup {
            MainView()
-                .modelContainer(for: [Recipe.self, ChristmasLightsLocation.self])
+                .modelContainer(for: [Recipe.self, ChristmasLightsLocation.self, Giftee.self])
         }
     }
 }
