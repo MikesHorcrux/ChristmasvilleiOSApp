@@ -23,9 +23,9 @@ struct CountdownView: View {
             HStack {
                 ForEach(Array(String(format: "%02d", calendar.dateComponents([.day], from: currentDate, to: targetDate).day ?? 0)), id: \.self) { digit in
                     Text("\(Int(String(digit)) ?? 0)")
-                        .font(.largeTitle)
+                        .font(.title3)
                         .foregroundStyle(.white)
-                        .padding()
+                        .padding(10)
                         .background(Color.santaRed)
                         .cornerRadius(8)
                 }

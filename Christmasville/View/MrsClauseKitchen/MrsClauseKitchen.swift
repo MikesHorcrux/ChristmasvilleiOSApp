@@ -12,7 +12,6 @@ import SwiftData
 struct MrsClauseKitchen: View {
     
     @Query(sort: \Recipe.title) var recipes: [Recipe]
-    @State var show = false
     
     var body: some View {
         NavigationStack() {
@@ -46,24 +45,9 @@ struct MrsClauseKitchen: View {
                     }
                     Spacer()
                 }
-                VStack{
-                    Spacer()
-                    HStack{
-                        Spacer()
-                        Button(action: {
-                            show.toggle()
-                        }, label: {
-                            Image("christmas Mug - 1")
-                        })
-                        .buttonStyle(RoundGreenButtonStyle())
-                    }
-                }
             }
             .padding()
             .snowBackground()
-            .sheet(isPresented: $show, content: {
-                MCKChatView()
-        })
         }
     }
 }

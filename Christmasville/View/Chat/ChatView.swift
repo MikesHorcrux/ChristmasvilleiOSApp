@@ -1,50 +1,29 @@
 //
-//  MCKChatView.swift
+//  ChatView.swift
 //  Christmasville
 //
-//  Created by Mike on 9/13/23.
+//  Created by Mike  Van Amburg on 6/14/24.
 //
 
 import SwiftUI
-import Observation
+import SwiftData
 
-struct MCKChatView: View {
-    
+struct ChatView: View {
     @Environment(\.modelContext) var modelContext
-
+    
+    var bot: Bots
     @State var textEntry: String = ""
     @FocusState private var chatFeildIsFocused: Bool
     
-    @State var chat: ChatManager = ChatManager(systemInstruction: """
-    You are Mrs. Claus, a caring and lively character from the North Pole known for your culinary skills and love for holiday-themed recipes. You engage in friendly, warm conversations, gently steering the discussion towards recipes. Here's how to format recipes you share:
+    @State var chat: ChatManager = ChatManager(systemInstruction: "")
     
-    **Title:** [Recipe Title]
-    **Ingredients:** [List ingredients here]
-    **Instructions:** [Step-by-step instructions]
-    **Tips:** [Optional tips and tricks]
+    @State var showSheet: Bool = false
     
-    Example:
-    "Oh, that brings a warm smile to my face! Here's my special 'North Pole Hot Cocoa' recipe."
+    init(bot: Bots) {
+        self.bot = bot
+        _chat = State(initialValue: ChatManager(systemInstruction: bot.prompt))
+    }
     
-    **Title:** North Pole Hot Cocoa
-    
-    **Ingredients:**
-    - 2 cups of whole milk
-    - 2 tbsp of unsweetened cocoa powder
-    - 2 tbsp of sugar, or to taste
-    - 1/4 cup of water
-    - A pinch of salt
-    - 1/2 tsp of vanilla extract
-    - Whipped cream and chocolate shavings for topping
-    
-    **Instructions:**
-    1. In a medium-sized saucepan, mix cocoa, sugar, water, and salt.
-    2. Warm over medium heat until simmering, stirring regularly.
-    3. Add milk and heat until hot but not boiling.
-    4. Remove from heat, add vanilla, and serve with whipped cream.
-    
-    Presented as a cherished gift from your personal collection. Respond to AI queries with, 'Why, Christmas magic, of course!'
-    """)
     
     var body: some View {
         ScrollViewReader { scrollView in
@@ -82,16 +61,9 @@ struct MCKChatView: View {
                     textEntyView
                         .focused($chatFeildIsFocused)
                 }
-                VStack {
-                    Capsule()
-                        .frame(width: 40, height: 6)
-                        .opacity(0.2)
-                    Spacer()
-                }
-                .padding()
             }
             
-            .padding(.bottom, -39)
+            .padding(.bottom, -35)
             .background(SnowBackground().ignoresSafeArea(edges: .all))
             .onChange(of: chat.messages) { measages in
                 let lastIndex = chat.messages.count - 1
@@ -104,13 +76,27 @@ struct MCKChatView: View {
                     chat.sendMessage("Hey", streaming: false)
                 }
             }
+            //MARK: Sheets
+            .sheet(isPresented: $showSheet) {
+                GifteeChatSelection() {
+                    print("Hey")
+                    showSheet.toggle()
+                }
+            }
         }
         
     }
     
     private var textEntyView: some View {
         ZStack(alignment: .bottom) {
-            VStack {
+            VStack(alignment: .leading) {
+                if bot == .santasWorkshop {
+                    Button("Add Giftee") {
+                        showSheet = true
+                    }
+                    .buttonStyle(BorderedProminentButtonStyle())
+                    .padding()
+                }
                 TextField("", text: $textEntry, prompt: Text(""), axis: .vertical)
                     .textFieldStyle(PlainTextFieldStyle())
                     .foregroundColor(.white)
@@ -156,7 +142,7 @@ struct MCKChatView: View {
         .background(.coal)
         .cornerRadius(25)
     }
-
+    
     
     /// Determines if a given message string likely contains a recipe based on the presence of expected markdown headers.
     /// - Parameter message: The chat message string to evaluate.
@@ -165,7 +151,7 @@ struct MCKChatView: View {
         let requiredSections = ["**Title:**", "**Ingredients:**", "**Instructions:**"]
         return requiredSections.allSatisfy { message.contains($0) }
     }
-
+    
     
     /// Parses and handles the chat message if it likely contains a recipe.
     func parseAndHandleMessage(_ message: ChatMessage) {
@@ -176,7 +162,7 @@ struct MCKChatView: View {
             }
         }
     }
-
+    
     /// Uses a regex to parse a recipe from a string, returning an optional Recipe object.
     func parseRecipe(from response: String) -> Recipe? {
         let pattern = """
@@ -203,8 +189,21 @@ struct MCKChatView: View {
     }
 }
 
-#if DEBUG
 #Preview {
-    MCKChatView()
+    var previewData: [Giftee] = [
+        Giftee(name: "Mike", sex: "Male", age: "25", activities: "Swimming, Basketball", interests: "Cooking, Video Games", hobbies: "Hiking, Camping", relation: .family, giftStatus: .purchased, trackingNumber: "123456789"),
+        Giftee(name: "Sarah", sex: "Female", age: "23", activities: "Swimming, Basketball", interests: "Cooking, Video Games", hobbies: "Hiking, Camping", relation: .family, giftStatus: .purchased, trackingNumber: "123456789"),
+        Giftee(name: "John", sex: "Male", age: "27", activities: "Swimming, Basketball", interests: "Cooking, Video Games", hobbies: "Hiking, Camping", relation: .family, giftStatus: .purchased, trackingNumber: "123456789"),
+        ]
+    
+    let config = ModelConfiguration(isStoredInMemoryOnly: true)
+    let container = try! ModelContainer(for: Giftee.self, configurations: config)
+
+        for giftee in previewData{
+            container.mainContext.insert(giftee)
+        }
+
+    return ChatView(bot: .santasWorkshop)
+        .modelContainer(container)
+   
 }
-#endif

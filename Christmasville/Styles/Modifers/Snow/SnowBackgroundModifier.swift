@@ -11,7 +11,9 @@ import SwiftUI
 struct SnowBackgroundModifier: ViewModifier {
     func body(content: Content) -> some View {
         content
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(SnowBackground().ignoresSafeArea(edges: .all))
+            .scrollContentBackground(.hidden)
     }
 }
 

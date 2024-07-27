@@ -33,7 +33,7 @@ struct NeumorphicBackground: ViewModifier {
         content
             .background(
                 RoundedRectangle(cornerRadius: cornerRadius)
-                    .fill(backgroundColor)
+                    .fill(.backgroundCV)
                     .shadow(color: Color.white.opacity(0.02), radius: 5, x: -5, y: -5) // Light shadow
                     .shadow(color: Color.black.opacity(0.1), radius: 5, x: 5, y: 5)  // Dark shadow
             )
