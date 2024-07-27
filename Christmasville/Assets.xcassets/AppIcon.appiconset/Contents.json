@@ -1,13 +1,73 @@
 {
   "images" : [
     {
-      "filename" : "artssy-a village with Chris.png",
+      "filename" : "C7FBA461-3773-4CAF-A6A9-C8FF89995F2D_1_102_o.jpeg",
       "idiom" : "universal",
       "platform" : "ios",
       "size" : "1024x1024"
     },
     {
-      "filename" : "Icon-16.png",
+      "filename" : "C7FBA461-3773-4CAF-A6A9-C8FF89995F2D_1_102_o-20@2x.png",
+      "idiom" : "iphone",
+      "scale" : "2x",
+      "size" : "20x20"
+    },
+    {
+      "filename" : "C7FBA461-3773-4CAF-A6A9-C8FF89995F2D_1_102_o-20@3x.png",
+      "idiom" : "iphone",
+      "scale" : "3x",
+      "size" : "20x20"
+    },
+    {
+      "filename" : "C7FBA461-3773-4CAF-A6A9-C8FF89995F2D_1_102_o-29.png",
+      "idiom" : "iphone",
+      "scale" : "1x",
+      "size" : "29x29"
+    },
+    {
+      "filename" : "C7FBA461-3773-4CAF-A6A9-C8FF89995F2D_1_102_o-29@2x.png",
+      "idiom" : "iphone",
+      "scale" : "2x",
+      "size" : "29x29"
+    },
+    {
+      "filename" : "C7FBA461-3773-4CAF-A6A9-C8FF89995F2D_1_102_o-29@3x.png",
+      "idiom" : "iphone",
+      "scale" : "3x",
+      "size" : "29x29"
+    },
+    {
+      "filename" : "C7FBA461-3773-4CAF-A6A9-C8FF89995F2D_1_102_o-40@2x.png",
+      "idiom" : "iphone",
+      "scale" : "2x",
+      "size" : "40x40"
+    },
+    {
+      "filename" : "C7FBA461-3773-4CAF-A6A9-C8FF89995F2D_1_102_o-40@3x.png",
+      "idiom" : "iphone",
+      "scale" : "3x",
+      "size" : "40x40"
+    },
+    {
+      "filename" : "C7FBA461-3773-4CAF-A6A9-C8FF89995F2D_1_102_o-60@2x.png",
+      "idiom" : "iphone",
+      "scale" : "2x",
+      "size" : "60x60"
+    },
+    {
+      "filename" : "C7FBA461-3773-4CAF-A6A9-C8FF89995F2D_1_102_o-60@3x.png",
+      "idiom" : "iphone",
+      "scale" : "3x",
+      "size" : "60x60"
+    },
+    {
+      "filename" : "C7FBA461-3773-4CAF-A6A9-C8FF89995F2D_1_102_o 1.jpeg",
+      "idiom" : "ios-marketing",
+      "scale" : "1x",
+      "size" : "1024x1024"
+    },
+    {
+      "filename" : "C7FBA461-3773-4CAF-A6A9-C8FF89995F2D_1_102_o-16.png",
       "idiom" : "mac",
       "scale" : "1x",
       "size" : "16x16"
@@ -19,7 +79,7 @@
       "size" : "16x16"
     },
     {
-      "filename" : "Icon-32.png",
+      "filename" : "C7FBA461-3773-4CAF-A6A9-C8FF89995F2D_1_102_o-32.png",
       "idiom" : "mac",
       "scale" : "1x",
       "size" : "32x32"
@@ -30,37 +90,34 @@
       "size" : "32x32"
     },
     {
-      "filename" : "Icon-128.png",
+      "filename" : "C7FBA461-3773-4CAF-A6A9-C8FF89995F2D_1_102_o-128.png",
       "idiom" : "mac",
       "scale" : "1x",
       "size" : "128x128"
     },
     {
-      "filename" : "Icon-256@2x.png",
       "idiom" : "mac",
       "scale" : "2x",
       "size" : "128x128"
     },
     {
-      "filename" : "Icon-256.png",
+      "filename" : "C7FBA461-3773-4CAF-A6A9-C8FF89995F2D_1_102_o-256.png",
       "idiom" : "mac",
       "scale" : "1x",
       "size" : "256x256"
     },
     {
-      "filename" : "Icon-512@2x.png",
       "idiom" : "mac",
       "scale" : "2x",
       "size" : "256x256"
     },
     {
-      "filename" : "Icon-512@2x 1.png",
+      "filename" : "C7FBA461-3773-4CAF-A6A9-C8FF89995F2D_1_102_o-512.png",
       "idiom" : "mac",
       "scale" : "1x",
       "size" : "512x512"
     },
     {
-      "filename" : "artssy-a village with Chris 1.png",
       "idiom" : "mac",
       "scale" : "2x",
       "size" : "512x512"

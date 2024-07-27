@@ -22,6 +22,7 @@ struct LightsMapView: View {
     @State private var showAddAddress = false
     @State private var showAddAddressSheet = false
     @State var showLocationInfo = false
+    
     var body: some View {
         NavigationStack() {
             ZStack(alignment: .bottomTrailing) {

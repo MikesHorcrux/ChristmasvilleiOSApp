@@ -22,13 +22,10 @@
 		5546CB7A2A64CCE60079D285 /* RepeatingPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5546CB792A64CCE60079D285 /* RepeatingPlayer.swift */; };
 		555D4C002A52004B00943DB8 /* ChristmasLightsLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555D4BFF2A52004B00943DB8 /* ChristmasLightsLocation.swift */; };
 		555D62092A36825A00785A7C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555D62082A36825A00785A7C /* MainView.swift */; };
-		555D620C2A36902800785A7C /* CVTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555D620B2A36902800785A7C /* CVTabView.swift */; };
-		555D620E2A36908F00785A7C /* SplitMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555D620D2A36908F00785A7C /* SplitMenuView.swift */; };
 		5562CAC02A59A566003E5DA9 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5562CABF2A59A566003E5DA9 /* Address.swift */; };
 		5562CAC22A59A5F9003E5DA9 /* Coordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5562CAC12A59A5F9003E5DA9 /* Coordinates.swift */; };
 		5562CAC52A59A671003E5DA9 /* ChristmasLightsHouseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5562CAC42A59A671003E5DA9 /* ChristmasLightsHouseType.swift */; };
 		5562CACB2A59F85A003E5DA9 /* RoundGreenButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5562CACA2A59F85A003E5DA9 /* RoundGreenButtonStyle.swift */; };
-		557570492AB277EA007B7F91 /* MCKChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557570482AB277EA007B7F91 /* MCKChatView.swift */; };
 		559A2D6D2A3938EF00DFA306 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559A2D6C2A3938EF00DFA306 /* LocationManager.swift */; };
 		559A2D742A3A904800DFA306 /* LocationServicesInitalPermissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559A2D732A3A904800DFA306 /* LocationServicesInitalPermissionView.swift */; };
 		559A2D772A3A97CF00DFA306 /* PillButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559A2D762A3A97CF00DFA306 /* PillButtonStyle.swift */; };
@@ -55,6 +52,16 @@
 		7F35E1292C100D6F00297037 /* Relation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F35E1212C0FF6EE00297037 /* Relation.swift */; };
 		7F48ACF02BE4687B00EAD547 /* GenerativeAI-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7F48ACEF2BE4687B00EAD547 /* GenerativeAI-Info.plist */; };
 		7F48ACF32BE85C7000EAD547 /* MrsClauseChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F48ACF22BE85C7000EAD547 /* MrsClauseChat.swift */; };
+		7F5972042C210FBD00531724 /* GiftStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5972032C210FBD00531724 /* GiftStatus.swift */; };
+		7F5972062C2110BE00531724 /* GifteeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5972052C2110BE00531724 /* GifteeCard.swift */; };
+		7F5972912C2630C300531724 /* GifteeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5972902C2630C300531724 /* GifteeView.swift */; };
+		7F6125FC2C44811E0058DC11 /* GifteeChatSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6125FB2C44811E0058DC11 /* GifteeChatSelection.swift */; };
+		7F6126002C44AD620058DC11 /* SnowHillsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6125FF2C44AD600058DC11 /* SnowHillsView.swift */; };
+		7F6126022C45E4290058DC11 /* MiniMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6126012C45E4290058DC11 /* MiniMapView.swift */; };
+		7F95F9312C17C2E9006AE9FB /* CreateGifteeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F95F9302C17C2E9006AE9FB /* CreateGifteeView.swift */; };
+		7F95F9332C1A7264006AE9FB /* NavigationTabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F95F9322C1A7264006AE9FB /* NavigationTabs.swift */; };
+		7F95F9BE2C1CD619006AE9FB /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F95F9BD2C1CD619006AE9FB /* ChatView.swift */; };
+		7F95F9C02C1CD668006AE9FB /* Bots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F95F9BF2C1CD660006AE9FB /* Bots.swift */; };
 		EC29B5DF2ACBA1430032EE95 /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC29B5DE2ACBA1430032EE95 /* RecipeView.swift */; };
 		EC2C137B2AEDA51D00A16DE2 /* CountdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2C137A2AEDA51D00A16DE2 /* CountdownView.swift */; };
 		EC69994C2AD0F28A009FB09C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC69994B2AD0F28A009FB09C /* HomeView.swift */; };
@@ -102,13 +109,10 @@
 		5546CB792A64CCE60079D285 /* RepeatingPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatingPlayer.swift; sourceTree = "<group>"; };
 		555D4BFF2A52004B00943DB8 /* ChristmasLightsLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChristmasLightsLocation.swift; sourceTree = "<group>"; };
 		555D62082A36825A00785A7C /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
-		555D620B2A36902800785A7C /* CVTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVTabView.swift; sourceTree = "<group>"; };
-		555D620D2A36908F00785A7C /* SplitMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitMenuView.swift; sourceTree = "<group>"; };
 		5562CABF2A59A566003E5DA9 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
 		5562CAC12A59A5F9003E5DA9 /* Coordinates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinates.swift; sourceTree = "<group>"; };
 		5562CAC42A59A671003E5DA9 /* ChristmasLightsHouseType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChristmasLightsHouseType.swift; sourceTree = "<group>"; };
 		5562CACA2A59F85A003E5DA9 /* RoundGreenButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundGreenButtonStyle.swift; sourceTree = "<group>"; };
-		557570482AB277EA007B7F91 /* MCKChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCKChatView.swift; sourceTree = "<group>"; };
 		559A2D6C2A3938EF00DFA306 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		559A2D732A3A904800DFA306 /* LocationServicesInitalPermissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationServicesInitalPermissionView.swift; sourceTree = "<group>"; };
 		559A2D762A3A97CF00DFA306 /* PillButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillButtonStyle.swift; sourceTree = "<group>"; };
@@ -132,6 +136,16 @@
 		7F35E1272C1008B800297037 /* EditGifteeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditGifteeView.swift; sourceTree = "<group>"; };
 		7F48ACEF2BE4687B00EAD547 /* GenerativeAI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GenerativeAI-Info.plist"; sourceTree = "<group>"; };
 		7F48ACF22BE85C7000EAD547 /* MrsClauseChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MrsClauseChat.swift; sourceTree = "<group>"; };
+		7F5972032C210FBD00531724 /* GiftStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftStatus.swift; sourceTree = "<group>"; };
+		7F5972052C2110BE00531724 /* GifteeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifteeCard.swift; sourceTree = "<group>"; };
+		7F5972902C2630C300531724 /* GifteeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifteeView.swift; sourceTree = "<group>"; };
+		7F6125FB2C44811E0058DC11 /* GifteeChatSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifteeChatSelection.swift; sourceTree = "<group>"; };
+		7F6125FF2C44AD600058DC11 /* SnowHillsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnowHillsView.swift; sourceTree = "<group>"; };
+		7F6126012C45E4290058DC11 /* MiniMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniMapView.swift; sourceTree = "<group>"; };
+		7F95F9302C17C2E9006AE9FB /* CreateGifteeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGifteeView.swift; sourceTree = "<group>"; };
+		7F95F9322C1A7264006AE9FB /* NavigationTabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTabs.swift; sourceTree = "<group>"; };
+		7F95F9BD2C1CD619006AE9FB /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		7F95F9BF2C1CD660006AE9FB /* Bots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bots.swift; sourceTree = "<group>"; };
 		EC29B5DE2ACBA1430032EE95 /* RecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView.swift; sourceTree = "<group>"; };
 		EC2C137A2AEDA51D00A16DE2 /* CountdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownView.swift; sourceTree = "<group>"; };
 		EC69994B2AD0F28A009FB09C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -187,6 +201,7 @@
 				552C726D2A4E58FC00E2B682 /* AddAddressForm.swift */,
 				55E2A1F52A79F45600260F59 /* LightLocationLabel.swift */,
 				55E2A1F72A7C80F000260F59 /* LocationProfileView.swift */,
+				7F6126012C45E4290058DC11 /* MiniMapView.swift */,
 			);
 			path = ChristmasLightsMap;
 			sourceTree = "<group>";
@@ -273,7 +288,6 @@
 				55D4D9722A8AD3CA000DEC60 /* Chat */,
 				559A2D6E2A3A8FB500DFA306 /* AppMessaging */,
 				5535F1E32A36A3EE000279F6 /* ChristmasLightsMap */,
-				555D620A2A36901300785A7C /* Navigations */,
 				555D62082A36825A00785A7C /* MainView.swift */,
 				5546CB792A64CCE60079D285 /* RepeatingPlayer.swift */,
 				EC69994B2AD0F28A009FB09C /* HomeView.swift */,
@@ -282,20 +296,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		555D620A2A36901300785A7C /* Navigations */ = {
-			isa = PBXGroup;
-			children = (
-				555D620B2A36902800785A7C /* CVTabView.swift */,
-				555D620D2A36908F00785A7C /* SplitMenuView.swift */,
-			);
-			path = Navigations;
-			sourceTree = "<group>";
-		};
 		5562CAC32A59A647003E5DA9 /* Enum */ = {
 			isa = PBXGroup;
 			children = (
+				7F95F9BF2C1CD660006AE9FB /* Bots.swift */,
 				5562CAC42A59A671003E5DA9 /* ChristmasLightsHouseType.swift */,
 				7F35E1212C0FF6EE00297037 /* Relation.swift */,
+				7F95F9322C1A7264006AE9FB /* NavigationTabs.swift */,
+				7F5972032C210FBD00531724 /* GiftStatus.swift */,
 			);
 			path = Enum;
 			sourceTree = "<group>";
@@ -356,6 +364,7 @@
 			children = (
 				55D4D9732A8AD6E3000DEC60 /* ChatBubbles */,
 				55D4D97C2A8ADCE0000DEC60 /* TextEntryView.swift */,
+				7F95F9BD2C1CD619006AE9FB /* ChatView.swift */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -375,7 +384,6 @@
 			isa = PBXGroup;
 			children = (
 				55D4D97F2A8AE276000DEC60 /* MrsClauseKitchen.swift */,
-				557570482AB277EA007B7F91 /* MCKChatView.swift */,
 				ECEF5C122AC0E822005A36F0 /* MiniRecipeCard.swift */,
 				ECEF5C142AC3C550005A36F0 /* FeaturedRecipeCard.swift */,
 				EC29B5DE2ACBA1430032EE95 /* RecipeView.swift */,
@@ -403,6 +411,7 @@
 		7F35E11E2C0FD67500297037 /* SantasWorkshop */ = {
 			isa = PBXGroup;
 			children = (
+				7F6125FA2C4480A80058DC11 /* ChatSelection */,
 				7F35E1262C10089F00297037 /* Giftee */,
 				7F35E11F2C0FD68F00297037 /* SantasWorkshop.swift */,
 			);
@@ -421,6 +430,9 @@
 			isa = PBXGroup;
 			children = (
 				7F35E1272C1008B800297037 /* EditGifteeView.swift */,
+				7F95F9302C17C2E9006AE9FB /* CreateGifteeView.swift */,
+				7F5972052C2110BE00531724 /* GifteeCard.swift */,
+				7F5972902C2630C300531724 /* GifteeView.swift */,
 			);
 			path = Giftee;
 			sourceTree = "<group>";
@@ -462,9 +474,18 @@
 			path = ButtonStyles;
 			sourceTree = "<group>";
 		};
+		7F6125FA2C4480A80058DC11 /* ChatSelection */ = {
+			isa = PBXGroup;
+			children = (
+				7F6125FB2C44811E0058DC11 /* GifteeChatSelection.swift */,
+			);
+			path = ChatSelection;
+			sourceTree = "<group>";
+		};
 		ECEF5C0C2AC0CD6B005A36F0 /* Shape  */ = {
 			isa = PBXGroup;
 			children = (
+				7F6125FF2C44AD600058DC11 /* SnowHillsView.swift */,
 				ECEF5C0D2AC0CD85005A36F0 /* WavySquareShape.swift */,
 			);
 			path = "Shape ";
@@ -619,17 +640,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F6125FC2C44811E0058DC11 /* GifteeChatSelection.swift in Sources */,
+				7F95F9C02C1CD668006AE9FB /* Bots.swift in Sources */,
 				555D62092A36825A00785A7C /* MainView.swift in Sources */,
 				7F35E1292C100D6F00297037 /* Relation.swift in Sources */,
+				7F95F9BE2C1CD619006AE9FB /* ChatView.swift in Sources */,
 				55D4D9792A8AD84F000DEC60 /* UserBubble.swift in Sources */,
 				5535F1E52A36A409000279F6 /* LightsMapView.swift in Sources */,
 				EC2C137B2AEDA51D00A16DE2 /* CountdownView.swift in Sources */,
 				55D4D97D2A8ADCE0000DEC60 /* TextEntryView.swift in Sources */,
 				ECEF5C132AC0E822005A36F0 /* MiniRecipeCard.swift in Sources */,
 				EC69994E2AD0F5C3009FB09C /* SnowBackgroundModifier.swift in Sources */,
+				7F95F9312C17C2E9006AE9FB /* CreateGifteeView.swift in Sources */,
 				55E2A1F62A79F45600260F59 /* LightLocationLabel.swift in Sources */,
 				5535F1DF2A36A034000279F6 /* SnowBackground.swift in Sources */,
 				5546CB7A2A64CCE60079D285 /* RepeatingPlayer.swift in Sources */,
+				7F6126002C44AD620058DC11 /* SnowHillsView.swift in Sources */,
 				559A2D772A3A97CF00DFA306 /* PillButtonStyle.swift in Sources */,
 				7F35E1252C0FFFA000297037 /* Giftee.swift in Sources */,
 				7F33B1C92BD9E3C60011421E /* GoogleAiApiKey.swift in Sources */,
@@ -638,31 +664,33 @@
 				5562CAC02A59A566003E5DA9 /* Address.swift in Sources */,
 				7F35E1282C1008B800297037 /* EditGifteeView.swift in Sources */,
 				EC29B5DF2ACBA1430032EE95 /* RecipeView.swift in Sources */,
-				555D620C2A36902800785A7C /* CVTabView.swift in Sources */,
 				5562CAC52A59A671003E5DA9 /* ChristmasLightsHouseType.swift in Sources */,
 				5562CAC22A59A5F9003E5DA9 /* Coordinates.swift in Sources */,
 				ECEF5C112AC0E5A6005A36F0 /* NeumorphicBackground.swift in Sources */,
 				55CD21472AB7BFB700987391 /* Recipe.swift in Sources */,
 				552C726E2A4E58FC00E2B682 /* AddAddressForm.swift in Sources */,
 				EC69994C2AD0F28A009FB09C /* HomeView.swift in Sources */,
+				7F95F9332C1A7264006AE9FB /* NavigationTabs.swift in Sources */,
 				5535F1E22A36A034000279F6 /* SnowScene.swift in Sources */,
 				ECEF5C0E2AC0CD85005A36F0 /* WavySquareShape.swift in Sources */,
 				7F33B1C02BD9DD3C0011421E /* ChatManager.swift in Sources */,
 				ECEF5C152AC3C551005A36F0 /* FeaturedRecipeCard.swift in Sources */,
 				5562CACB2A59F85A003E5DA9 /* RoundGreenButtonStyle.swift in Sources */,
-				555D620E2A36908F00785A7C /* SplitMenuView.swift in Sources */,
 				559A2D742A3A904800DFA306 /* LocationServicesInitalPermissionView.swift in Sources */,
 				55D4D9772A8AD7A4000DEC60 /* BubbleShape.swift in Sources */,
+				7F6126022C45E4290058DC11 /* MiniMapView.swift in Sources */,
 				55D4D9802A8AE276000DEC60 /* MrsClauseKitchen.swift in Sources */,
 				7F33B1C22BD9DD980011421E /* ChatMessage.swift in Sources */,
 				7F35E11D2C0FD31600297037 /* SWEmptyPage.swift in Sources */,
+				7F5972912C2630C300531724 /* GifteeView.swift in Sources */,
 				553F99092A35133E00F7D4BD /* ChristmasvilleApp.swift in Sources */,
 				7F48ACF32BE85C7000EAD547 /* MrsClauseChat.swift in Sources */,
+				7F5972062C2110BE00531724 /* GifteeCard.swift in Sources */,
 				55CA29182AA663BB003A5B1E /* ComingSoonView.swift in Sources */,
 				55D4D9752A8AD720000DEC60 /* Bubble.swift in Sources */,
+				7F5972042C210FBD00531724 /* GiftStatus.swift in Sources */,
 				7F35E1202C0FD68F00297037 /* SantasWorkshop.swift in Sources */,
 				55D4D97B2A8ADA69000DEC60 /* SystemBubble.swift in Sources */,
-				557570492AB277EA007B7F91 /* MCKChatView.swift in Sources */,
 				559A2D6D2A3938EF00DFA306 /* LocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -823,7 +851,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Christmasville/Christmasville.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Christmasville/Preview Content\"";
 				DEVELOPMENT_TEAM = 5V5PZUN2HG;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -841,11 +869,11 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.0;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.flamingoapps.Christmasville;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
@@ -866,7 +894,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Christmasville/Christmasville.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Christmasville/Preview Content\"";
 				DEVELOPMENT_TEAM = 5V5PZUN2HG;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -884,11 +912,11 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.0;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.flamingoapps.Christmasville;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;

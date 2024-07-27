@@ -1,41 +1,44 @@
 //
-//  NewGifteeView.swift
+//  CreateGifteeView.swift
 //  Christmasville
 //
-//  Created by Mike  Van Amburg on 6/4/24.
+//  Created by Mike  Van Amburg on 6/10/24.
 //
 
 import SwiftUI
 import SwiftData
 
-struct EditGifteeView: View {
+struct CreateGifteeView: View {
     @Environment(\.dismiss) var dismiss
     @Environment(\.modelContext) var modelContext
 
-    @Bindable var giftee: Giftee
-    
+    @State private var name: String = ""
+    @State private var sex: String = ""
+    @State private var age: String = ""
+    @State private var activities: String = ""
+    @State private var interests: String = ""
+    @State private var hobbies: String = ""
+    @State private var relation: Relation = .friend
 
     var body: some View {
         Form {
             Section(header: Text("Giftee Information")) {
-                TextField("Name", text: $giftee.name)
-                TextField("Sex", text: $giftee.sex)
-                TextField("Age", value: $giftee.age, formatter: NumberFormatter())
+                TextField("Name", text: $name)
+                TextField("Sex", text: $sex)
+                TextField("Age", value: $age, formatter: NumberFormatter())
                 #if !os(macOS)
                     .keyboardType(.numberPad)
                 #endif
             }
             
-            
             Section(header: Text("Additional Information")) {
-                TextField("Activities", text: $giftee.activities, axis: .vertical)
-                TextField("Interests", text: $giftee.interests, axis: .vertical)
-                TextField("Hobbies", text: $giftee.hobbies, axis: .vertical)
+                TextField("Activities", text: $activities, axis: .vertical)
+                TextField("Interests", text: $interests, axis: .vertical)
+                TextField("Hobbies", text: $hobbies, axis: .vertical)
             }
             
-            
             Section(header: Text("Relation")) {
-                Picker("Relation", selection: $giftee.relation) {
+                Picker("Relation", selection: $relation) {
                     ForEach(Relation.allCases, id: \.self) { relation in
                         Text(relation.rawValue.capitalized).tag(relation)
                     }
@@ -48,7 +51,7 @@ struct EditGifteeView: View {
                 Image("leaf")
                     .resizable()
                     .scaledToFit()
-                .frame(height: 110)
+                    .frame(height: 110)
                 Spacer()
             }
             .listRowBackground(Color.clear)
@@ -58,32 +61,25 @@ struct EditGifteeView: View {
         #endif
         .toolbar(content: {
             ToolbarItem(placement: .automatic) {
-                Button("Done") {
-                    dismiss()
+                Button("Save") {
+                    saveGiftee()
                 }
                 .buttonStyle(BorderedProminentButtonStyle())
             }
         })
-        #if os(iOS)
+#if os(iOS)
         .toolbar(.hidden, for: .tabBar)
         #endif
-        .scrollContentBackground(.hidden)
         .snowBackground()
     }
     
+    func saveGiftee() {
+        let gifttee = Giftee(name: name, sex: sex, age: age, activities: activities, interests: interests, hobbies: hobbies, relation: relation)
+        modelContext.insert(gifttee)
+        dismiss()
+    }
 }
 
 #Preview {
-    do {
-           let config = ModelConfiguration(isStoredInMemoryOnly: true)
-           let container = try ModelContainer(for: Giftee.self, configurations: config)
-        return  
-        NavigationStack{
-            EditGifteeView(giftee: Giftee(name: "Santa", sex: "Male", age: "100", relation: .family))
-                .modelContainer(container)
-        }
-       } catch {
-           fatalError("Failed to create model container.")
-       }
-    
+    CreateGifteeView()
 }

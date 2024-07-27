@@ -14,7 +14,7 @@ struct RecipeView: View {
         ScrollView {
             VStack(alignment: .leading) {
                 HStack {
-                    Text("Instructions: ")
+                    Text("Ingredents: ")
                         .font(.title3)
                     Spacer()
                 }
@@ -29,8 +29,11 @@ struct RecipeView: View {
             .padding()
             
             VStack(alignment: .leading) {
-                Text("Instructions: ")
-                    .font(.title3)
+                HStack {
+                    Text("Instructions: ")
+                        .font(.title3)
+                    Spacer()
+                }
                 Divider()
                     .frame(width: 100)
                 Text(recipe.instructions)
@@ -39,8 +42,29 @@ struct RecipeView: View {
             .padding()
             .neumorphicBackground()
             .padding()
+            
+            if let tip = recipe.tip {
+                VStack(alignment: .leading) {
+                    HStack {
+                        Text("Tips: ")
+                            .font(.title3)
+                        Spacer()
+                    }
+                    Divider()
+                        .frame(width: 100)
+                    Text(tip)
+                        .multilineTextAlignment(.leading)
+                }
+                .padding()
+                .neumorphicBackground()
+                .padding()
+            }
+            
         }
+#if !os(macOS)
         .toolbarBackground(Color.snowBackground, for: .navigationBar)
+            #endif
+        
         .background(SnowBackground().ignoresSafeArea(edges: .all))
         .navigationTitle(recipe.title)
     }
