@@ -17,7 +17,7 @@ import SwiftData
 struct LightsMapView: View {
     @Query var clLocations: [ChristmasLightsLocation]
     @Bindable var locationManager: LocationManager = LocationManager()
-//    @State var selectedLocation: ChristmasLightsLocation = ChristmasLightsLocation(address: Address(street: "", city: "", state: "", country: "", postalCode: ""), coordinates: Coordinates(latitude: 0, longitude: 0), houseType: .amazing)
+    @State var selectedLocation: ChristmasLightsLocation = ChristmasLightsLocation(address: Address(street: "", city: "", state: "", country: "", postalCode: ""), coordinates: Coordinates(latitude: 0, longitude: 0), houseType: .amazing)
     @State var position: MapCameraPosition = .userLocation(fallback: .automatic)
     @State private var showAddAddress = false
     @State private var showAddAddressSheet = false
@@ -50,6 +50,13 @@ struct LightsMapView: View {
                 Annotation(location.nickname ?? "", coordinate: CLLocationCoordinate2D(latitude: location.coordinates.latitude, longitude: location.coordinates.longitude)) {
                     LightLocationLabel()
                         .onTapGesture {
+                            selectedLocation = location
+                            showLocationInfo = true
+                        }
+                        .sheet(isPresented: $showLocationInfo) {
+                            LocationProfileView(location: $selectedLocation)
+                                .presentationDetents([.medium, .large])
+                                .presentationDragIndicator(.visible)
                         }
                 }
             }

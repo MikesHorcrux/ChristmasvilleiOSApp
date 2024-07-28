@@ -13,7 +13,7 @@ struct LightLocationLabel: View {
             Circle()
                 .strokeBorder(Color.lightgreen, lineWidth: 1.5)
                 .background(Circle().foregroundColor(.bellBrown))
-                .frame(width: 45, height: 45)
+                .frame(width: 40, height: 40)
             
             Image("home globe")
                 .resizable()

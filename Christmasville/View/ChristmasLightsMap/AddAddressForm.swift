@@ -114,8 +114,9 @@ struct AddAddressForm: View {
             VStack {
                 Button("Save") {
                     
-                }
-                .buttonStyle(SantaRedPillButtonStyle())
+                    let location = ChristmasLightsLocation(nickname: nickName,address: address, coordinates: coordinates, houseType: houseType)
+                    modelContext.insert(location)
+                    dismiss()                }
                
                 Button("Cancel"){
                     dismiss()

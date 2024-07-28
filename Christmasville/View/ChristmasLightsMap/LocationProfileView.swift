@@ -8,6 +8,7 @@
 import SwiftUI
 import Observation
 struct LocationProfileView: View {
+    @Environment(\.dismiss) var dismiss
     @Binding var location: ChristmasLightsLocation
     var body: some View {
         VStack {
@@ -56,6 +57,20 @@ struct LocationProfileView: View {
         }
         .padding(.top)
         .background(SnowBackground().ignoresSafeArea(edges: .all))
+        .toolbar {
+#if os(macOS)
+            ToolbarItem(placement: .cancellationAction) {
+                Button(action: {
+                    dismiss()
+                }, label: {
+                    Image(systemName: "arrowshape.backward")
+                        .font(.title2)
+                }
+                       )
+                .buttonStyle(BorderedProminentButtonStyle())
+            }
+#endif
+        }
     }
 }
 
