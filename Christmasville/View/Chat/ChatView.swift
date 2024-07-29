@@ -15,14 +15,14 @@ struct ChatView: View {
     @State var textEntry: String = ""
     @FocusState private var chatFeildIsFocused: Bool
     
-    @State var chat: ChatManager = ChatManager(systemInstruction: "")
+    @State var chat: ChatManager = ChatManager()
     
     @State var showSheet: Bool = false
     
-    init(bot: Bots) {
-        self.bot = bot
-        _chat = State(initialValue: ChatManager(systemInstruction: bot.prompt))
-    }
+//    init(bot: Bots) {
+//        self.bot = bot
+//        _chat = State(initialValue: ChatManager(systemInstruction: bot.prompt))
+//    }
     
     
     var body: some View {
@@ -73,7 +73,7 @@ struct ChatView: View {
             }
             .onAppear(){
                 if chat.messages.isEmpty {
-                    chat.sendMessage("Hey", streaming: false)
+                    chat.sendMessage("Hey", streaming: false, systemInstructions: bot.prompt)
                 }
             }
             //MARK: Sheets
@@ -123,7 +123,7 @@ struct ChatView: View {
                         }
                     }
                     Button {
-                        chat.sendMessage(textEntry)
+                        chat.sendMessage(textEntry, systemInstructions: bot.prompt)
                         textEntry = ""
                     } label: {
                         Image(systemName: "arrow.up")
