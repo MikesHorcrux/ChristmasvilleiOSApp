@@ -7,10 +7,14 @@
 
 import SwiftUI
 import SwiftData
+import Firebase
 
 @main
 struct ChristmasvilleApp: App {
     
+    init() {
+        FirebaseApp.configure()
+    }
     var body: some Scene {
         WindowGroup {
            MainView()
