@@ -37,7 +37,7 @@ class ChatManager {
 
         // Initialize the generative model with a model that supports your use case
         // Gemini 1.5 models are versatile and can be used with all API capabilities
-        let model = vertex.generativeModel(modelName: "gemini-1.5-flash", systemInstruction: .init(parts: [.text(systemInstructions)]))
+        let model = vertex.generativeModel(modelName: "gemini-1.5-pro", systemInstruction: .init(parts: [.text(systemInstructions)]))
         Task {
             do {
                 busy.toggle()

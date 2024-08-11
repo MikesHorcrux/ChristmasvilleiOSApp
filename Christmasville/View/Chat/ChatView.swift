@@ -78,8 +78,8 @@ struct ChatView: View {
             }
             //MARK: Sheets
             .sheet(isPresented: $showSheet) {
-                GifteeChatSelection() {
-                    print("Hey")
+                GifteeChatSelection() { giftee in
+                    addGifteetoChat(giftee)
                     showSheet.toggle()
                 }
             }
@@ -186,6 +186,18 @@ struct ChatView: View {
             print("Invalid regex: \(error.localizedDescription)")
         }
         return nil
+    }
+
+    func addGifteetoChat(_ giftee: Giftee) {
+        let messages = """
+Can you help me find gift ideas for \(giftee.name), who is \(giftee.age). here is what I know 
+activities: \(giftee.activities)
+interests: \(giftee.interests)
+hobbies: \(giftee.hobbies)
+relation: \(giftee.relation)
+
+"""
+        chat.sendMessage(messages, systemInstructions: bot.prompt)
     }
 }
 

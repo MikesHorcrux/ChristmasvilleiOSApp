@@ -10,7 +10,10 @@ import Observation
 import MapKit
 import SwiftData
 
+
 struct HomeView: View {
+    //@EnvironmentObject var paymentManager: PaymentManager
+
     @Query var giftees: [Giftee]
     @Query var recipes: [Recipe]
    
@@ -154,7 +157,6 @@ struct HomeView: View {
                         
                     }
                 }
-                
             .snowBackground()
 #if !os(macOS)
             .toolbarBackground(.hidden, for: .navigationBar)

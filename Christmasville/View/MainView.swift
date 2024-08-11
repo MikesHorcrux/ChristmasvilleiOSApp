@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import RevenueCat
+import RevenueCatUI
 
 struct MainView: View {
     
@@ -151,6 +153,7 @@ struct MainView: View {
 #endif
         }
         .tabViewStyle(.sidebarAdaptable)
+        .presentPaywallIfNeeded(requiredEntitlementIdentifier: "Yearly Subscription", presentationMode: .fullScreen)
         
         
     }

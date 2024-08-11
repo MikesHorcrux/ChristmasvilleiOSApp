@@ -8,13 +8,19 @@
 import SwiftUI
 import SwiftData
 import Firebase
+import DeviceCheck
+import RevenueCat
+import RevenueCatUI
 
 @main
 struct ChristmasvilleApp: App {
-    
+        
     init() {
         FirebaseApp.configure()
+               Purchases.logLevel = .debug
+               Purchases.configure(withAPIKey: "appl_bgShEoxKoGalbOYImQDRXEBzcQX")
     }
+    
     var body: some Scene {
         WindowGroup {
            MainView()

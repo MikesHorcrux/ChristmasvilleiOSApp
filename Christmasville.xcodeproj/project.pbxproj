@@ -48,6 +48,9 @@
 		7F35E1252C0FFFA000297037 /* Giftee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F35E1242C0FFFA000297037 /* Giftee.swift */; };
 		7F35E1282C1008B800297037 /* EditGifteeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F35E1272C1008B800297037 /* EditGifteeView.swift */; };
 		7F35E1292C100D6F00297037 /* Relation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F35E1212C0FF6EE00297037 /* Relation.swift */; };
+		7F42900F2C5EDF3D000CBE37 /* RevenueCat in Frameworks */ = {isa = PBXBuildFile; productRef = 7F42900E2C5EDF3D000CBE37 /* RevenueCat */; };
+		7F4290112C5EDF3D000CBE37 /* RevenueCatUI in Frameworks */ = {isa = PBXBuildFile; productRef = 7F4290102C5EDF3D000CBE37 /* RevenueCatUI */; };
+		7F4290142C5EDFB3000CBE37 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F4290132C5EDFB3000CBE37 /* StoreKit.framework */; };
 		7F48ACF32BE85C7000EAD547 /* MrsClauseChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F48ACF22BE85C7000EAD547 /* MrsClauseChat.swift */; };
 		7F5972042C210FBD00531724 /* GiftStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5972032C210FBD00531724 /* GiftStatus.swift */; };
 		7F5972062C2110BE00531724 /* GifteeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5972052C2110BE00531724 /* GifteeCard.swift */; };
@@ -55,6 +58,8 @@
 		7F6125FC2C44811E0058DC11 /* GifteeChatSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6125FB2C44811E0058DC11 /* GifteeChatSelection.swift */; };
 		7F6126002C44AD620058DC11 /* SnowHillsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6125FF2C44AD600058DC11 /* SnowHillsView.swift */; };
 		7F6126022C45E4290058DC11 /* MiniMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6126012C45E4290058DC11 /* MiniMapView.swift */; };
+		7F6941CD2C63051D002A6965 /* PaymentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6941CC2C630516002A6965 /* PaymentManager.swift */; };
+		7F710B032C68449D00F7DE04 /* ChristmasVille.storekit in Resources */ = {isa = PBXBuildFile; fileRef = 7F710B022C68449D00F7DE04 /* ChristmasVille.storekit */; };
 		7F95F9312C17C2E9006AE9FB /* CreateGifteeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F95F9302C17C2E9006AE9FB /* CreateGifteeView.swift */; };
 		7F95F9332C1A7264006AE9FB /* NavigationTabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F95F9322C1A7264006AE9FB /* NavigationTabs.swift */; };
 		7F95F9BE2C1CD619006AE9FB /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F95F9BD2C1CD619006AE9FB /* ChatView.swift */; };
@@ -135,6 +140,7 @@
 		7F35E1212C0FF6EE00297037 /* Relation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Relation.swift; sourceTree = "<group>"; };
 		7F35E1242C0FFFA000297037 /* Giftee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Giftee.swift; sourceTree = "<group>"; };
 		7F35E1272C1008B800297037 /* EditGifteeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditGifteeView.swift; sourceTree = "<group>"; };
+		7F4290132C5EDFB3000CBE37 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		7F48ACF22BE85C7000EAD547 /* MrsClauseChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MrsClauseChat.swift; sourceTree = "<group>"; };
 		7F5972032C210FBD00531724 /* GiftStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftStatus.swift; sourceTree = "<group>"; };
 		7F5972052C2110BE00531724 /* GifteeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifteeCard.swift; sourceTree = "<group>"; };
@@ -142,6 +148,8 @@
 		7F6125FB2C44811E0058DC11 /* GifteeChatSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifteeChatSelection.swift; sourceTree = "<group>"; };
 		7F6125FF2C44AD600058DC11 /* SnowHillsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnowHillsView.swift; sourceTree = "<group>"; };
 		7F6126012C45E4290058DC11 /* MiniMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniMapView.swift; sourceTree = "<group>"; };
+		7F6941CC2C630516002A6965 /* PaymentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentManager.swift; sourceTree = "<group>"; };
+		7F710B022C68449D00F7DE04 /* ChristmasVille.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = ChristmasVille.storekit; sourceTree = "<group>"; };
 		7F95F9302C17C2E9006AE9FB /* CreateGifteeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGifteeView.swift; sourceTree = "<group>"; };
 		7F95F9322C1A7264006AE9FB /* NavigationTabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTabs.swift; sourceTree = "<group>"; };
 		7F95F9BD2C1CD619006AE9FB /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
@@ -163,7 +171,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F9EC5EB2C572FCD006CDC4D /* FirebaseVertexAI-Preview in Frameworks */,
+				7F4290142C5EDFB3000CBE37 /* StoreKit.framework in Frameworks */,
 				7F9EC5E52C572FCD006CDC4D /* FirebaseAnalytics in Frameworks */,
+				7F4290112C5EDF3D000CBE37 /* RevenueCatUI in Frameworks */,
+				7F42900F2C5EDF3D000CBE37 /* RevenueCat in Frameworks */,
 				7F9EC5E92C572FCD006CDC4D /* FirebaseCrashlytics in Frameworks */,
 				7F9EC5E72C572FCD006CDC4D /* FirebaseAppCheck in Frameworks */,
 			);
@@ -218,6 +229,7 @@
 				553F99192A35133F00F7D4BD /* ChristmasvilleTests */,
 				553F99232A35133F00F7D4BD /* ChristmasvilleUITests */,
 				553F99062A35133E00F7D4BD /* Products */,
+				7F4290122C5EDFB3000CBE37 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -234,6 +246,7 @@
 		553F99072A35133E00F7D4BD /* Christmasville */ = {
 			isa = PBXGroup;
 			children = (
+				7F4290152C6197CD000CBE37 /* LifeCyle */,
 				559A2D752A3A97B400DFA306 /* Styles */,
 				5562CAC32A59A647003E5DA9 /* Enum */,
 				555D4BFE2A52001E00943DB8 /* Models */,
@@ -243,6 +256,7 @@
 				553F990C2A35133F00F7D4BD /* Assets.xcassets */,
 				553F990E2A35133F00F7D4BD /* Christmasville.entitlements */,
 				553F990F2A35133F00F7D4BD /* Preview Content */,
+				7F710B022C68449D00F7DE04 /* ChristmasVille.storekit */,
 			);
 			path = Christmasville;
 			sourceTree = "<group>";
@@ -315,6 +329,7 @@
 		559A2D6B2A3938CF00DFA306 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				7F6941CC2C630516002A6965 /* PaymentManager.swift */,
 				559A2D6C2A3938EF00DFA306 /* LocationManager.swift */,
 				7F33B1BF2BD9DD3C0011421E /* ChatManager.swift */,
 			);
@@ -432,6 +447,21 @@
 			path = Giftee;
 			sourceTree = "<group>";
 		};
+		7F4290122C5EDFB3000CBE37 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F4290132C5EDFB3000CBE37 /* StoreKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7F4290152C6197CD000CBE37 /* LifeCyle */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LifeCyle;
+			sourceTree = "<group>";
+		};
 		7F48ACF12BE5C40600EAD547 /* MCKitchen */ = {
 			isa = PBXGroup;
 			children = (
@@ -516,6 +546,8 @@
 				7F9EC5E62C572FCD006CDC4D /* FirebaseAppCheck */,
 				7F9EC5E82C572FCD006CDC4D /* FirebaseCrashlytics */,
 				7F9EC5EA2C572FCD006CDC4D /* FirebaseVertexAI-Preview */,
+				7F42900E2C5EDF3D000CBE37 /* RevenueCat */,
+				7F4290102C5EDF3D000CBE37 /* RevenueCatUI */,
 			);
 			productName = Christmasville;
 			productReference = 553F99052A35133E00F7D4BD /* Christmasville.app */;
@@ -592,6 +624,7 @@
 			packageReferences = (
 				7F33B1B92BD9CD8D0011421E /* XCRemoteSwiftPackageReference "swift-markdown-ui" */,
 				7F9EC5E32C572FCD006CDC4D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				7F42900D2C5EDF3D000CBE37 /* XCRemoteSwiftPackageReference "purchases-ios-spm" */,
 			);
 			productRefGroup = 553F99062A35133E00F7D4BD /* Products */;
 			projectDirPath = "";
@@ -611,6 +644,7 @@
 			files = (
 				553F99112A35133F00F7D4BD /* Preview Assets.xcassets in Resources */,
 				553F990D2A35133F00F7D4BD /* Assets.xcassets in Resources */,
+				7F710B032C68449D00F7DE04 /* ChristmasVille.storekit in Resources */,
 				5535F1E12A36A034000279F6 /* Assets.xcassets in Resources */,
 				5535F1E02A36A034000279F6 /* snow.sks in Resources */,
 				7F9EC5ED2C572FF2006CDC4D /* GoogleService-Info.plist in Resources */,
@@ -678,6 +712,7 @@
 				7F6126022C45E4290058DC11 /* MiniMapView.swift in Sources */,
 				55D4D9802A8AE276000DEC60 /* MrsClauseKitchen.swift in Sources */,
 				7F33B1C22BD9DD980011421E /* ChatMessage.swift in Sources */,
+				7F6941CD2C63051D002A6965 /* PaymentManager.swift in Sources */,
 				7F35E11D2C0FD31600297037 /* SWEmptyPage.swift in Sources */,
 				7F5972912C2630C300531724 /* GifteeView.swift in Sources */,
 				553F99092A35133E00F7D4BD /* ChristmasvilleApp.swift in Sources */,
@@ -874,13 +909,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = dev.flamingoapps.Christmasville;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator xros xrsimulator";
 				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
 		};
@@ -917,13 +953,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = dev.flamingoapps.Christmasville;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator xros xrsimulator";
 				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
@@ -1067,6 +1104,14 @@
 				minimumVersion = 2.3.0;
 			};
 		};
+		7F42900D2C5EDF3D000CBE37 /* XCRemoteSwiftPackageReference "purchases-ios-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RevenueCat/purchases-ios-spm.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.2;
+			};
+		};
 		7F9EC5E32C572FCD006CDC4D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -1078,6 +1123,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		7F42900E2C5EDF3D000CBE37 /* RevenueCat */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7F42900D2C5EDF3D000CBE37 /* XCRemoteSwiftPackageReference "purchases-ios-spm" */;
+			productName = RevenueCat;
+		};
+		7F4290102C5EDF3D000CBE37 /* RevenueCatUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7F42900D2C5EDF3D000CBE37 /* XCRemoteSwiftPackageReference "purchases-ios-spm" */;
+			productName = RevenueCatUI;
+		};
 		7F9EC5E42C572FCD006CDC4D /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 7F9EC5E32C572FCD006CDC4D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
