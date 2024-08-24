@@ -18,13 +18,7 @@ struct ChatView: View {
     @State var chat: ChatManager = ChatManager()
     
     @State var showSheet: Bool = false
-    
-//    init(bot: Bots) {
-//        self.bot = bot
-//        _chat = State(initialValue: ChatManager(systemInstruction: bot.prompt))
-//    }
-    
-    
+
     var body: some View {
         ScrollViewReader { scrollView in
             ZStack{
@@ -33,8 +27,25 @@ struct ChatView: View {
                         ForEach(Array(chat.messages.enumerated()), id: \.offset) { index, message in
                             HStack {
                                 if message.participant == .user{
-                                    Spacer()
-                                    UserChatBubble(msg: message.message)
+                                    if containsGiftMessage(in: message.message) {
+                                        HStack {
+                                            Image("sock")
+                                                .resizable()
+                                                .scaledToFit()
+                                                .frame(width: 50, height: 50)
+                                            Text("Checking Santa's List...")
+                                                .font(.headline)
+                                                .fontWeight(.bold)
+                                                .foregroundStyle(Color("EverGreen"))
+                                        }
+                                        .padding()
+                                        .background(Color("SnowBackground"))
+                                        .clipShape(RoundedRectangle(cornerRadius: 15))
+                                        Spacer()
+                                    } else {
+                                        Spacer()
+                                        UserChatBubble(msg: message.message)
+                                    }
                                 } else {
                                     
                                     SystemBubble(msg: message.message)
@@ -53,8 +64,8 @@ struct ChatView: View {
                             }
                         }
                 )
-                .padding(.top, 25)
-                .padding(.bottom, 100)
+                //.padding(.top, 25)
+                .padding(.bottom, bot == .santasWorkshop ? 150 : 100)
                 
                 VStack {
                     Spacer()
@@ -84,7 +95,9 @@ struct ChatView: View {
                 }
             }
         }
-        
+        #if os(iOS)
+        .toolbar(.hidden, for: .tabBar)
+        #endif
     }
     
     private var textEntyView: some View {
@@ -138,7 +151,7 @@ struct ChatView: View {
                 .padding([.trailing, .bottom],14)
             }
         }
-        .padding(.bottom, 50)
+        .padding(.bottom, 30)
         .background(.coal)
         .cornerRadius(25)
     }
@@ -190,15 +203,21 @@ struct ChatView: View {
 
     func addGifteetoChat(_ giftee: Giftee) {
         let messages = """
-Can you help me find gift ideas for \(giftee.name), who is \(giftee.age). here is what I know 
-activities: \(giftee.activities)
-interests: \(giftee.interests)
-hobbies: \(giftee.hobbies)
-relation: \(giftee.relation)
-
-"""
+        Can you help me find gift ideas for \(giftee.name), who is \(giftee.age). here is what I know
+        activities: \(giftee.activities)
+        interests: \(giftee.interests)
+        hobbies: \(giftee.hobbies)
+        relation: \(giftee.relation)
+        """
         chat.sendMessage(messages, systemInstructions: bot.prompt)
     }
+    
+    func containsGiftMessage(in text: String) -> Bool {
+        let pattern = #"Can you help me find gift ideas for"#
+
+        return text.range(of: pattern, options: .regularExpression) != nil
+    }
+    
 }
 
 #Preview {

@@ -17,7 +17,7 @@ struct MainView: View {
         TabView(selection: $selectedTab) {
             
             Tab(value: .home) {
-                HomeView()
+                HomeView(selectedTab: $selectedTab)
                    
             } label: {
                 if selectedTab == .home {
