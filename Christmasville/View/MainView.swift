@@ -10,7 +10,7 @@ import RevenueCat
 import RevenueCatUI
 
 struct MainView: View {
-    
+    @State var subscriptions: SubscriptionManager = .shared
     @State var selectedTab: Tabs = .home
     
     var body: some View {
@@ -153,7 +153,11 @@ struct MainView: View {
 #endif
         }
         .tabViewStyle(.sidebarAdaptable)
-        .presentPaywallIfNeeded(requiredEntitlementIdentifier: "Yearly Subscription", presentationMode: .fullScreen)
+//        .presentPaywallIfNeeded(requiredEntitlementIdentifier: "Yearly Subscription", presentationMode: .fullScreen)
+        .fullScreenCover(isPresented: $subscriptions.showPaywall) {
+            PaywallView(displayCloseButton: false)
+                .edgesIgnoringSafeArea(.top)
+        }
         
         
     }

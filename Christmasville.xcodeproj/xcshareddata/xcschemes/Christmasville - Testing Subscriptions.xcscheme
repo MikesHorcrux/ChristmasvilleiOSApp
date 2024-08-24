@@ -51,7 +51,7 @@
          </BuildableReference>
       </BuildableProductRunnable>
       <StoreKitConfigurationFileReference
-         identifier = "../../Christmasville/ChristmasVille.storekit">
+         identifier = "../../Christmasville/Christmasville.storekit">
       </StoreKitConfigurationFileReference>
    </LaunchAction>
    <ProfileAction

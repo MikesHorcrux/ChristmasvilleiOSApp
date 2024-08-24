@@ -9,7 +9,7 @@
       }
     ]
   },
-  "identifier" : "ABE1DEAF",
+  "identifier" : "72B2A4B5",
   "nonRenewingSubscriptions" : [
 
   ],
@@ -17,7 +17,10 @@
 
   ],
   "settings" : {
+    "_applicationInternalID" : "6444195633",
+    "_developerTeamID" : "5V5PZUN2HG",
     "_failTransactionsEnabled" : false,
+    "_lastSynchronizedDate" : 746219490.391693,
     "_storeKitErrors" : [
       {
         "current" : null,
@@ -67,44 +70,12 @@
     ]
   },
   "subscriptionGroups" : [
-    {
-      "id" : "7A79045F",
-      "localizations" : [
 
-      ],
-      "name" : "ChristmasVille",
-      "subscriptions" : [
-        {
-          "adHocOffers" : [
-
-          ],
-          "codeOffers" : [
-
-          ],
-          "displayPrice" : "9.99",
-          "familyShareable" : false,
-          "groupNumber" : 1,
-          "internalID" : "F8C26E0F",
-          "introductoryOffer" : null,
-          "localizations" : [
-            {
-              "description" : "",
-              "displayName" : "",
-              "locale" : "en_US"
-            }
-          ],
-          "productID" : "YearlyCVSub",
-          "recurringSubscriptionPeriod" : "P1Y",
-          "referenceName" : "Yearly Subscription - 9.99",
-          "subscriptionGroupID" : "7A79045F",
-          "type" : "RecurringSubscription",
-          "winbackOffers" : [
-
-          ]
-        }
-      ]
-    }
   ],
+  "subscriptionOffersKeyPair" : {
+    "id" : "B965811F",
+    "privateKey" : "MIGTAgEAMBMGByqGSM49AgEGCCqGSM49AwEHBHkwdwIBAQQgmVE0cPvyuAHaZ855OYHTP8z4aYVmmkTX2OBX0MDVpW6gCgYIKoZIzj0DAQehRANCAASZSUCEiYHqQdM2OL7M+vBQt9vUYHlelHO7H+gHTQmUMxeght066EiZsGEj4SvcGwF1IXqoOfdixkj3m+26CYhK"
+  },
   "version" : {
     "major" : 4,
     "minor" : 0

@@ -39,6 +39,8 @@
 		55D4D9802A8AE276000DEC60 /* MrsClauseKitchen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D4D97F2A8AE276000DEC60 /* MrsClauseKitchen.swift */; };
 		55E2A1F62A79F45600260F59 /* LightLocationLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E2A1F52A79F45600260F59 /* LightLocationLabel.swift */; };
 		55E2A1F82A7C80F000260F59 /* LocationProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E2A1F72A7C80F000260F59 /* LocationProfileView.swift */; };
+		7F0CAE612C7A678100701F59 /* Christmasville.storekit in Resources */ = {isa = PBXBuildFile; fileRef = 7F0CAE602C7A678100701F59 /* Christmasville.storekit */; };
+		7F0CAE632C7A67F300701F59 /* StoreKitTestCertificate.cer in Resources */ = {isa = PBXBuildFile; fileRef = 7F0CAE622C7A67F300701F59 /* StoreKitTestCertificate.cer */; };
 		7F33B1C02BD9DD3C0011421E /* ChatManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F33B1BF2BD9DD3C0011421E /* ChatManager.swift */; };
 		7F33B1C22BD9DD980011421E /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F33B1C12BD9DD980011421E /* ChatMessage.swift */; };
 		7F33B1CD2BDB0CA50011421E /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F33B1C12BD9DD980011421E /* ChatMessage.swift */; };
@@ -58,8 +60,7 @@
 		7F6125FC2C44811E0058DC11 /* GifteeChatSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6125FB2C44811E0058DC11 /* GifteeChatSelection.swift */; };
 		7F6126002C44AD620058DC11 /* SnowHillsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6125FF2C44AD600058DC11 /* SnowHillsView.swift */; };
 		7F6126022C45E4290058DC11 /* MiniMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6126012C45E4290058DC11 /* MiniMapView.swift */; };
-		7F6941CD2C63051D002A6965 /* PaymentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6941CC2C630516002A6965 /* PaymentManager.swift */; };
-		7F710B032C68449D00F7DE04 /* ChristmasVille.storekit in Resources */ = {isa = PBXBuildFile; fileRef = 7F710B022C68449D00F7DE04 /* ChristmasVille.storekit */; };
+		7F6941CD2C63051D002A6965 /* SubscriptionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6941CC2C630516002A6965 /* SubscriptionManager.swift */; };
 		7F95F9312C17C2E9006AE9FB /* CreateGifteeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F95F9302C17C2E9006AE9FB /* CreateGifteeView.swift */; };
 		7F95F9332C1A7264006AE9FB /* NavigationTabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F95F9322C1A7264006AE9FB /* NavigationTabs.swift */; };
 		7F95F9BE2C1CD619006AE9FB /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F95F9BD2C1CD619006AE9FB /* ChatView.swift */; };
@@ -133,6 +134,8 @@
 		55D4D97F2A8AE276000DEC60 /* MrsClauseKitchen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MrsClauseKitchen.swift; sourceTree = "<group>"; };
 		55E2A1F52A79F45600260F59 /* LightLocationLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightLocationLabel.swift; sourceTree = "<group>"; };
 		55E2A1F72A7C80F000260F59 /* LocationProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationProfileView.swift; sourceTree = "<group>"; };
+		7F0CAE602C7A678100701F59 /* Christmasville.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Christmasville.storekit; sourceTree = "<group>"; };
+		7F0CAE622C7A67F300701F59 /* StoreKitTestCertificate.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = StoreKitTestCertificate.cer; sourceTree = "<group>"; };
 		7F33B1BF2BD9DD3C0011421E /* ChatManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatManager.swift; sourceTree = "<group>"; };
 		7F33B1C12BD9DD980011421E /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
 		7F35E11C2C0FD31600297037 /* SWEmptyPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWEmptyPage.swift; sourceTree = "<group>"; };
@@ -148,8 +151,7 @@
 		7F6125FB2C44811E0058DC11 /* GifteeChatSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifteeChatSelection.swift; sourceTree = "<group>"; };
 		7F6125FF2C44AD600058DC11 /* SnowHillsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnowHillsView.swift; sourceTree = "<group>"; };
 		7F6126012C45E4290058DC11 /* MiniMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniMapView.swift; sourceTree = "<group>"; };
-		7F6941CC2C630516002A6965 /* PaymentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentManager.swift; sourceTree = "<group>"; };
-		7F710B022C68449D00F7DE04 /* ChristmasVille.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = ChristmasVille.storekit; sourceTree = "<group>"; };
+		7F6941CC2C630516002A6965 /* SubscriptionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionManager.swift; sourceTree = "<group>"; };
 		7F95F9302C17C2E9006AE9FB /* CreateGifteeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGifteeView.swift; sourceTree = "<group>"; };
 		7F95F9322C1A7264006AE9FB /* NavigationTabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTabs.swift; sourceTree = "<group>"; };
 		7F95F9BD2C1CD619006AE9FB /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
@@ -225,6 +227,8 @@
 			isa = PBXGroup;
 			children = (
 				7F9EC5EC2C572FF2006CDC4D /* GoogleService-Info.plist */,
+				7F0CAE602C7A678100701F59 /* Christmasville.storekit */,
+				7F0CAE622C7A67F300701F59 /* StoreKitTestCertificate.cer */,
 				553F99072A35133E00F7D4BD /* Christmasville */,
 				553F99192A35133F00F7D4BD /* ChristmasvilleTests */,
 				553F99232A35133F00F7D4BD /* ChristmasvilleUITests */,
@@ -256,7 +260,6 @@
 				553F990C2A35133F00F7D4BD /* Assets.xcassets */,
 				553F990E2A35133F00F7D4BD /* Christmasville.entitlements */,
 				553F990F2A35133F00F7D4BD /* Preview Content */,
-				7F710B022C68449D00F7DE04 /* ChristmasVille.storekit */,
 			);
 			path = Christmasville;
 			sourceTree = "<group>";
@@ -329,7 +332,7 @@
 		559A2D6B2A3938CF00DFA306 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				7F6941CC2C630516002A6965 /* PaymentManager.swift */,
+				7F6941CC2C630516002A6965 /* SubscriptionManager.swift */,
 				559A2D6C2A3938EF00DFA306 /* LocationManager.swift */,
 				7F33B1BF2BD9DD3C0011421E /* ChatManager.swift */,
 			);
@@ -643,10 +646,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				553F99112A35133F00F7D4BD /* Preview Assets.xcassets in Resources */,
+				7F0CAE632C7A67F300701F59 /* StoreKitTestCertificate.cer in Resources */,
 				553F990D2A35133F00F7D4BD /* Assets.xcassets in Resources */,
-				7F710B032C68449D00F7DE04 /* ChristmasVille.storekit in Resources */,
 				5535F1E12A36A034000279F6 /* Assets.xcassets in Resources */,
 				5535F1E02A36A034000279F6 /* snow.sks in Resources */,
+				7F0CAE612C7A678100701F59 /* Christmasville.storekit in Resources */,
 				7F9EC5ED2C572FF2006CDC4D /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -712,7 +716,7 @@
 				7F6126022C45E4290058DC11 /* MiniMapView.swift in Sources */,
 				55D4D9802A8AE276000DEC60 /* MrsClauseKitchen.swift in Sources */,
 				7F33B1C22BD9DD980011421E /* ChatMessage.swift in Sources */,
-				7F6941CD2C63051D002A6965 /* PaymentManager.swift in Sources */,
+				7F6941CD2C63051D002A6965 /* SubscriptionManager.swift in Sources */,
 				7F35E11D2C0FD31600297037 /* SWEmptyPage.swift in Sources */,
 				7F5972912C2630C300531724 /* GifteeView.swift in Sources */,
 				553F99092A35133E00F7D4BD /* ChristmasvilleApp.swift in Sources */,
