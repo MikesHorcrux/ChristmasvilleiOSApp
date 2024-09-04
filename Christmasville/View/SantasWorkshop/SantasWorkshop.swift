@@ -12,6 +12,8 @@ import SwiftData
 struct SantasWorkshop: View {
     @Query var giftees: [Giftee]
     
+    @State var showChat: Bool = false
+    
     var body: some View {
         NavigationStack(){
             if giftees.isEmpty {
@@ -39,17 +41,18 @@ struct SantasWorkshop: View {
                 }
                 .buttonStyle(BorderedProminentButtonStyle())
             }
+            
         }
     }
     
     /// View displayed when there are giftees.
     private var contentStateView: some View {
         List(){
-           ForEach(giftees) { giftee in
-                        NavigationLink(value: giftee) {
-                            GifteeCard(giftee: giftee)
-                                
-                        }
+            ForEach(giftees) { giftee in
+                NavigationLink(value: giftee) {
+                    GifteeCard(giftee: giftee)
+                    
+                }
             }
         }
         .snowBackground()
@@ -65,9 +68,27 @@ struct SantasWorkshop: View {
                 }
                 .buttonStyle(BorderedProminentButtonStyle())
             }
+            
+            ToolbarItem(placement: .topBarLeading) {
+                Button() {
+                    showChat.toggle()
+                } label: {
+                    HStack {
+                        Image("Sock - 2")
+                        Text("SC. Workshop")
+                    }
+                }
+                .buttonStyle(BorderedProminentButtonStyle())
+                
+            }
+            
         }
         .navigationDestination(for: Giftee.self) { giftee in
             GifteeView(giftee: giftee)
+        }
+        //MARK: Sheets
+        .sheet(isPresented: $showChat) {
+            ChatView(bot: .santasWorkshop, showCapsule: true)
         }
     }
 }

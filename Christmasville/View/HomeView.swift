@@ -10,7 +10,9 @@ import Observation
 import MapKit
 import SwiftData
 
+
 struct HomeView: View {
+    @Binding var selectedTab: Tabs
     @Query var giftees: [Giftee]
     @Query var recipes: [Recipe]
    
@@ -62,6 +64,9 @@ struct HomeView: View {
                             }
                             .frame(maxWidth: 400, maxHeight: 230)
                             .clipShape(RoundedRectangle(cornerRadius: 20))
+                            .onTapGesture {
+                                selectedTab = .lightsMap
+                            }
                             Spacer()
                         }
                         .padding()
@@ -98,6 +103,9 @@ struct HomeView: View {
                         .frame(maxWidth: .infinity, maxHeight: 350)
                         .neumorphicBackground()
                         .padding()
+                        .onTapGesture {
+                            selectedTab = .santasList
+                        }
                        
                         VStack(alignment: .leading) {
                             Text("CookBook: ")
@@ -135,6 +143,9 @@ struct HomeView: View {
                         .frame(maxWidth: .infinity, maxHeight: 300)
                         .neumorphicBackground()
                         .padding()
+                        .onTapGesture {
+                            selectedTab = .cookbook
+                        }
 
                         ZStack(alignment: .bottom) {
                             SnowHillsView()
@@ -154,7 +165,6 @@ struct HomeView: View {
                         
                     }
                 }
-                
             .snowBackground()
 #if !os(macOS)
             .toolbarBackground(.hidden, for: .navigationBar)
@@ -163,11 +173,11 @@ struct HomeView: View {
             .toolbar {
                 ToolbarItem(placement: .automatic) {
                     NavigationLink {
-                        Text("settings view Coming soon")
+                        SettingsView()
                     } label: {
                         Image(systemName: "gearshape.fill")
                     }
-                    .buttonStyle(RoundGreenButtonStyle(padding: 2))
+                    .buttonStyle(BorderedProminentButtonStyle())
                 }
             }
             
@@ -190,7 +200,7 @@ struct HomeView: View {
             container.mainContext.insert(giftee)
         }
 
-    return HomeView()
+   return HomeView(selectedTab: .constant(.home))
         .modelContainer(container)
 }
 

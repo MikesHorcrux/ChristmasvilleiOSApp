@@ -18,6 +18,8 @@ struct SWEmptyPage: View {
             Text("Ho Ho Ho! Welcome to my workshop! Please add a profile for the ones you want to give a gift. This will help Santa keep track of all your special people and their unique preferences!")
                 .padding()
                 .opacity(0.65)
+                .background(Color("SnowBackground").opacity(0.8))
+                .clipShape(RoundedRectangle(cornerRadius: 20))
             Spacer()
         }
         .frame(maxWidth: .infinity)

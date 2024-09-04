@@ -15,15 +15,10 @@ struct ChatView: View {
     @State var textEntry: String = ""
     @FocusState private var chatFeildIsFocused: Bool
     
-    @State var chat: ChatManager = ChatManager(systemInstruction: "")
+    @State var chat: ChatManager = ChatManager()
     
     @State var showSheet: Bool = false
-    
-    init(bot: Bots) {
-        self.bot = bot
-        _chat = State(initialValue: ChatManager(systemInstruction: bot.prompt))
-    }
-    
+    var showCapsule: Bool = false
     
     var body: some View {
         ScrollViewReader { scrollView in
@@ -33,8 +28,25 @@ struct ChatView: View {
                         ForEach(Array(chat.messages.enumerated()), id: \.offset) { index, message in
                             HStack {
                                 if message.participant == .user{
-                                    Spacer()
-                                    UserChatBubble(msg: message.message)
+                                    if containsGiftMessage(in: message.message) {
+                                        HStack {
+                                            Image("sock")
+                                                .resizable()
+                                                .scaledToFit()
+                                                .frame(width: 50, height: 50)
+                                            Text("Checking Santa's List...")
+                                                .font(.headline)
+                                                .fontWeight(.bold)
+                                                .foregroundStyle(Color("EverGreen"))
+                                        }
+                                        .padding()
+                                        .background(Color("SnowBackground"))
+                                        .clipShape(RoundedRectangle(cornerRadius: 15))
+                                        Spacer()
+                                    } else {
+                                        Spacer()
+                                        UserChatBubble(msg: message.message)
+                                    }
                                 } else {
                                     
                                     SystemBubble(msg: message.message)
@@ -53,13 +65,22 @@ struct ChatView: View {
                             }
                         }
                 )
-                .padding(.top, 25)
-                .padding(.bottom, 100)
+                //.padding(.top, 25)
+                .padding(.bottom, bot == .santasWorkshop ? 150 : 100)
                 
                 VStack {
                     Spacer()
                     textEntyView
                         .focused($chatFeildIsFocused)
+                }
+                if showCapsule {
+                    VStack {
+                        Capsule()
+                            .frame(width: 100, height: 10)
+                            .foregroundStyle(Color("EverGreen"))
+                        Spacer()
+                    }
+                    .padding(.top)
                 }
             }
             
@@ -73,18 +94,20 @@ struct ChatView: View {
             }
             .onAppear(){
                 if chat.messages.isEmpty {
-                    chat.sendMessage("Hey", streaming: false)
+                    chat.sendMessage("Hey", streaming: false, systemInstructions: bot.prompt)
                 }
             }
             //MARK: Sheets
             .sheet(isPresented: $showSheet) {
-                GifteeChatSelection() {
-                    print("Hey")
+                GifteeChatSelection() { giftee in
+                    addGifteetoChat(giftee)
                     showSheet.toggle()
                 }
             }
         }
-        
+        #if os(iOS)
+        .toolbar(.hidden, for: .tabBar)
+        #endif
     }
     
     private var textEntyView: some View {
@@ -123,7 +146,7 @@ struct ChatView: View {
                         }
                     }
                     Button {
-                        chat.sendMessage(textEntry)
+                        chat.sendMessage(textEntry, systemInstructions: bot.prompt)
                         textEntry = ""
                     } label: {
                         Image(systemName: "arrow.up")
@@ -138,7 +161,7 @@ struct ChatView: View {
                 .padding([.trailing, .bottom],14)
             }
         }
-        .padding(.bottom, 50)
+        .padding(.bottom, 30)
         .background(.coal)
         .cornerRadius(25)
     }
@@ -154,7 +177,7 @@ struct ChatView: View {
     
     
     /// Parses and handles the chat message if it likely contains a recipe.
-    func parseAndHandleMessage(_ message: ChatMessage) {
+    func parseAndHandleMessage(_ message: CVChatMessage) {
         if isLikelyRecipe(message: message.message) {
             if let recipe = parseRecipe(from: message.message) {
                 print(recipe.title)
@@ -187,6 +210,24 @@ struct ChatView: View {
         }
         return nil
     }
+
+    func addGifteetoChat(_ giftee: Giftee) {
+        let messages = """
+        Can you help me find gift ideas for \(giftee.name), who is \(giftee.age). here is what I know
+        activities: \(giftee.activities)
+        interests: \(giftee.interests)
+        hobbies: \(giftee.hobbies)
+        relation: \(giftee.relation)
+        """
+        chat.sendMessage(messages, systemInstructions: bot.prompt)
+    }
+    
+    func containsGiftMessage(in text: String) -> Bool {
+        let pattern = #"Can you help me find gift ideas for"#
+
+        return text.range(of: pattern, options: .regularExpression) != nil
+    }
+    
 }
 
 #Preview {

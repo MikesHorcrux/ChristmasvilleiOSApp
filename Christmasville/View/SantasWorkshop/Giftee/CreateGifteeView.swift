@@ -25,7 +25,7 @@ struct CreateGifteeView: View {
             Section(header: Text("Giftee Information")) {
                 TextField("Name", text: $name)
                 TextField("Sex", text: $sex)
-                TextField("Age", value: $age, formatter: NumberFormatter())
+                TextField("Age", text: $age)
                 #if !os(macOS)
                     .keyboardType(.numberPad)
                 #endif

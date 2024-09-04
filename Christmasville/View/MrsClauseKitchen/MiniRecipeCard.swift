@@ -14,7 +14,7 @@ struct MiniRecipeCard: View {
         HStack{
             VStack(alignment: .leading){
                 Text(recipe.title)
-                    .font(.headline)
+                    .font(.footnote)
                     .fontWeight(.bold)
                     .foregroundStyle(.everGreen)
                 Divider()

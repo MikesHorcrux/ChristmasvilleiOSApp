@@ -10,7 +10,7 @@ import SwiftData
 
 struct GifteeChatSelection: View {
     @Query var giftees: [Giftee]
-    var action: (() -> Void)?
+    var action: ((_ giftee: Giftee) -> Void)?
     var body: some View {
         List {
             Text("Select a Giftee")
@@ -19,7 +19,7 @@ struct GifteeChatSelection: View {
             ForEach(giftees) { giftee in
                 Button(action: {
                     if let action = action {
-                        action()
+                        action(giftee)
                     }
                 }) {
                     GifteeCard(giftee: giftee, hideGiftInfo: true)
@@ -44,7 +44,7 @@ struct GifteeChatSelection: View {
             container.mainContext.insert(giftee)
         }
 
-    return GifteeChatSelection(){
+    return GifteeChatSelection(){ giftee in
         print("tapped")
     }
         .modelContainer(container)
