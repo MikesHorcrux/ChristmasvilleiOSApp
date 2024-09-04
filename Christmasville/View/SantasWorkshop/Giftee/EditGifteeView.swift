@@ -20,7 +20,7 @@ struct EditGifteeView: View {
             Section(header: Text("Giftee Information")) {
                 TextField("Name", text: $giftee.name)
                 TextField("Sex", text: $giftee.sex)
-                TextField("Age", value: $giftee.age, formatter: NumberFormatter())
+                TextField("Age", text: $giftee.age)
                 #if !os(macOS)
                     .keyboardType(.numberPad)
                 #endif

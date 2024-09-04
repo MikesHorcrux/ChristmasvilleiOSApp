@@ -13,7 +13,7 @@ import FirebaseVertexAI
 @Observable
 class ChatManager {
   
-    var messages = [ChatMessage]()
+    var messages = [CVChatMessage]()
     var busy = false
     var error: Error?
 
@@ -23,7 +23,7 @@ class ChatManager {
     ///   - streaming: Specifies whether to send the message as a streaming request.
     func sendMessage(_ text: String, streaming: Bool = false, systemInstructions: String) {
         if !messages.isEmpty{
-            let userMessage = ChatMessage(message: text, participant: .user)
+            let userMessage = CVChatMessage(message: text, participant: .user)
             messages.append(userMessage)
         }
         sendMessageNonStreaming(text, systemInstructions: systemInstructions)
@@ -44,7 +44,7 @@ class ChatManager {
                 // To generate text output, call generateContent with the text input
                 let response = try await model.generateContent(text)
                 if let responseText = response.text {
-                    let message = ChatMessage(message: responseText, participant: .system, pending: false)
+                    let message = CVChatMessage(message: responseText, participant: .system, pending: false)
                     messages.append(message)
                     busy.toggle()
                 }

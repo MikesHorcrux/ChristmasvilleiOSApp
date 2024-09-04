@@ -173,11 +173,11 @@ struct HomeView: View {
             .toolbar {
                 ToolbarItem(placement: .automatic) {
                     NavigationLink {
-                        Text("settings view Coming soon")
+                        SettingsView()
                     } label: {
                         Image(systemName: "gearshape.fill")
                     }
-                    .buttonStyle(RoundGreenButtonStyle(padding: 2))
+                    .buttonStyle(BorderedProminentButtonStyle())
                 }
             }
             

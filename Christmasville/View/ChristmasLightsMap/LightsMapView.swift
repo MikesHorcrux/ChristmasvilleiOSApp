@@ -25,10 +25,7 @@ struct LightsMapView: View {
     
     var body: some View {
         NavigationStack() {
-            ZStack(alignment: .bottomTrailing) {
-                mapSection
-                addAddressButtonSection
-            }
+        mapSection
             .sheet(isPresented: $locationManager.showLocationPermissionPrompt, onDismiss: {
                 if locationManager.askLoctionPermission {
                     locationManager.askLocationPermission()
@@ -36,6 +33,23 @@ struct LightsMapView: View {
             }) {
                 LocationServicesInitalPermissionView(locationManager: locationManager)
             }
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    NavigationLink() {
+                        AddAddressForm(locationManager: locationManager)
+                    } label: {
+                        HStack {
+                            Image("Bulbs")
+                            Text("Add House")
+                        }
+                    }
+                    .buttonStyle(BorderedProminentButtonStyle())
+                
+                }
+            }
+#if !os(macOS)
+            .toolbarBackground(.hidden, for: .navigationBar)
+#endif
             
         }
     }
@@ -62,42 +76,7 @@ struct LightsMapView: View {
             }
         }
         .mapStyle(.standard)
-//        .onMapCameraChange {
-//            position = .userLocation(fallback: .automatic)
-//        }
-//        .sheet(isPresented: $showLocationInfo, content: {
-//                LocationProfileView(location: $selectedLocation)
-//                    .presentationDetents([.medium])
-//                    .presentationDragIndicator(.visible)
-//        })
 
-    }
-    
-    /// Section for the add address button.
-    ///
-    /// This section includes a button to add a new address for Christmas lights.
-    /// The button leads to a form where the user can input the new address.
-    private var addAddressButtonSection: some View {
-        Button(action: {
-#if os(macOS)
-            showAddAddressSheet.toggle()
-#else
-            showAddAddress.toggle()
-#endif
-        }) {
-            Image("Bulbs")
-        }
-        .buttonStyle(RoundGreenButtonStyle())
-        .padding(15)
-        .background {
-            NavigationLink(destination: AddAddressForm(locationManager: locationManager), isActive: $showAddAddress) {
-                EmptyView()
-            }
-        }
-        .sheet(isPresented: $showAddAddressSheet) {
-            AddAddressForm(locationManager: locationManager)
-                .frame(minHeight: 800)
-        }
     }
 }
 

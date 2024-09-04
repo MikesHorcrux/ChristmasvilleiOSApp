@@ -12,19 +12,19 @@ enum Participant {
   case user
 }
 
-struct ChatMessage: Identifiable, Equatable {
+struct CVChatMessage: Identifiable, Equatable {
   let id = UUID().uuidString
   var message: String
   let participant: Participant
   var pending = false
 
-  static func pending(participant: Participant) -> ChatMessage {
+  static func pending(participant: Participant) -> CVChatMessage {
     Self(message: "", participant: participant, pending: true)
   }
 }
 
-extension ChatMessage {
-  static var samples: [ChatMessage] = [
+extension CVChatMessage {
+  static var samples: [CVChatMessage] = [
     .init(message: "Hello. What can I do for you today?", participant: .system),
     .init(message: "Show me a simple loop in Swift.", participant: .user),
     .init(message: """

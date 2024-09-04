@@ -18,7 +18,8 @@ struct ChatView: View {
     @State var chat: ChatManager = ChatManager()
     
     @State var showSheet: Bool = false
-
+    var showCapsule: Bool = false
+    
     var body: some View {
         ScrollViewReader { scrollView in
             ZStack{
@@ -71,6 +72,15 @@ struct ChatView: View {
                     Spacer()
                     textEntyView
                         .focused($chatFeildIsFocused)
+                }
+                if showCapsule {
+                    VStack {
+                        Capsule()
+                            .frame(width: 100, height: 10)
+                            .foregroundStyle(Color("EverGreen"))
+                        Spacer()
+                    }
+                    .padding(.top)
                 }
             }
             
@@ -167,7 +177,7 @@ struct ChatView: View {
     
     
     /// Parses and handles the chat message if it likely contains a recipe.
-    func parseAndHandleMessage(_ message: ChatMessage) {
+    func parseAndHandleMessage(_ message: CVChatMessage) {
         if isLikelyRecipe(message: message.message) {
             if let recipe = parseRecipe(from: message.message) {
                 print(recipe.title)

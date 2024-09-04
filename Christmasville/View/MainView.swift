@@ -10,7 +10,8 @@ import RevenueCat
 import RevenueCatUI
 
 struct MainView: View {
-    @State var subscriptions: SubscriptionManager = .shared
+    
+    @Bindable var subscriptions: SubscriptionManager
     @State var selectedTab: Tabs = .home
     
     var body: some View {
@@ -61,22 +62,21 @@ struct MainView: View {
                 }
             }
             
-//#if !os(macOS)
-//            if UIDevice.current.userInterfaceIdiom == .phone {
-//                Tab(value: .northPoleIPhone) {
-//                    Text("North Pole")
-//                       
-//                } label: {
-//                    if selectedTab == .northPoleIPhone {
-//                        Label("North Pole", image: .christmasHat3)
-//                    } else {
-//                        Label("North Pole", image: .christmasHat2)
-//                    }
-//                }
-//            }
-//#endif
+#if !os(macOS)
+            if UIDevice.current.userInterfaceIdiom == .phone {
+                Tab(value: .northPoleIPhone) {
+                    NorthPoleView()
+                } label: {
+                    if selectedTab == .northPoleIPhone {
+                        Label("North Pole", image: .christmasHat3)
+                    } else {
+                        Label("North Pole", image: .christmasHat2)
+                    }
+                }
+            }
+#endif
             
-            // North pole for all decives but iphone
+             //North pole for all decives but iphone
             
 #if os(macOS)
             TabSection {
@@ -114,7 +114,7 @@ struct MainView: View {
             }
             
 #else
-//            if UIDevice.current.userInterfaceIdiom != .phone {
+            if UIDevice.current.userInterfaceIdiom != .phone {
                 TabSection {
                     Tab(value: Tabs.northPole(.santa)) {
                         ChatView(bot: .santa)
@@ -149,7 +149,7 @@ struct MainView: View {
                     Label("NorthPole", image: .christmasHat2)
                 }
                 
-            //}
+            }
 #endif
         }
         .tabViewStyle(.sidebarAdaptable)
@@ -164,5 +164,5 @@ struct MainView: View {
 }
 
 #Preview {
-    MainView()
+    MainView(subscriptions: SubscriptionManager.shared)
 }

@@ -12,42 +12,59 @@ import SwiftData
 struct MrsClauseKitchen: View {
     
     @Query(sort: \Recipe.title) var recipes: [Recipe]
-    
+    @State var showMrsClausChat = false
     var body: some View {
         NavigationStack() {
-            ZStack {
                 VStack(alignment: .leading) {
-                    
-                    HStack(alignment: .top){
-                        Text("Mrs Claus CookBook")
-                            .font(.title)
-                            .fontWeight(.bold)
-                        .foregroundStyle(.santaRed)
-                        .multilineTextAlignment(.leading)
-                        Spacer()
-                        Image("ginger bread man #2")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 65)
-                            .padding()
-                            .neumorphicBackground(backgroundColor: .bellBrown)
-                    }
-                    ScrollView(.vertical){
-                        VStack {
-                            ForEach(recipes, id: \.self){ recipe in
-                                NavigationLink {
-                                    RecipeView(recipe: recipe)
-                                } label: {
-                                    FeaturedRecipeCard(recipe: recipe)
+                    if recipes.isEmpty {
+                        CookBookEmptyView()
+                    } else {
+                        ScrollView(.vertical, showsIndicators: true){
+                            VStack {
+                                ForEach(recipes, id: \.self){ recipe in
+                                    NavigationLink {
+                                        RecipeView(recipe: recipe)
+                                    } label: {
+                                        FeaturedRecipeCard(recipe: recipe)
+                                    }
                                 }
                             }
                         }
+                }
+                }
+            //.padding()
+            .snowBackground()
+            .toolbar {
+                ToolbarItem(placement: .topBarLeading) {
+                    Button() {
+                        showMrsClausChat.toggle()
+                    } label: {
+                        HStack {
+                            Image("christmas Mug - 1")
+                            Text("Mrs. Claus")
+                        }
                     }
-                    Spacer()
+                    .buttonStyle(BorderedProminentButtonStyle())
+                
+                }
+                ToolbarItem(placement: .topBarTrailing) {
+                    NavigationLink() {
+                        AddRecipie()
+                    } label: {
+                        HStack {
+                            Image(systemName: "plus")
+                            Image("Candy Christmas - 4")
+                     
+                        }
+                    }
+                    .buttonStyle(BorderedProminentButtonStyle())
+                
                 }
             }
-            .padding()
-            .snowBackground()
+            //MARK: Sheets
+            .sheet(isPresented: $showMrsClausChat) {
+                ChatView(bot: .mrsClaus, showCapsule: true)
+            }
         }
     }
 }

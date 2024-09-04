@@ -21,6 +21,28 @@ enum Bots: Int, Equatable, Hashable, Identifiable, CaseIterable {
         }
     }
     
+    var name: String {
+        switch self {
+        case .santa:
+            return "Santa Claus"
+        case .santasWorkshop:
+            return "Santa's Workshop Elves"
+        case .mrsClaus:
+            return "Mrs. Claus"
+        }
+    }
+    
+    var image: String {
+        switch self {
+        case .santa:
+            return "SantaProfile"
+        case .santasWorkshop:
+            return "elfProfile"
+        case .mrsClaus:
+            return "MrsClausProfile"
+        }
+    }
+    
     var prompt: String {
         switch self {
         case .santa:
