@@ -77,10 +77,10 @@ struct ChatView: View {
                     VStack {
                         Capsule()
                             .frame(width: 100, height: 10)
-                            .foregroundStyle(Color("EverGreen"))
+                            .foregroundStyle(Color.secondary)
+                            .padding()
                         Spacer()
                     }
-                    .padding(.top)
                 }
             }
             
