@@ -1,3 +1,8 @@
+## 2024-09-11
+
+### Changed
+- Updated capsule indicator color and padding in `ChatView` for improved visual consistency and layout spacing.
+
 ## 2024-09-05
 
 ### Added
