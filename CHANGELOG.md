@@ -1,6 +1,11 @@
 ## 2024-09-12
 
 ### Added
+- New `EditRecipe` SwiftUI view for editing recipes, integrated into `RecipeView` with navigation and toolbar enhancements.
+
+## 2024-09-12
+
+### Added
 - Integrated Firebase Performance for enhanced app monitoring and analytics.
 - Automated crash report handling with a new shell script build phase for Firebase Crashlytics.
 
