@@ -62,7 +62,7 @@ struct EditRecipie: View {
     let container = try! ModelContainer(for: Recipe.self, configurations: config)
     
     NavigationStack() {
-        EditRecipie()
+        EditRecipie( recipe: Recipe(title: "", ingredients: "", instructions: ""))
             .modelContainer(container)
     }
 }
