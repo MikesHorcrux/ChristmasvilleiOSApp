@@ -22,7 +22,7 @@ struct RecipeView: View {
                     .frame(width: 100)
                 Text(recipe.ingredients)
                     .multilineTextAlignment(.leading)
-                    
+                
             }
             .padding()
             .neumorphicBackground()
@@ -61,17 +61,26 @@ struct RecipeView: View {
             }
             
         }
-#if !os(macOS)
-        .toolbarBackground(Color.snowBackground, for: .navigationBar)
-            #endif
-        
-        .background(SnowBackground().ignoresSafeArea(edges: .all))
-        .navigationTitle(recipe.title)
-    }
-}
-
-#Preview {
-    NavigationStack {
-        RecipeView(recipe: Recipe(title: "", ingredients: "", instructions: ""))
-    }
-}
+        .toolbar() {
+            ToolbarItem() {
+                NavigationLink(destination: EditRecipie(recipe: recipe)) {
+                    Text("Edit")
+                }
+                .buttonStyle(BorderedProminentButtonStyle())
+            }
+                }
+                        
+                        #if !os(macOS)
+                .toolbarBackground(Color.snowBackground, for: .navigationBar)
+                        #endif
+                        
+                .background(SnowBackground().ignoresSafeArea(edges: .all))
+                .navigationTitle(recipe.title)
+                        }
+                        }
+                        
+                        #Preview {
+                NavigationStack {
+                    RecipeView(recipe: Recipe(title: "", ingredients: "", instructions: ""))
+                }
+            }
