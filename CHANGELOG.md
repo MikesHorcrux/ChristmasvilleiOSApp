@@ -1,3 +1,12 @@
+## 2024-09-12
+
+### Added
+- Integrated Firebase Performance for enhanced app monitoring and analytics.
+- Automated crash report handling with a new shell script build phase for Firebase Crashlytics.
+
+### Changed
+- Updated build settings to improve debugging information.
+
 ## 2024-09-11
 
 ### Changed
