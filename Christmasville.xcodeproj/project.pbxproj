@@ -60,6 +60,7 @@
 		7F4290112C5EDF3D000CBE37 /* RevenueCatUI in Frameworks */ = {isa = PBXBuildFile; productRef = 7F4290102C5EDF3D000CBE37 /* RevenueCatUI */; };
 		7F4290142C5EDFB3000CBE37 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F4290132C5EDFB3000CBE37 /* StoreKit.framework */; };
 		7F498EE42C926AE90052967C /* FirebasePerformance in Frameworks */ = {isa = PBXBuildFile; productRef = 7F498EE32C926AE90052967C /* FirebasePerformance */; };
+		7F498EE72C9289EF0052967C /* EditRecipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F498EE62C9289EF0052967C /* EditRecipe.swift */; };
 		7F5972042C210FBD00531724 /* GiftStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5972032C210FBD00531724 /* GiftStatus.swift */; };
 		7F5972062C2110BE00531724 /* GifteeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5972052C2110BE00531724 /* GifteeCard.swift */; };
 		7F5972912C2630C300531724 /* GifteeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5972902C2630C300531724 /* GifteeView.swift */; };
@@ -156,6 +157,7 @@
 		7F35E1242C0FFFA000297037 /* Giftee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Giftee.swift; sourceTree = "<group>"; };
 		7F35E1272C1008B800297037 /* EditGifteeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditGifteeView.swift; sourceTree = "<group>"; };
 		7F4290132C5EDFB3000CBE37 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		7F498EE62C9289EF0052967C /* EditRecipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditRecipe.swift; sourceTree = "<group>"; };
 		7F5972032C210FBD00531724 /* GiftStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftStatus.swift; sourceTree = "<group>"; };
 		7F5972052C2110BE00531724 /* GifteeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifteeCard.swift; sourceTree = "<group>"; };
 		7F5972902C2630C300531724 /* GifteeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifteeView.swift; sourceTree = "<group>"; };
@@ -425,6 +427,7 @@
 				ECEF5C122AC0E822005A36F0 /* MiniRecipeCard.swift */,
 				ECEF5C142AC3C550005A36F0 /* FeaturedRecipeCard.swift */,
 				EC29B5DE2ACBA1430032EE95 /* RecipeView.swift */,
+				7F498EE62C9289EF0052967C /* EditRecipe.swift */,
 			);
 			path = MrsClauseKitchen;
 			sourceTree = "<group>";
@@ -755,6 +758,7 @@
 				7F329B0E2C8675040038C417 /* NorthPoleContactView.swift in Sources */,
 				EC29B5DF2ACBA1430032EE95 /* RecipeView.swift in Sources */,
 				5562CAC52A59A671003E5DA9 /* ChristmasLightsHouseType.swift in Sources */,
+				7F498EE72C9289EF0052967C /* EditRecipe.swift in Sources */,
 				5562CAC22A59A5F9003E5DA9 /* Coordinates.swift in Sources */,
 				ECEF5C112AC0E5A6005A36F0 /* NeumorphicBackground.swift in Sources */,
 				7F329B0C2C8674970038C417 /* NorthPoleView.swift in Sources */,
