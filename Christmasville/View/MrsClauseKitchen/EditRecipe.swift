@@ -8,7 +8,7 @@
 import SwiftUI
 import SwiftData
 
-struct EditRecipie: View {
+struct EditRecipe: View {
     @Environment(\.dismiss) var dismiss
     @Environment(\.modelContext) var modelContext
     @State var recipe: Recipe
@@ -62,7 +62,7 @@ struct EditRecipie: View {
     let container = try! ModelContainer(for: Recipe.self, configurations: config)
     
     NavigationStack() {
-        EditRecipie( recipe: Recipe(title: "", ingredients: "", instructions: ""))
+        EditRecipe( recipe: Recipe(title: "", ingredients: "", instructions: ""))
             .modelContainer(container)
     }
 }

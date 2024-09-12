@@ -63,7 +63,7 @@ struct RecipeView: View {
         }
         .toolbar() {
             ToolbarItem() {
-                NavigationLink(destination: EditRecipie(recipe: recipe)) {
+                NavigationLink(destination: EditRecipe(recipe: recipe)) {
                     Text("Edit")
                 }
                 .buttonStyle(BorderedProminentButtonStyle())
