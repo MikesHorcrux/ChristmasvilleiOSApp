@@ -1,3 +1,17 @@
+## 2024-09-15
+
+### Added
+- Introduced `TypingIndicatorView` to display typing animations in chat.
+- Added placeholder system messages for pending chat responses.
+
+### Changed
+- Improved chat message handling to ensure UI updates occur on the main thread.
+- Enhanced `ChatView` to handle pending messages and ensure the latest message is always visible.
+- Updated `TextEntryView` to reset the text field after sending a message.
+
+### Fixed
+- Removed an unused breakpoint from the debugger configuration.
+
 ## 2024-09-12
 
 ### Added
