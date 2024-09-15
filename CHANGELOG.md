@@ -1,5 +1,13 @@
 ## 2024-09-15
 
+### Changed
+- Enhanced `MrsClauseKitchen` and `SantasWorkshop` views for visionOS compatibility with conditional sheet presentations and close buttons.
+- Applied `PlainButtonStyle` to navigation links in `MrsClauseKitchen` for consistent styling.
+- Introduced `@Environment(\.dismiss)` in `MrsClauseKitchen` for improved view management.
+- Made minor formatting adjustments in `ChatView`.
+
+## 2024-09-15
+
 ### Added
 - Introduced `TypingIndicatorView` to display typing animations in chat.
 - Added placeholder system messages for pending chat responses.
