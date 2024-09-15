@@ -48,9 +48,13 @@ struct ChatView: View {
                                         UserChatBubble(msg: message.message)
                                     }
                                 } else {
-                                    
-                                    SystemBubble(msg: message.message)
-                                        .onAppear {parseAndHandleMessage(message)}
+                                    if message.pending {
+                                        SystemBubble(isPending: true)
+                                    } else {
+                                        SystemBubble(msg: message.message)
+                                            .onAppear {parseAndHandleMessage(message)}
+                                            .id(index)
+                                    }
                                 }
                             }
                         }
@@ -67,6 +71,7 @@ struct ChatView: View {
                 )
                 //.padding(.top, 25)
                 .padding(.bottom, bot == .santasWorkshop ? 150 : 100)
+                
                 
                 VStack {
                     Spacer()
@@ -86,11 +91,11 @@ struct ChatView: View {
             
             .padding(.bottom, -35)
             .background(SnowBackground().ignoresSafeArea(edges: .all))
-            .onChange(of: chat.messages) { measages in
-                let lastIndex = chat.messages.count - 1
-                if lastIndex >= 0 {
-                    scrollView.scrollTo(lastIndex, anchor: .bottom)
-                }
+            .onChange(of: chat.messages) { _ in
+                scrollToBottom(scrollView: scrollView)
+            }
+            .onChange(of: chat.busy) { _ in
+                scrollToBottom(scrollView: scrollView)
             }
             .onAppear(){
                 if chat.messages.isEmpty {
@@ -105,9 +110,9 @@ struct ChatView: View {
                 }
             }
         }
-        #if os(iOS)
-        .toolbar(.hidden, for: .tabBar)
-        #endif
+#if os(iOS)
+        .toolbar(.automatic, for: .tabBar)
+#endif
     }
     
     private var textEntyView: some View {
@@ -210,7 +215,7 @@ struct ChatView: View {
         }
         return nil
     }
-
+    
     func addGifteetoChat(_ giftee: Giftee) {
         let messages = """
         Can you help me find gift ideas for \(giftee.name), who is \(giftee.age). here is what I know
@@ -224,8 +229,16 @@ struct ChatView: View {
     
     func containsGiftMessage(in text: String) -> Bool {
         let pattern = #"Can you help me find gift ideas for"#
-
+        
         return text.range(of: pattern, options: .regularExpression) != nil
+    }
+    
+    // Helper function to scroll to the bottom
+    private func scrollToBottom(scrollView: ScrollViewProxy) {
+        let lastIndex = chat.messages.count - 1
+        if lastIndex >= 0 {
+            scrollView.scrollTo(lastIndex, anchor: .bottom)
+        }
     }
     
 }
@@ -235,16 +248,16 @@ struct ChatView: View {
         Giftee(name: "Mike", sex: "Male", age: "25", activities: "Swimming, Basketball", interests: "Cooking, Video Games", hobbies: "Hiking, Camping", relation: .family, giftStatus: .purchased, trackingNumber: "123456789"),
         Giftee(name: "Sarah", sex: "Female", age: "23", activities: "Swimming, Basketball", interests: "Cooking, Video Games", hobbies: "Hiking, Camping", relation: .family, giftStatus: .purchased, trackingNumber: "123456789"),
         Giftee(name: "John", sex: "Male", age: "27", activities: "Swimming, Basketball", interests: "Cooking, Video Games", hobbies: "Hiking, Camping", relation: .family, giftStatus: .purchased, trackingNumber: "123456789"),
-        ]
+    ]
     
     let config = ModelConfiguration(isStoredInMemoryOnly: true)
     let container = try! ModelContainer(for: Giftee.self, configurations: config)
-
-        for giftee in previewData{
-            container.mainContext.insert(giftee)
-        }
-
+    
+    for giftee in previewData{
+        container.mainContext.insert(giftee)
+    }
+    
     return ChatView(bot: .santasWorkshop)
         .modelContainer(container)
-   
+    
 }

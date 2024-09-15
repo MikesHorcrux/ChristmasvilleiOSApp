@@ -7,17 +7,32 @@
 
 import SwiftUI
 
-
 struct SystemBubble: View {
-    var msg: String = ""
+    var msg: String? = nil
+    var isPending: Bool = false
+
     var body: some View {
-        Bubble(direction: .left) {
-            Text(msg)
-                .multilineTextAlignment(.leading)
-                .padding(.all, 20)
-                .background(.coal)
-                .textSelection(.enabled)
-                .foregroundColor(.white)
+        HStack {
+            if isPending {
+                Bubble(direction: .left) {
+                    TypingIndicatorView()
+                        .padding(.all, 20)
+                        .background(.coal)
+                        .textSelection(.enabled)
+                        .foregroundColor(.white)
+                }
+                Spacer()
+            } else if let msg = msg {
+                Bubble(direction: .left) {
+                    Text(msg)
+                        .multilineTextAlignment(.leading)
+                        .padding(.all, 20)
+                        .background(.coal)
+                        .textSelection(.enabled)
+                        .foregroundColor(.white)
+                }
+                Spacer()
+            }
         }
         .padding(.trailing, 30)
     }

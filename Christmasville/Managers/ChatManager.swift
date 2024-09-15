@@ -1,56 +1,56 @@
-//
-//  ChatManager.swift
-//  Christmasville
-//
-//  Created by Mike  Van Amburg on 4/24/24.
-//
-
 import Foundation
 import Observation
 import FirebaseVertexAI
 
-/// Manages the interactions with a generative AI model for chat functionality.
 @Observable
 class ChatManager {
-  
+
     var messages = [CVChatMessage]()
     var busy = false
     var error: Error?
 
-    /// Sends a message to the chat service.
-    /// - Parameters:
-    ///   - text: The text message to send.
-    ///   - streaming: Specifies whether to send the message as a streaming request.
     func sendMessage(_ text: String, streaming: Bool = false, systemInstructions: String) {
-        if !messages.isEmpty{
+        if !messages.isEmpty {
             let userMessage = CVChatMessage(message: text, participant: .user)
             messages.append(userMessage)
         }
         sendMessageNonStreaming(text, systemInstructions: systemInstructions)
     }
 
-    /// Sends a message to the chat service in non-streaming mode.
-    /// - Parameter text: The text message to send.
     private func sendMessageNonStreaming(_ text: String, systemInstructions: String) {
-        // Initialize the Vertex AI service
         let vertex = VertexAI.vertexAI()
-
-        // Initialize the generative model with a model that supports your use case
-        // Gemini 1.5 models are versatile and can be used with all API capabilities
         let model = vertex.generativeModel(modelName: "gemini-1.5-pro", systemInstruction: .init(parts: [.text(systemInstructions)]))
         Task {
             do {
-                busy.toggle()
-                // To generate text output, call generateContent with the text input
+                // Ensure UI updates are on the main thread
+                await MainActor.run {
+                    busy = true
+                    // Add a placeholder system message with pending = true
+                    let placeholderMessage = CVChatMessage(message: "", participant: .system, pending: true)
+                    messages.append(placeholderMessage)
+                }
+                let messageIndex = messages.count - 1
+
+                // Generate the content (this can be on a background thread)
                 let response = try await model.generateContent(text)
                 if let responseText = response.text {
-                    let message = CVChatMessage(message: responseText, participant: .system, pending: false)
-                    messages.append(message)
-                    busy.toggle()
+                    // Update the placeholder message on the main thread
+                    await MainActor.run {
+                        messages[messageIndex].message = responseText
+                        messages[messageIndex].pending = false
+                        busy = false
+                    }
                 }
             } catch {
                 print(error)
-                busy.toggle()
+                // Handle error on the main thread
+                await MainActor.run {
+                    if messages.indices.contains(messages.count - 1) {
+                        messages[messages.count - 1].message = "Error: Unable to get response."
+                        messages[messages.count - 1].pending = false
+                    }
+                    busy = false
+                }
             }
         }
     }
