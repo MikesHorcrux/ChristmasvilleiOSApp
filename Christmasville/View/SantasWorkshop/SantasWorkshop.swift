@@ -87,9 +87,22 @@ struct SantasWorkshop: View {
             GifteeView(giftee: giftee)
         }
         //MARK: Sheets
+#if os(visionOS)
         .sheet(isPresented: $showChat) {
-            ChatView(bot: .santasWorkshop, showCapsule: true)
+            ZStack(alignment: .topTrailing) {
+                ChatView(bot: .santasWorkshop, showCapsule: false)
+                    .frame(minWidth: 250, maxWidth: 450, minHeight: 400, maxHeight: .infinity)
+                Button("close"){
+                    showChat.toggle()
+                }
+                .padding()
+            }
         }
+#else
+        .sheet(isPresented: $showChat) {
+                ChatView(bot: .santasWorkshop, showCapsule: true)
+        }
+        #endif
     }
 }
 

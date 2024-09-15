@@ -10,28 +10,29 @@ import Observation
 import SwiftData
 
 struct MrsClauseKitchen: View {
-    
+    @Environment(\.dismiss) var dismiss
     @Query(sort: \Recipe.title) var recipes: [Recipe]
     @State var showMrsClausChat = false
     var body: some View {
         NavigationStack() {
-                VStack(alignment: .leading) {
-                    if recipes.isEmpty {
-                        CookBookEmptyView()
-                    } else {
-                        ScrollView(.vertical, showsIndicators: true){
-                            VStack {
-                                ForEach(recipes, id: \.self){ recipe in
-                                    NavigationLink {
-                                        RecipeView(recipe: recipe)
-                                    } label: {
-                                        FeaturedRecipeCard(recipe: recipe)
-                                    }
+            VStack(alignment: .leading) {
+                if recipes.isEmpty {
+                    CookBookEmptyView()
+                } else {
+                    ScrollView(.vertical, showsIndicators: true){
+                        VStack {
+                            ForEach(recipes, id: \.self){ recipe in
+                                NavigationLink {
+                                    RecipeView(recipe: recipe)
+                                } label: {
+                                    FeaturedRecipeCard(recipe: recipe)
                                 }
+                                .buttonStyle(PlainButtonStyle())
                             }
                         }
+                    }
                 }
-                }
+            }
             //.padding()
             .snowBackground()
             .toolbar {
@@ -45,7 +46,7 @@ struct MrsClauseKitchen: View {
                         }
                     }
                     .buttonStyle(BorderedProminentButtonStyle())
-                
+                    
                 }
                 ToolbarItem(placement: .topBarTrailing) {
                     NavigationLink() {
@@ -54,17 +55,30 @@ struct MrsClauseKitchen: View {
                         HStack {
                             Image(systemName: "plus")
                             Image("Candy Christmas - 4")
-                     
+                            
                         }
                     }
                     .buttonStyle(BorderedProminentButtonStyle())
-                
+                    
                 }
             }
             //MARK: Sheets
+#if os(visionOS)
             .sheet(isPresented: $showMrsClausChat) {
-                ChatView(bot: .mrsClaus, showCapsule: true)
+                ZStack(alignment: .topTrailing) {
+                    ChatView(bot: .mrsClaus, showCapsule: false)
+                        .frame(minWidth: 250, maxWidth: 450, minHeight: 400, maxHeight: .infinity)
+                    Button("close"){
+                        showMrsClausChat.toggle()
+                    }
+                    .padding()
+                }
             }
+#else
+            .sheet(isPresented: $showMrsClausChat) {
+                    ChatView(bot: .mrsClaus, showCapsule: true)
+            }
+            #endif
         }
     }
 }

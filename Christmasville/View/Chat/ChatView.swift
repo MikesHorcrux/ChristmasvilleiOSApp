@@ -10,7 +10,6 @@ import SwiftData
 
 struct ChatView: View {
     @Environment(\.modelContext) var modelContext
-    
     var bot: Bots
     @State var textEntry: String = ""
     @FocusState private var chatFeildIsFocused: Bool
