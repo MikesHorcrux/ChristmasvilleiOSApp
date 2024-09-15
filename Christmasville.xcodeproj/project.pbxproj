@@ -61,6 +61,7 @@
 		7F4290142C5EDFB3000CBE37 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F4290132C5EDFB3000CBE37 /* StoreKit.framework */; };
 		7F498EE42C926AE90052967C /* FirebasePerformance in Frameworks */ = {isa = PBXBuildFile; productRef = 7F498EE32C926AE90052967C /* FirebasePerformance */; };
 		7F498EE72C9289EF0052967C /* EditRecipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F498EE62C9289EF0052967C /* EditRecipe.swift */; };
+		7F498EE92C965A300052967C /* TypingIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F498EE82C965A300052967C /* TypingIndicatorView.swift */; };
 		7F5972042C210FBD00531724 /* GiftStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5972032C210FBD00531724 /* GiftStatus.swift */; };
 		7F5972062C2110BE00531724 /* GifteeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5972052C2110BE00531724 /* GifteeCard.swift */; };
 		7F5972912C2630C300531724 /* GifteeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5972902C2630C300531724 /* GifteeView.swift */; };
@@ -158,6 +159,7 @@
 		7F35E1272C1008B800297037 /* EditGifteeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditGifteeView.swift; sourceTree = "<group>"; };
 		7F4290132C5EDFB3000CBE37 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		7F498EE62C9289EF0052967C /* EditRecipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditRecipe.swift; sourceTree = "<group>"; };
+		7F498EE82C965A300052967C /* TypingIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypingIndicatorView.swift; sourceTree = "<group>"; };
 		7F5972032C210FBD00531724 /* GiftStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftStatus.swift; sourceTree = "<group>"; };
 		7F5972052C2110BE00531724 /* GifteeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifteeCard.swift; sourceTree = "<group>"; };
 		7F5972902C2630C300531724 /* GifteeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifteeView.swift; sourceTree = "<group>"; };
@@ -411,6 +413,7 @@
 		55D4D9732A8AD6E3000DEC60 /* ChatBubbles */ = {
 			isa = PBXGroup;
 			children = (
+				7F498EE82C965A300052967C /* TypingIndicatorView.swift */,
 				55D4D9742A8AD720000DEC60 /* Bubble.swift */,
 				55D4D9762A8AD7A4000DEC60 /* BubbleShape.swift */,
 				55D4D9782A8AD84F000DEC60 /* UserBubble.swift */,
@@ -771,6 +774,7 @@
 				ECEF5C0E2AC0CD85005A36F0 /* WavySquareShape.swift in Sources */,
 				7F33B1C02BD9DD3C0011421E /* ChatManager.swift in Sources */,
 				ECEF5C152AC3C551005A36F0 /* FeaturedRecipeCard.swift in Sources */,
+				7F498EE92C965A300052967C /* TypingIndicatorView.swift in Sources */,
 				5562CACB2A59F85A003E5DA9 /* RoundGreenButtonStyle.swift in Sources */,
 				559A2D742A3A904800DFA306 /* LocationServicesInitalPermissionView.swift in Sources */,
 				55D4D9772A8AD7A4000DEC60 /* BubbleShape.swift in Sources */,

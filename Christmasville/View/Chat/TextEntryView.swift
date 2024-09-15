@@ -9,12 +9,12 @@ import SwiftUI
 import Observation
 
 struct TextEntryView: View {
-    @State var textentry: String
+    @State var entry: String
     var sendAction: () -> ()
     var body: some View {
         ZStack(alignment: .bottom) {
             VStack {
-                TextField("", text: $textentry, prompt: Text(""), axis: .vertical)
+                TextField("", text: $entry, prompt: Text(""), axis: .vertical)
                     .textFieldStyle(PlainTextFieldStyle())
                     .foregroundColor(.white)
                     .padding(5)
@@ -28,6 +28,7 @@ struct TextEntryView: View {
                 HStack {
                     Button {
                         sendAction()
+                        entry = ""
                     } label: {
                         Image(systemName: "arrow.up")
                             .fontWeight(.semibold)
@@ -51,6 +52,6 @@ struct TextEntryView: View {
 #Preview {
     VStack {
         Spacer()
-        TextEntryView(textentry: "Hey All"){}
+        TextEntryView(entry: "Hey All"){}
     }
 }
