@@ -26,7 +26,7 @@ class SubscriptionManager {
 
     private func configureRevenueCat() {
         Purchases.logLevel = .debug
-        Purchases.configure(withAPIKey: "appl_bgShEoxKoGalbOYImQDRXEBzcQX")
+        Purchases.configure(withAPIKey: "Add API Key Here")
     }
 
     /// Fetch the latest customer information and update the subscription status

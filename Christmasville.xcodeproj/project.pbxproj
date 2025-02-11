@@ -39,8 +39,6 @@
 		55D4D9802A8AE276000DEC60 /* MrsClauseKitchen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D4D97F2A8AE276000DEC60 /* MrsClauseKitchen.swift */; };
 		55E2A1F62A79F45600260F59 /* LightLocationLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E2A1F52A79F45600260F59 /* LightLocationLabel.swift */; };
 		55E2A1F82A7C80F000260F59 /* LocationProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E2A1F72A7C80F000260F59 /* LocationProfileView.swift */; };
-		7F0CAE612C7A678100701F59 /* Christmasville.storekit in Resources */ = {isa = PBXBuildFile; fileRef = 7F0CAE602C7A678100701F59 /* Christmasville.storekit */; };
-		7F0CAE632C7A67F300701F59 /* StoreKitTestCertificate.cer in Resources */ = {isa = PBXBuildFile; fileRef = 7F0CAE622C7A67F300701F59 /* StoreKitTestCertificate.cer */; };
 		7F0CAE672C7AA71100701F59 /* CookBookEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0CAE662C7AA71100701F59 /* CookBookEmptyView.swift */; };
 		7F0CAE692C80130700701F59 /* AddRecipie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0CAE682C80130700701F59 /* AddRecipie.swift */; };
 		7F329B012C84EBC50038C417 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F329B002C84EBC50038C417 /* SettingsView.swift */; };
@@ -77,7 +75,6 @@
 		7F9EC5E72C572FCD006CDC4D /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = 7F9EC5E62C572FCD006CDC4D /* FirebaseAppCheck */; };
 		7F9EC5E92C572FCD006CDC4D /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 7F9EC5E82C572FCD006CDC4D /* FirebaseCrashlytics */; };
 		7F9EC5EB2C572FCD006CDC4D /* FirebaseVertexAI-Preview in Frameworks */ = {isa = PBXBuildFile; productRef = 7F9EC5EA2C572FCD006CDC4D /* FirebaseVertexAI-Preview */; };
-		7F9EC5ED2C572FF2006CDC4D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7F9EC5EC2C572FF2006CDC4D /* GoogleService-Info.plist */; };
 		EC29B5DF2ACBA1430032EE95 /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC29B5DE2ACBA1430032EE95 /* RecipeView.swift */; };
 		EC2C137B2AEDA51D00A16DE2 /* CountdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2C137A2AEDA51D00A16DE2 /* CountdownView.swift */; };
 		EC69994C2AD0F28A009FB09C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC69994B2AD0F28A009FB09C /* HomeView.swift */; };
@@ -142,8 +139,6 @@
 		55D4D97F2A8AE276000DEC60 /* MrsClauseKitchen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MrsClauseKitchen.swift; sourceTree = "<group>"; };
 		55E2A1F52A79F45600260F59 /* LightLocationLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightLocationLabel.swift; sourceTree = "<group>"; };
 		55E2A1F72A7C80F000260F59 /* LocationProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationProfileView.swift; sourceTree = "<group>"; };
-		7F0CAE602C7A678100701F59 /* Christmasville.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Christmasville.storekit; sourceTree = "<group>"; };
-		7F0CAE622C7A67F300701F59 /* StoreKitTestCertificate.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = StoreKitTestCertificate.cer; sourceTree = "<group>"; };
 		7F0CAE662C7AA71100701F59 /* CookBookEmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookBookEmptyView.swift; sourceTree = "<group>"; };
 		7F0CAE682C80130700701F59 /* AddRecipie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRecipie.swift; sourceTree = "<group>"; };
 		7F329B002C84EBC50038C417 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
@@ -171,7 +166,6 @@
 		7F95F9322C1A7264006AE9FB /* NavigationTabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTabs.swift; sourceTree = "<group>"; };
 		7F95F9BD2C1CD619006AE9FB /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		7F95F9BF2C1CD660006AE9FB /* Bots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bots.swift; sourceTree = "<group>"; };
-		7F9EC5EC2C572FF2006CDC4D /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EC29B5DE2ACBA1430032EE95 /* RecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView.swift; sourceTree = "<group>"; };
 		EC2C137A2AEDA51D00A16DE2 /* CountdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownView.swift; sourceTree = "<group>"; };
 		EC69994B2AD0F28A009FB09C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -242,9 +236,6 @@
 		553F98FC2A35133E00F7D4BD = {
 			isa = PBXGroup;
 			children = (
-				7F9EC5EC2C572FF2006CDC4D /* GoogleService-Info.plist */,
-				7F0CAE602C7A678100701F59 /* Christmasville.storekit */,
-				7F0CAE622C7A67F300701F59 /* StoreKitTestCertificate.cer */,
 				553F99072A35133E00F7D4BD /* Christmasville */,
 				553F99192A35133F00F7D4BD /* ChristmasvilleTests */,
 				553F99232A35133F00F7D4BD /* ChristmasvilleUITests */,
@@ -679,12 +670,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				553F99112A35133F00F7D4BD /* Preview Assets.xcassets in Resources */,
-				7F0CAE632C7A67F300701F59 /* StoreKitTestCertificate.cer in Resources */,
 				553F990D2A35133F00F7D4BD /* Assets.xcassets in Resources */,
 				5535F1E12A36A034000279F6 /* Assets.xcassets in Resources */,
 				5535F1E02A36A034000279F6 /* snow.sks in Resources */,
-				7F0CAE612C7A678100701F59 /* Christmasville.storekit in Resources */,
-				7F9EC5ED2C572FF2006CDC4D /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -955,7 +943,7 @@
 				CURRENT_PROJECT_VERSION = 2;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"Christmasville/Preview Content\"";
-				DEVELOPMENT_TEAM = 5V5PZUN2HG;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -999,7 +987,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Christmasville/Preview Content\"";
-				DEVELOPMENT_TEAM = 5V5PZUN2HG;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
